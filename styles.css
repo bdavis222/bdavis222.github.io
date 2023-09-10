@@ -51,6 +51,13 @@ code {
   margin-top: 0px;
 }
 
+.subtitle-left {
+  text-align: left;
+  font-style: italic;
+  color: #808080;
+  margin-top: 0px;
+}
+
 .bordered-image {
   border: 1px solid #808080;
   border-radius: 10px;
