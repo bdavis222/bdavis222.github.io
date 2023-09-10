@@ -1,0 +1,128 @@
+body {
+  background-color: #F0F0F0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #1560bd;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #1877F2; 
+}
+
+h3 {
+  color: #787878;
+}
+
+footer {
+  font-size: 80%;
+  text-align: center;
+}
+
+hr {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+b {
+  color: #282828;
+}
+
+code {
+  background-color: #404040;
+  color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #808080;
+  margin-top: 0px;
+}
+
+.bordered-image {
+  border: 1px solid #808080;
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 70%;
+  height: auto;
+}
+
+.logo {
+  padding-left: 3px;
+  padding-right: 3px;
+  max-height: 25px;
+  width: auto;
+  filter: drop-shadow(1px 1px 1px #505050);
+}
+
+.donate-button {
+  padding: 5px;
+  filter: drop-shadow(2px 2px 2px #808080);
+}
+
+.donate-button:hover {
+  opacity: 0.5;
+}
+
+.donate-button-container {
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.center-in-donate-button-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  background-color: #8cc751;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 18px;
+  filter: drop-shadow(2px 2px 2px #808080);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #303030;
+}
+
+.button:hover {
+  background-color: #808080;
+}
+
+.button-container {
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.center-in-button-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
