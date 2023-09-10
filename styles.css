@@ -73,6 +73,13 @@ code {
   width: auto;
 }
 
+.company-name {
+  padding-left: 3px;
+  padding-right: 3px;
+  max-height: 30px;
+  width: auto;
+}
+
 .donate-button {
   padding: 5px;
   filter: drop-shadow(2px 2px 2px #808080);
