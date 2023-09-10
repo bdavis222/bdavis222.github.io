@@ -66,12 +66,11 @@ code {
   height: auto;
 }
 
-.logo {
+.icon {
   padding-left: 3px;
   padding-right: 3px;
   max-height: 25px;
   width: auto;
-  filter: drop-shadow(1px 1px 1px #505050);
 }
 
 .donate-button {
