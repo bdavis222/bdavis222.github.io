@@ -21,7 +21,7 @@ function Cards() {
             "src/assets/css-logo.png",
           ]}
           title="Software Engineering Roadmap"
-          description="A react website that guides people pursuing programming jobs"
+          description="A website that guides people pursuing programming jobs"
         />
         <Card
           link="operator"
@@ -32,7 +32,7 @@ function Cards() {
             "src/assets/swift-logo.png",
           ]}
           title="Operator Game"
-          description="An original iOS math puzzle game with procedurally generated levels"
+          description="An original math puzzle game with procedurally generated levels"
         />
         <Card
           link="gravity"
