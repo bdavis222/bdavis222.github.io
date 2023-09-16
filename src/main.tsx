@@ -2,13 +2,13 @@ import "./styles.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Releases from "../components/Releases";
-import DotScanner from "../components/dotscanner/DotScanner";
-import PypiMaker from "../components/pypimaker/PypiMaker";
-import Operator from "../components/operator/Operator";
-import Gravity from "../components/gravity/Gravity";
-import Roadmap from "../components/roadmap/Roadmap";
-import PythonLanding from "../components/roadmap/PythonLanding";
+import Releases from "../public/assets/components/Releases";
+import DotScanner from "../public/assets/components/dotscanner/DotScanner";
+import PypiMaker from "../public/assets/components/pypimaker/PypiMaker";
+import Operator from "../public/assets/components/operator/Operator";
+import Gravity from "../public/assets/components/gravity/Gravity";
+import Roadmap from "../public/assets/components/roadmap/Roadmap";
+import PythonLanding from "../public/assets/components/roadmap/PythonLanding";
 
 class App extends React.Component {
   render() {
