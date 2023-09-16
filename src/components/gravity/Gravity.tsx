@@ -25,8 +25,8 @@ function Gravity() {
       <h2>Gameplay Demo</h2>
       <p>Below is a demo of the first few levels of gameplay in Gravity.</p>
       <iframe
-        width="420"
-        height="345"
+        width="640"
+        height="360"
         src="https://www.youtube.com/embed/evGW_AUilRQ"
         allowFullScreen
       ></iframe>
