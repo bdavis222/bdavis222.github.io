@@ -31,14 +31,14 @@ function Cards() {
             "src/assets/swiftui-logo.png",
             "src/assets/swift-logo.png",
           ]}
-          title="Operator Game"
+          title="Operator"
           description="An original math puzzle game with procedurally generated levels"
         />
         <Card
           link="gravity"
           image="src/assets/gravity.png"
           icons={["src/assets/cpp-logo.png"]}
-          title="Gravity Game"
+          title="Gravity"
           description="A game for space travel enthusiasts"
         />
         <Card
