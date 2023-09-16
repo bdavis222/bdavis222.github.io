@@ -10,7 +10,7 @@ function DotScanner() {
     <>
       <h1>Dot Scanner</h1>
       <h2 className="subtitle">
-        Software designed for analysis of microscope imaging data
+        Microscope image analysis software
       </h2>
       <DonateButton />
       <img src="assets/dotscanner.png" className="page-banner" />

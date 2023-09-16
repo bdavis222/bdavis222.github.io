@@ -54,14 +54,15 @@ hr {
 }
 h1 {
   text-align: center;
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
   margin-bottom: 10px;
   color: #1560bd;
 }
 h2 {
+  font-size: 1.6em;
   margin-bottom: 10px;
-  color: #1877F2; 
+  color: #1877f2;
 }
 h3 {
   color: #787878;
@@ -72,7 +73,7 @@ iframe {
 }
 input[type="checkbox"] {
   margin-left: 20px;
-  outline: 1px solid black
+  outline: 1px solid black;
 }
 
 @media (prefers-color-scheme: light) {
@@ -145,42 +146,23 @@ input[type="checkbox"] {
   height: auto;
 }
 
-/* Float two columns side by side */
+/* Float three columns side by side */
 .column {
   float: left;
-  width: 50%;
-  padding: 10px 10px;
+  width: 33%;
+  padding: 20px;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0px -5px;}
+/* Remove extra left and right margins due to padding */
+.row {
+  margin: 0px -10px;
+}
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-/* Responsive screen */
-@media screen and (max-width: 1200px) {
-  .card {
-    min-height: 285px;
-  }
-}
-@media screen and (max-width: 700px) {
-  body {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .column {
-    width: 100%;
-    display: block;
-  }
-  .card {
-    max-width: 100%;
-    min-height: 0px;
-  }
 }
 
 .card-link {
@@ -192,33 +174,114 @@ input[type="checkbox"] {
   color: black;
 }
 
+.card-icon {
+  max-height: 15px;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 5px;
+}
+.card-icon-row {
+  position: absolute;
+  bottom: 5px;
+  right: 12px;
+}
 .card-title {
   padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .card-description {
+  margin-top: 0px;
+  margin-bottom: 8px;
   padding-top: 0px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
-  max-width: 600px;
-  margin: 20px;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
 }
 
 .card-image {
   width: 100%;
-  height: auto;
+  height: 50%;
 }
 
 .card-container {
-  padding: 2px 16px;
+  position: relative;
+  height: 150px;
+  padding: 0px 16px;
+}
+
+/* Making the grid responsive to screen size */
+@media screen and (max-width: 1050px) {
+  .column {
+    height: 325px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .column {
+    height: 318px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .column {
+    height: 310px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .column {
+    height: 305px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .column {
+    height: 300px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .column {
+    height: 292px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .column {
+    height: 288px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .column {
+    height: 278px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .column {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .card-container {
+    height: 130px;
+  }
 }
 
 .subtitle {
+  font-size: 1.2em;
   text-align: center;
   font-style: italic;
   color: #808080;

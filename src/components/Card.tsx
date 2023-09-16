@@ -16,12 +16,14 @@ function Card({ link, image, icons, title, description }: Props) {
             <img className="card-image" src={image} alt={altText} />
             <div className="card-container">
               <h3 className="card-title">
-                <b>{title} </b>
-                {icons.map((icon) => (
-                  <img className="icon" src={icon} alt="icon logo" />
-                ))}
+                <b>{title}</b>
               </h3>
               <p className="card-description">{description}</p>
+              <div className="card-icon-row">
+                {icons.map((icon) => (
+                  <img className="card-icon" src={icon} alt="icon logo" />
+                ))}
+              </div>
             </div>
           </div>
         </a>

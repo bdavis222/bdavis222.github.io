@@ -11,7 +11,7 @@ function PypiMaker() {
     <>
       <h1>PyPI Maker</h1>
       <h2 className="subtitle">
-        Software designed for simplifying PyPI Python package setups
+        Simplifying PyPI setup and management
       </h2>
       <DonateButton />
       <img src="assets/pypimaker.png" className="page-banner" />

@@ -5,13 +5,6 @@ function Cards() {
     <>
       <div className="row">
         <Card
-          link="/#/dotscanner"
-          image="assets/dotscanner.png"
-          icons={["assets/python-logo.png"]}
-          title="Dot Scanner"
-          description="Software designed for analysis of microscope imaging data"
-        />
-        <Card
           link="/#/roadmap"
           image="assets/roadmap.png"
           icons={[
@@ -22,6 +15,20 @@ function Cards() {
           ]}
           title="Software Engineering Roadmap"
           description="A website that guides people pursuing programming jobs"
+        />
+        <Card
+          link="/#/dotscanner"
+          image="assets/dotscanner.png"
+          icons={["assets/python-logo.png"]}
+          title="Dot Scanner"
+          description="Software designed for analysis of microscope imaging data"
+        />
+        <Card
+          link="/#/pypimaker"
+          image="assets/pypimaker.png"
+          icons={["assets/python-logo.png"]}
+          title="PyPI Maker"
+          description="Software designed for simplifying PyPI Python package setups"
         />
         <Card
           link="/#/operator"
@@ -39,14 +46,7 @@ function Cards() {
           image="assets/gravity.png"
           icons={["assets/cpp-logo.png"]}
           title="Gravity"
-          description="A game for space travel enthusiasts"
-        />
-        <Card
-          link="/#/pypimaker"
-          image="assets/pypimaker.png"
-          icons={["assets/python-logo.png"]}
-          title="PyPI Maker"
-          description="Software designed for simplifying PyPI Python package setups"
+          description="An original spaceflight game with a built-in level editor"
         />
       </div>
     </>

@@ -12,10 +12,12 @@ function Gravity() {
         Gravity is a game in which the player uses the gravitational fields of
         planets to navigate their spaceship toward a target planet to land it
         safely. Several powerups can be acquired and used along the way, which
-        will allow the player to use extra boosts or shoot missiles. The game
-        also features a level editor (unlocked when reaching a certain level in
-        the game), which allows the player to make their own custom levels to
-        play.
+        will allow the player to use extra boosts or shoot missiles.
+      </p>
+      <p>
+        The game also features a level editor (unlocked when reaching a certain
+        level in the game), which allows the player to make their own custom
+        levels to play.
       </p>
       <p>
         Gravity was written in C++ using the{" "}
