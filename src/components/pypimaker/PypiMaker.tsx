@@ -2,7 +2,7 @@ import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 import Changing from "./Changing";
 import Generating from "./Generating";
-import GettingStarted from "./GettingStarted";
+import StartingPypiMaker from "./StartingPypiMaker";
 import Resetting from "./Resetting";
 import Uploading from "./Uploading";
 
@@ -24,7 +24,7 @@ function PypiMaker() {
       </p>
       <p>Donations are appreciated, but not required.</p>
       <hr />
-      <GettingStarted />
+      <StartingPypiMaker />
       <hr />
       <Generating />
       <hr />

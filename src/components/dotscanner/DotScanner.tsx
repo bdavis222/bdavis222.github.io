@@ -1,7 +1,7 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 import Configurations from "./Configurations";
-import GettingStarted from "./GettingStarted";
+import StartingDotScanner from "./StartingDotScanner";
 import RegionSelection from "./RegionSelection";
 import ThresholdAdjustment from "./ThresholdAdjustment";
 
@@ -24,7 +24,7 @@ function DotScanner() {
       </p>
       <p>Donations are appreciated, but not required.</p>
       <hr />
-      <GettingStarted />
+      <StartingDotScanner />
       <hr />
       <Configurations />
       <hr />

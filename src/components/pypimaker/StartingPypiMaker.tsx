@@ -1,4 +1,4 @@
-function GettingStarted() {
+function StartingPypiMaker() {
   return (
     <>
       <h2>Getting Started</h2>
@@ -25,4 +25,4 @@ function GettingStarted() {
   );
 }
 
-export default GettingStarted;
+export default StartingPypiMaker;

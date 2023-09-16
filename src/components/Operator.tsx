@@ -1,5 +1,5 @@
-import DonateButton from "../DonateButton";
-import Footer from "../Footer";
+import DonateButton from "./DonateButton";
+import Footer from "./Footer";
 
 function Operator() {
   return (

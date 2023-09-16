@@ -5,8 +5,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Releases from "./components/Releases";
 import DotScanner from "./components/dotscanner/DotScanner";
 import PypiMaker from "./components/pypimaker/PypiMaker";
-import Operator from "./components/operator/Operator";
-import Gravity from "./components/gravity/Gravity";
+import Operator from "./components/Operator";
+import Gravity from "./components/Gravity";
 import Roadmap from "./components/roadmap/Roadmap";
 import PythonLanding from "./components/roadmap/PythonLanding";
 
