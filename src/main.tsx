@@ -9,11 +9,13 @@ import Operator from "./components/operator/Operator";
 import Gravity from "./components/gravity/Gravity";
 import Roadmap from "./components/roadmap/Roadmap";
 import PythonLanding from "./components/roadmap/PythonLanding";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends React.Component {
   render() {
     return (
       <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Releases />} />
           <Route path="/dotscanner" element={<DotScanner />} />
