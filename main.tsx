@@ -15,13 +15,13 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="" element={<Releases />} />
-          <Route path="dotscanner" element={<DotScanner />} />
-          <Route path="pypimaker" element={<PypiMaker />} />
-          <Route path="operator" element={<Operator />} />
-          <Route path="gravity" element={<Gravity />} />
-          <Route path="roadmap" element={<Roadmap />} />
-          <Route path="python" element={<PythonLanding />} />
+          <Route path="./" element={<Releases />} />
+          <Route path="./dotscanner" element={<DotScanner />} />
+          <Route path="./pypimaker" element={<PypiMaker />} />
+          <Route path="./operator" element={<Operator />} />
+          <Route path="./gravity" element={<Gravity />} />
+          <Route path="./roadmap" element={<Roadmap />} />
+          <Route path="./python" element={<PythonLanding />} />
         </Routes>
       </BrowserRouter>
     );
