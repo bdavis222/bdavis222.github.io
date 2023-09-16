@@ -5,14 +5,14 @@ function Cards() {
     <>
       <div className="row">
         <Card
-          link="dotscanner"
+          link="./dotscanner"
           image="assets/dotscanner.png"
           icons={["assets/python-logo.png"]}
           title="Dot Scanner"
           description="Software designed for analysis of microscope imaging data"
         />
         <Card
-          link="roadmap"
+          link="./roadmap"
           image="assets/roadmap.png"
           icons={[
             "assets/react-logo.png",
@@ -24,7 +24,7 @@ function Cards() {
           description="A website that guides people pursuing programming jobs"
         />
         <Card
-          link="operator"
+          link="./operator"
           image="assets/operator.png"
           icons={[
             "assets/apple-logo.png",
@@ -35,14 +35,14 @@ function Cards() {
           description="An original math puzzle game with procedurally generated levels"
         />
         <Card
-          link="gravity"
+          link="./gravity"
           image="assets/gravity.png"
           icons={["assets/cpp-logo.png"]}
           title="Gravity"
           description="A game for space travel enthusiasts"
         />
         <Card
-          link="pypimaker"
+          link="./pypimaker"
           image="assets/pypimaker.png"
           icons={["assets/python-logo.png"]}
           title="PyPI Maker"
