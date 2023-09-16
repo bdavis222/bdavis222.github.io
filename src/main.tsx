@@ -13,7 +13,7 @@ import PythonLanding from "./components/roadmap/PythonLanding";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={"/"}>
         <Routes>
           <Route path="/" element={<Releases />} />
           <Route path="/dotscanner" element={<DotScanner />} />
