@@ -7,7 +7,7 @@ function Intro() {
       <h1>Software Engineering Roadmap</h1>
       <h2 className="subtitle">A simple guide to getting a programming job</h2>
       <DonateButton />
-      <img src="src/assets/roadmap.png" className="page-banner" />
+      <img src="assets/roadmap.png" className="page-banner" />
       <p>
         This website is designed to guide people of all different levels of
         programming experience (including no experience) to the level of a

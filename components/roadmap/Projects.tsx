@@ -40,17 +40,17 @@ function Projects() {
         </span>{" "}
         <img
           className="icon"
-          src="src/assets/apple-logo.png"
+          src="assets/apple-logo.png"
           alt="Apple logo"
         />
         <img
           className="icon"
-          src="src/assets/swiftui-logo.png"
+          src="assets/swiftui-logo.png"
           alt="SwiftUI logo"
         />
         <img
           className="icon"
-          src="src/assets/swift-logo.png"
+          src="assets/swift-logo.png"
           alt="Swift logo"
         />
       </h3>
@@ -76,17 +76,17 @@ function Projects() {
         </span>{" "}
         <img
           className="icon"
-          src="src/assets/android-logo.png"
+          src="assets/android-logo.png"
           alt="Android logo"
         />
         <img
           className="icon"
-          src="src/assets/compose-logo.png"
+          src="assets/compose-logo.png"
           alt="Jetpack Compose logo"
         />
         <img
           className="icon"
-          src="src/assets/kotlin-logo.png"
+          src="assets/kotlin-logo.png"
           alt="Kotlin logo"
         />{" "}
       </h3>
@@ -107,23 +107,23 @@ function Projects() {
         </span>{" "}
         <img
           className="icon"
-          src="src/assets/react-logo.png"
+          src="assets/react-logo.png"
           alt="React logo"
         />
         <img
           className="icon"
-          src="src/assets/javascript-logo.png"
+          src="assets/javascript-logo.png"
           alt="JavaScript logo"
         />
         <img
           className="icon"
-          src="src/assets/typescript-logo.png"
+          src="assets/typescript-logo.png"
           alt="TypeScript logo"
         />
-        <img className="icon" src="src/assets/html-logo.png" alt="HTML logo" />
+        <img className="icon" src="assets/html-logo.png" alt="HTML logo" />
         <img
           className="icon"
-          src="src/assets/css-logo.png"
+          src="assets/css-logo.png"
           alt="CSS logo"
         />{" "}
       </h3>
@@ -160,12 +160,12 @@ function Projects() {
         </span>{" "}
         <img
           className="icon"
-          src="src/assets/pygame-logo.png"
+          src="assets/pygame-logo.png"
           alt="PyGame logo"
         />
         <img
           className="icon"
-          src="src/assets/python-logo.png"
+          src="assets/python-logo.png"
           alt="Python logo"
         />
       </h3>
@@ -185,10 +185,10 @@ function Projects() {
         </span>{" "}
         <img
           className="icon"
-          src="src/assets/unity-logo.png"
+          src="assets/unity-logo.png"
           alt="Unity logo"
         />
-        <img className="icon" src="src/assets/c-sharp-logo.png" alt="C# logo" />
+        <img className="icon" src="assets/c-sharp-logo.png" alt="C# logo" />
       </h3>
       <p>
         This is a great project to choose if you want to showcase experience
@@ -204,8 +204,8 @@ function Projects() {
         <span className="h3-thin">
           <i>(hard)</i>
         </span>{" "}
-        <img className="icon" src="src/assets/sfml-logo.png" alt="SFML logo" />
-        <img className="icon" src="src/assets/cpp-logo.png" alt="C++ logo" />
+        <img className="icon" src="assets/sfml-logo.png" alt="SFML logo" />
+        <img className="icon" src="assets/cpp-logo.png" alt="C++ logo" />
       </h3>
       <p>
         This is a great project to choose if you want to showcase experience

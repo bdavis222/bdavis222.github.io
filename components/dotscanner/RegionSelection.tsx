@@ -7,10 +7,10 @@ function RegionSelection() {
         from the main Threshold Adjustment Window saves the threshold settings
         selected by the user and advances to the Region Selector Window:
       </p>
-      <a href="src/assets/dotscanner/9.png">
+      <a href="assets/dotscanner/9.png">
         <img
           className="bordered-image"
-          src="src/assets/dotscanner/9.png"
+          src="assets/dotscanner/9.png"
           alt="Region selection image"
           loading="lazy"
         />

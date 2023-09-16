@@ -11,10 +11,10 @@ function Generating() {
         This will launch a graphical user interface that looks like the
         following:
       </p>
-      <a href="src/assets/pypimaker/0.png">
+      <a href="assets/pypimaker/0.png">
         <img
           className="bordered-image"
-          src="src/assets/pypimaker/0.png"
+          src="assets/pypimaker/0.png"
           alt="Main GUI image"
           loading="lazy"
         />

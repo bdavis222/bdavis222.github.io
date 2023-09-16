@@ -67,10 +67,10 @@ function PythonLanding() {
         When the course website loads in the new tab you just opened, you will
         see the following:
       </p>
-      <a href="src/assets/roadmap/folders.png">
+      <a href="assets/roadmap/folders.png">
         <img
           className="bordered-image"
-          src="src/assets/roadmap/folders.png"
+          src="assets/roadmap/folders.png"
           alt="Image highlighting folders"
           loading="lazy"
         />
@@ -86,10 +86,10 @@ function PythonLanding() {
         At any time, you can navigate back to the starting folder by clicking
         the folder icon shown in this image:
       </p>
-      <a href="src/assets/roadmap/back-folder.png">
+      <a href="assets/roadmap/back-folder.png">
         <img
           className="bordered-image"
-          src="src/assets/roadmap/back-folder.png"
+          src="assets/roadmap/back-folder.png"
           alt="Image highlighting back button"
           loading="lazy"
         />

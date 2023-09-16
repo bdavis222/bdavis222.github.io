@@ -7,7 +7,7 @@ function Gravity() {
       <h1>Gravity</h1>
       <h2 className="subtitle">A game for space travel enthusiasts</h2>
       <DonateButton />
-      <img src="src/assets/gravity.png" className="page-banner" />
+      <img src="assets/gravity.png" className="page-banner" />
       <p>
         Gravity is a game in which the player uses the gravitational fields of
         planets to navigate their spaceship toward a target planet to land it

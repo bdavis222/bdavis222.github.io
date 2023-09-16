@@ -14,7 +14,7 @@ function PypiMaker() {
         Software designed for simplifying PyPI Python package setups
       </h2>
       <DonateButton />
-      <img src="src/assets/pypimaker.png" className="page-banner" />
+      <img src="assets/pypimaker.png" className="page-banner" />
       <p>
         PyPI Maker is designed to simplify uploading Python packages to the
         Python Package Index (PyPI). The program runs entirely within a

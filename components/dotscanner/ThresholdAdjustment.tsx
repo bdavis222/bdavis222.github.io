@@ -9,10 +9,10 @@ function ThresholdAdjustment() {
         shows the image data with the dots and blobs identified, and features
         several button groups on the left sidebar:
       </p>
-      <a href="src/assets/dotscanner/7.png">
+      <a href="assets/dotscanner/7.png">
         <img
           className="bordered-image"
-          src="src/assets/dotscanner/7.png"
+          src="assets/dotscanner/7.png"
           alt="Threshold adjustment image"
           loading="lazy"
         />
@@ -52,10 +52,10 @@ function ThresholdAdjustment() {
         This button changes the left button bar view to display some manual
         threshold and size adjustment options:
       </p>
-      <a href="src/assets/dotscanner/8.png">
+      <a href="assets/dotscanner/8.png">
         <img
           className="bordered-image"
-          src="src/assets/dotscanner/8.png"
+          src="assets/dotscanner/8.png"
           alt="Threshold adjustment edit image"
           loading="lazy"
         />

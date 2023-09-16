@@ -13,7 +13,7 @@ function DotScanner() {
         Software designed for analysis of microscope imaging data
       </h2>
       <DonateButton />
-      <img src="src/assets/dotscanner.png" className="page-banner" />
+      <img src="assets/dotscanner.png" className="page-banner" />
       <p>
         Dot Scanner is designed to simplify analysis of microscope imaging data.
         The program runs entirely within a window-based graphical user

@@ -9,7 +9,7 @@ function Operator() {
         An original iOS math puzzle game with procedurally generated levels
       </h2>
       <DonateButton />
-      <img src="src/assets/operator.png" className="page-banner" />
+      <img src="assets/operator.png" className="page-banner" />
       <p>
         Operator is a game in which the player tries to solve math puzzles
         within a given time limit to earn more time and advance to the next

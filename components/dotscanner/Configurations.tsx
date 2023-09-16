@@ -3,10 +3,10 @@ function Configurations() {
     <>
       <h2>The Configurations Window</h2>
       <p>The first window displayed in the GUI is the Configurations Window:</p>
-      <a href="src/assets/dotscanner/3.png">
+      <a href="assets/dotscanner/3.png">
         <img
           className="bordered-image"
-          src="src/assets/dotscanner/3.png"
+          src="assets/dotscanner/3.png"
           alt="Configurations window image"
           loading="lazy"
         />
@@ -15,10 +15,10 @@ function Configurations() {
         If the File or Folder buttons are clicked, another window opens,
         allowing the user to select a file or folder for analysis:
       </p>
-      <a href="src/assets/dotscanner/4.png">
+      <a href="assets/dotscanner/4.png">
         <img
           className="bordered-image"
-          src="src/assets/dotscanner/4.png"
+          src="assets/dotscanner/4.png"
           alt="File browsing image"
           loading="lazy"
         />
@@ -50,10 +50,10 @@ function Configurations() {
         </em>
         This selection is made through the <b>Program</b> dropdown menu:
       </p>
-      <a href="src/assets/dotscanner/5.png">
+      <a href="assets/dotscanner/5.png">
         <img
           className="bordered-image"
-          src="src/assets/dotscanner/5.png"
+          src="assets/dotscanner/5.png"
           alt="Selecting lifetime image"
           loading="lazy"
         />
@@ -61,10 +61,10 @@ function Configurations() {
       <p>
         If <b>Lifetime</b> is selected, some additional options will appear:
       </p>
-      <a href="src/assets/dotscanner/6.png">
+      <a href="assets/dotscanner/6.png">
         <img
           className="bordered-image"
-          src="src/assets/dotscanner/6.png"
+          src="assets/dotscanner/6.png"
           alt="Lifetime options image"
           loading="lazy"
         />
