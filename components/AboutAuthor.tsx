@@ -12,7 +12,7 @@ function AboutAuthor() {
       <h4>
         <img
           className="company-name"
-          src="src/assets/google-name.png"
+          src="assets/google-name.png"
           alt="Google logo"
         />
       </h4>
@@ -24,7 +24,7 @@ function AboutAuthor() {
       <h4>
         <img
           className="company-name"
-          src="src/assets/psu-name.png"
+          src="assets/psu-name.png"
           alt="Penn State logo"
         />
       </h4>
@@ -43,7 +43,7 @@ function AboutAuthor() {
       <h4>
         <img
           className="company-name"
-          src="src/assets/cu-name.png"
+          src="assets/cu-name.png"
           alt="CU Boulder logo"
         />
       </h4>
@@ -61,61 +61,61 @@ function AboutAuthor() {
       <div>
         <img
           className="icon"
-          src="src/assets/android-logo.png"
+          src="assets/android-logo.png"
           alt="Android logo"
         />
         <img
           className="icon"
-          src="src/assets/compose-logo.png"
+          src="assets/compose-logo.png"
           alt="Jetpack Compose logo"
         />
         <img
           className="icon"
-          src="src/assets/kotlin-logo.png"
+          src="assets/kotlin-logo.png"
           alt="Kotlin logo"
         />
-        <img className="icon" src="src/assets/java-logo.png" alt="Java logo" />
+        <img className="icon" src="assets/java-logo.png" alt="Java logo" />
         <img
           className="icon"
-          src="src/assets/python-logo.png"
+          src="assets/python-logo.png"
           alt="Python logo"
         />
         <img
           className="icon"
-          src="src/assets/apple-logo.png"
+          src="assets/apple-logo.png"
           alt="Apple logo"
         />
         <img
           className="icon"
-          src="src/assets/swiftui-logo.png"
+          src="assets/swiftui-logo.png"
           alt="SwiftUI logo"
         />
         <img
           className="icon"
-          src="src/assets/swift-logo.png"
+          src="assets/swift-logo.png"
           alt="Swift logo"
         />
-        <img className="icon" src="src/assets/cpp-logo.png" alt="C++ logo" />
+        <img className="icon" src="assets/cpp-logo.png" alt="C++ logo" />
         <img
           className="icon"
-          src="src/assets/javascript-logo.png"
+          src="assets/javascript-logo.png"
           alt="JavaScript logo"
         />
         <img
           className="icon"
-          src="src/assets/typescript-logo.png"
+          src="assets/typescript-logo.png"
           alt="TypeScript logo"
         />
-        <img className="icon" src="src/assets/html-logo.png" alt="HTML logo" />
-        <img className="icon" src="src/assets/css-logo.png" alt="CSS logo" />
+        <img className="icon" src="assets/html-logo.png" alt="HTML logo" />
+        <img className="icon" src="assets/css-logo.png" alt="CSS logo" />
         <img
           className="icon"
-          src="src/assets/react-logo.png"
+          src="assets/react-logo.png"
           alt="React logo"
         />
-        <img className="icon" src="src/assets/sql-logo.png" alt="SQL logo" />
-        <img className="icon" src="src/assets/r-logo.png" alt="R logo" />
-        <img className="icon" src="src/assets/git-logo.png" alt="Git logo" />
+        <img className="icon" src="assets/sql-logo.png" alt="SQL logo" />
+        <img className="icon" src="assets/r-logo.png" alt="R logo" />
+        <img className="icon" src="assets/git-logo.png" alt="Git logo" />
       </div>
       <p>
         Android Development · Jetpack Compose · Kotlin · Java · Python · iOS
