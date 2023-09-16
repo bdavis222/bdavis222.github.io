@@ -5,7 +5,9 @@ function Intro() {
   return (
     <>
       <h1>Software Engineering Roadmap</h1>
-      <h2 className="subtitle">A guide to getting a programming job</h2>
+      <h2 className="subtitle">
+        A guide to landing a career in the software industry
+      </h2>
       <DonateButton />
       <img src="assets/roadmap.png" className="page-banner" />
       <p>

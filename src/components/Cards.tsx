@@ -14,7 +14,7 @@ function Cards() {
             "assets/css-logo.png",
           ]}
           title="Software Engineering Roadmap"
-          description="A website that guides people pursuing programming jobs"
+          description="A website for people pursuing programming jobs"
         />
         <Card
           link="/#/dotscanner"
