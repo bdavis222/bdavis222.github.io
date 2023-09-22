@@ -1,6 +1,17 @@
-function Footer() {
+import NavigationLinks from "./NavigationLinks";
+
+interface Props {
+  disclaimer?: string;
+}
+
+function Footer({ disclaimer = "" }: Props) {
+  const year: number = new Date().getFullYear();
   return (
-    <footer>&copy; Copyright 2023 Brian Davis. All Rights Reserved.</footer>
+    <>
+      <NavigationLinks />
+      {disclaimer && <footer>{disclaimer}</footer>}
+      <footer>&copy; Copyright {year} Brian Davis. All Rights Reserved.</footer>
+    </>
   );
 }
 

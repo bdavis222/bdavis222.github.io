@@ -5,9 +5,7 @@ function Operator() {
   return (
     <>
       <h1>Operator</h1>
-      <h2 className="subtitle">
-        A game for math enthusiasts
-      </h2>
+      <h2 className="subtitle">A game for math enthusiasts</h2>
       <DonateButton />
       <img src="assets/operator.png" className="page-banner" />
       <p>

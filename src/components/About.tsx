@@ -1,6 +1,26 @@
-function AboutAuthor() {
+import DonateButton from "./DonateButton";
+import Footer from "./Footer";
+
+function About() {
   return (
     <>
+      <h1>About This Website</h1>
+      <DonateButton />
+      <p>
+        This page showcases several different software products. All of these
+        products are free to use, and instructions for their installation and
+        use are provided for each. To see these products, visit the{" "}
+        <a href="/">software page</a>.
+      </p>
+      <p>
+        In addition to these free-to-use software products, this site also
+        provides a free <a href="/#/roadmap">software engineering roadmap</a>,
+        which is a simple step-by-step guide for how to obtain a career in
+        software engineering. This is also found on the software page. Within
+        that guide is an{" "}
+        <a href="/#/python">introductory Python programming course</a>, for
+        users who are brand new to programming and want to get started learning.
+      </p>
       <h2>About the Author</h2>
       <p>
         My name is Brian Davis. I am a software engineer with several years of
@@ -69,32 +89,16 @@ function AboutAuthor() {
           src="assets/compose-logo.png"
           alt="Jetpack Compose logo"
         />
-        <img
-          className="icon"
-          src="assets/kotlin-logo.png"
-          alt="Kotlin logo"
-        />
+        <img className="icon" src="assets/kotlin-logo.png" alt="Kotlin logo" />
         <img className="icon" src="assets/java-logo.png" alt="Java logo" />
-        <img
-          className="icon"
-          src="assets/python-logo.png"
-          alt="Python logo"
-        />
-        <img
-          className="icon"
-          src="assets/apple-logo.png"
-          alt="Apple logo"
-        />
+        <img className="icon" src="assets/python-logo.png" alt="Python logo" />
+        <img className="icon" src="assets/apple-logo.png" alt="Apple logo" />
         <img
           className="icon"
           src="assets/swiftui-logo.png"
           alt="SwiftUI logo"
         />
-        <img
-          className="icon"
-          src="assets/swift-logo.png"
-          alt="Swift logo"
-        />
+        <img className="icon" src="assets/swift-logo.png" alt="Swift logo" />
         <img className="icon" src="assets/cpp-logo.png" alt="C++ logo" />
         <img
           className="icon"
@@ -108,11 +112,7 @@ function AboutAuthor() {
         />
         <img className="icon" src="assets/html-logo.png" alt="HTML logo" />
         <img className="icon" src="assets/css-logo.png" alt="CSS logo" />
-        <img
-          className="icon"
-          src="assets/react-logo.png"
-          alt="React logo"
-        />
+        <img className="icon" src="assets/react-logo.png" alt="React logo" />
         <img className="icon" src="assets/sql-logo.png" alt="SQL logo" />
         <img className="icon" src="assets/r-logo.png" alt="R logo" />
         <img className="icon" src="assets/git-logo.png" alt="Git logo" />
@@ -126,8 +126,10 @@ function AboutAuthor() {
         Mathematical Modeling · Physics · Astrophysics · Research · Scientific
         Writing · Teaching · Public Speaking
       </p>
+      <hr />
+      <Footer />
     </>
   );
 }
 
-export default AboutAuthor;
+export default About;

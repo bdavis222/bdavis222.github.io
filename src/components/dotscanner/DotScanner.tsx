@@ -9,9 +9,7 @@ function DotScanner() {
   return (
     <>
       <h1>Dot Scanner</h1>
-      <h2 className="subtitle">
-        Microscope image analysis software
-      </h2>
+      <h2 className="subtitle">Microscope image analysis software</h2>
       <DonateButton />
       <img src="assets/dotscanner.png" className="page-banner" />
       <p>

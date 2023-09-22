@@ -103,6 +103,9 @@ input[type="checkbox"] {
   margin-top: 0px;
   margin-bottom: 20px;
 }
+.footer-nav {
+  text-align: center;
+}
 .icon {
   max-height: 20px;
   width: auto;

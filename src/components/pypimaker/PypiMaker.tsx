@@ -10,9 +10,7 @@ function PypiMaker() {
   return (
     <>
       <h1>PyPI Maker</h1>
-      <h2 className="subtitle">
-        Simplifying PyPI setup and management
-      </h2>
+      <h2 className="subtitle">Simplifying PyPI setup and management</h2>
       <DonateButton />
       <img src="assets/pypimaker.png" className="page-banner" />
       <p>
