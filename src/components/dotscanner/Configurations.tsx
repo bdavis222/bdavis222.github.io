@@ -192,6 +192,15 @@ function Configurations() {
         calculation is greater than zero, this will increase how many edge
         frames are removed from analysis.
       </p>
+      <p>
+        <i>
+          Note: The lifetimes output file will mark certain data points as
+          potentially unreliable using the <code>NOISE_STATISTIC</code> value in
+          the configurations file. If the output seems to be inaccurately
+          tagging data points with this marker, this value can be adjusted in
+          the configurations file.
+        </i>
+      </p>
     </>
   );
 }

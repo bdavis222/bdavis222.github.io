@@ -38,7 +38,8 @@ function DotScanner() {
       <hr />
       <h2>Development</h2>
       <p>
-        To contribute to the project, please visit the project's{" "}
+        For more information, or to contribute to the project, please visit the
+        project's{" "}
         <a href="https://github.com/bdavis222/dot-scanner">GitHub page</a>.
       </p>
       <hr />
