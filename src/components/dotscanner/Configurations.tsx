@@ -194,11 +194,10 @@ function Configurations() {
       </p>
       <p>
         <i>
-          Note: The lifetimes output file will mark certain data points as
-          potentially unreliable using the <code>NOISE_STATISTIC</code> value in
-          the configurations file. If the output seems to be inaccurately
-          tagging data points with this marker, this value can be adjusted in
-          the configurations file.
+          Note: If the user is working with particularly noisy datasets where
+          noise tends to be incorrectly marked as short-lived particles, the{" "}
+          <code>LIFETIME_THRESHOLD</code> value in the configurations file can
+          be adjusted to mark them as potentially unreliable in the output file.
         </i>
       </p>
     </>
