@@ -149,6 +149,14 @@ input[type="checkbox"] {
   height: auto;
 }
 
+.bordered-image {
+  border: 1px solid #808080;
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Float three columns side by side */
 .column {
   float: left;
@@ -296,14 +304,6 @@ input[type="checkbox"] {
   font-style: italic;
   color: #808080;
   margin-top: 0px;
-}
-
-.bordered-image {
-  border: 1px solid #808080;
-  border-radius: 10px;
-  margin: 5px;
-  max-width: 70%;
-  height: auto;
 }
 
 .icon {
