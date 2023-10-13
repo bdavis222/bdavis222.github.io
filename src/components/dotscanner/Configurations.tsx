@@ -44,9 +44,10 @@ function Configurations() {
         If a folder containing several images is selected, the user has the
         option to change the default program from <b>Density</b> to{" "}
         <b>Lifetime</b>
+        {". "}
         <em>
           (Note that trying to run a lifetime program on a single image will not
-          be allowed by the software.)
+          be allowed by the software.){" "}
         </em>
         This selection is made through the <b>Program</b> dropdown menu:
       </p>
