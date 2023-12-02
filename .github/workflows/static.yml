@@ -34,25 +34,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # # setup nodejs environment
-      # - name: Setup Node.js environment
-      #   uses: actions/setup-node@v2.1.5
-      #   with:
-      #     node-version: "18.16.1"
-
-      # # cache the dependencies to speed up the build
-      # - name: Cache dependencies
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: ~/.npm
-      #     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-node-
-
-      # # install dependencies
-      # - name: Install dependencies
-      #   run: npm i
-
       # build the react app
       - name: Build
         run: npm run build
