@@ -7,17 +7,21 @@ function About() {
       <h1>About This Website</h1>
       <DonateButton />
       <p>
-        This page showcases several different software products. All of these
-        products are free to use, and instructions for their installation and
-        use are provided for each. To see these products, visit the{" "}
-        <a href="/">software page</a>.
+        This page showcases several different software products{" "}
+        <i>
+          (including this website itself, written in TypeScript using the React
+          library)
+        </i>
+        . All of these products are free to use, and instructions for their
+        installation and use are provided for each. To see these products, visit
+        the <a href="/">software page</a>.
       </p>
       <p>
         In addition to these free-to-use software products, this site also
         provides a free <a href="/#/roadmap">software engineering roadmap</a>,
-        which is a simple step-by-step guide for how to obtain a career in
-        software engineering. This is also found on the software page. Within
-        that guide is an{" "}
+        which is a simple step-by-step guide for those interested in pursuing a
+        career in software engineering. This is also found on the software page.
+        Within that guide is an{" "}
         <a href="/#/python">introductory Python programming course</a>, for
         users who are brand new to programming and want to get started learning.
       </p>

@@ -1,17 +1,29 @@
 interface Props {
   link: string;
+  newTab?: boolean;
   image: string;
   icons: string[];
   title: string;
   description: string;
 }
 
-function Card({ link, image, icons, title, description }: Props) {
+function Card({
+  link,
+  newTab = false,
+  image,
+  icons,
+  title,
+  description,
+}: Props) {
   const altText = title + " image";
   return (
     <>
       <div className="column">
-        <a href={link} className="card-link">
+        <a
+          href={link}
+          className="card-link"
+          target={newTab ? "_blank" : "_self"}
+        >
           <div className="card">
             <img className="card-image" src={image} alt={altText} />
             <div className="card-container">
