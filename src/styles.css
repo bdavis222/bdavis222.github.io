@@ -160,6 +160,7 @@ input[type="checkbox"] {
 /* Float three columns side by side */
 .column {
   float: left;
+  height: 318px;
   width: 33%;
   padding: 20px;
 }
@@ -276,7 +277,7 @@ input[type="checkbox"] {
     width: 50%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 652px) {
   body {
     margin-left: 10px;
     margin-right: 10px;
