@@ -68,7 +68,7 @@ function Cards() {
         />
         <Card
           title="Software Engineering Roadmap"
-          description="A starter guide for software careers"
+          description="A guide for starting a software career"
           link="/#/roadmap"
           image="assets/roadmap.png"
           icons={reactIcons}
