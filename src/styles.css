@@ -138,7 +138,7 @@ input[type="checkbox"] {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  max-width: 75%;
+  max-width: 530px;
   height: auto;
 }
 
@@ -285,6 +285,9 @@ input[type="checkbox"] {
   .card-container {
     height: 135px;
   }
+}
+
+@media screen and (max-width: 530px) {
   .page-banner {
     max-width: 100%;
   }
@@ -319,6 +322,7 @@ input[type="checkbox"] {
   width: auto;
 }
 
+/* Donate button */
 .donate-button {
   padding: 5px;
   filter: drop-shadow(2px 2px 2px #808080);
@@ -342,6 +346,22 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
 }
 
+/* Button to launch the Python course */
+.button-container {
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.center-in-button-container {
+  margin: 0px;
+  position: absolute;
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .button {
   background-color: #8cc751;
   border: none;
@@ -362,18 +382,51 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
-.button-container {
-  height: 45px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  position: relative;
+/* Profile card */
+.profile-card-container {
+  border-radius: 10px;
+  width: 270px;
+  height: 100px;
 }
-.center-in-button-container {
-  margin: 0px;
-  position: absolute;
-  width: 150px;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.profile-card-container a:hover {
+  text-decoration: none;
+}
+.profile-card {
+  background-color: #172f46;
+  border-radius: 10px;
+  width: 270px;
+  height: 100px;
+}
+.profile-image {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+}
+.profile-name {
+  position: relative;
+  bottom: 100px;
+  left: 105px;
+  color: white;
+  font-weight: 800;
+  font-size: large;
+}
+.profile-title {
+  position: relative;
+  bottom: 122px;
+  left: 105px;
+  color: rgb(173, 173, 173);
+  font-weight: 200;
+  font-style: italic;
+  font-size: large;
+}
+.profile-icon {
+  border-radius: 4px;
+  position: relative;
+  bottom: 205px;
+  left: 235px;
+  width: 25px;
+  height: auto;
 }

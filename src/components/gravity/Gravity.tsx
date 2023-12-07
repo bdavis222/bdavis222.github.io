@@ -2,12 +2,22 @@ import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 
 function Gravity() {
+  const bannerImage = "assets/gravity.png";
+  document.title = "Gravity";
+
+  document
+    .querySelectorAll("meta[property=og\\:image]")[0]
+    .setAttribute("content", bannerImage);
+  document
+    .querySelectorAll("meta[property=og\\:title]")[0]
+    .setAttribute("content", document.title);
+
   return (
     <>
-      <h1>Gravity</h1>
+      <h1>{document.title}</h1>
       <h2 className="subtitle">A game for space travel enthusiasts</h2>
       <DonateButton />
-      <img src="assets/gravity.png" className="page-banner" />
+      <img src={bannerImage} className="page-banner" />
       <p>
         Gravity is a game in which the player uses the gravitational fields of
         planets to navigate their spaceship toward a target planet to land it

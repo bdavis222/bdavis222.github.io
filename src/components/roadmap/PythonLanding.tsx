@@ -2,14 +2,24 @@ import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 
 function PythonLanding() {
+  const bannerImage = "assets/python.png";
+  document.title = "Intro to Python";
+
+  document
+    .querySelectorAll("meta[property=og\\:image]")[0]
+    .setAttribute("content", bannerImage);
+  document
+    .querySelectorAll("meta[property=og\\:title]")[0]
+    .setAttribute("content", document.title);
+
   return (
     <>
-      <h1 id="title">Intro to Python</h1>
+      <h1 id="title">{document.title}</h1>
       <h2 className="subtitle">
         An introductory course for beginners to programming
       </h2>
       <DonateButton />
-      <img src="assets/python.png" className="page-banner" />
+      <img src={bannerImage} className="page-banner" />
       <p>
         Welcome! This is an interactive course designed to teach Python
         programming to beginners with no programming experience.

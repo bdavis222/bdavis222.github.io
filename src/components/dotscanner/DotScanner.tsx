@@ -6,12 +6,22 @@ import RegionSelection from "./RegionSelection";
 import ThresholdAdjustment from "./ThresholdAdjustment";
 
 function DotScanner() {
+  const bannerImage = "assets/dotscanner.png";
+  document.title = "Dot Scanner";
+
+  document
+    .querySelectorAll("meta[property=og\\:image]")[0]
+    .setAttribute("content", bannerImage);
+  document
+    .querySelectorAll("meta[property=og\\:title]")[0]
+    .setAttribute("content", document.title);
+
   return (
     <>
-      <h1>Dot Scanner</h1>
+      <h1>{document.title}</h1>
       <h2 className="subtitle">Microscope image analysis software</h2>
       <DonateButton />
-      <img src="assets/dotscanner.png" className="page-banner" />
+      <img src={bannerImage} className="page-banner" />
       <p>
         Dot Scanner is designed to simplify analysis of microscope imaging data.
         The program runs entirely within a window-based graphical user

@@ -7,12 +7,22 @@ import Resetting from "./Resetting";
 import Uploading from "./Uploading";
 
 function PypiMaker() {
+  const bannerImage = "assets/pypimaker.png";
+  document.title = "PyPI Maker";
+
+  document
+    .querySelectorAll("meta[property=og\\:image]")[0]
+    .setAttribute("content", bannerImage);
+  document
+    .querySelectorAll("meta[property=og\\:title]")[0]
+    .setAttribute("content", document.title);
+
   return (
     <>
-      <h1>PyPI Maker</h1>
+      <h1>{document.title}</h1>
       <h2 className="subtitle">Simplifying PyPI setup and management</h2>
       <DonateButton />
-      <img src="assets/pypimaker.png" className="page-banner" />
+      <img src={bannerImage} className="page-banner" />
       <p>
         PyPI Maker is designed to simplify uploading Python packages to the
         Python Package Index (PyPI). The program runs entirely within a

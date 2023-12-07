@@ -1,7 +1,18 @@
 import DonateButton from "./DonateButton";
 import Footer from "./Footer";
+import ProfileCard from "./ProfileCard";
 
 function About() {
+  const bannerImage = "assets/about-banner.png";
+  document.title = "Brian Davis - Software Engineer";
+
+  document
+    .querySelectorAll("meta[property=og\\:image]")[0]
+    .setAttribute("content", bannerImage);
+  document
+    .querySelectorAll("meta[property=og\\:title]")[0]
+    .setAttribute("content", document.title);
+
   return (
     <>
       <h1>About This Website</h1>
@@ -26,10 +37,12 @@ function About() {
         users who are brand new to programming and want to get started learning.
       </p>
       <h2>About the Author</h2>
+      <ProfileCard />
       <p>
-        My name is Brian Davis. I am a software engineer with several years of
-        teaching and collaborative work experience in academia (Ph.D. in
-        astrophysics). My background in mathematics and computational techniques
+        I am a software engineer with several years of teaching and
+        collaborative work experience in academia and the software industry. I
+        received my PhD in astrophysics in 2022, and have worked in software
+        ever since. My background in mathematics and computational techniques
         drives my interest in much of the software I create.
       </p>
       <h3>Experience</h3>
@@ -96,6 +109,11 @@ function About() {
         <img className="icon" src="assets/kotlin-logo.png" alt="Kotlin logo" />
         <img className="icon" src="assets/java-logo.png" alt="Java logo" />
         <img className="icon" src="assets/python-logo.png" alt="Python logo" />
+        <img
+          className="icon"
+          src="assets/jupyter-logo.png"
+          alt="Jupyter logo"
+        />
         <img className="icon" src="assets/apple-logo.png" alt="Apple logo" />
         <img
           className="icon"

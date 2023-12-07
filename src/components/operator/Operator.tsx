@@ -2,12 +2,22 @@ import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 
 function Operator() {
+  const bannerImage = "assets/operator.png";
+  document.title = "Operator";
+
+  document
+    .querySelectorAll("meta[property=og\\:image]")[0]
+    .setAttribute("content", bannerImage);
+  document
+    .querySelectorAll("meta[property=og\\:title]")[0]
+    .setAttribute("content", document.title);
+
   return (
     <>
-      <h1>Operator</h1>
+      <h1>{document.title}</h1>
       <h2 className="subtitle">A game for math enthusiasts</h2>
       <DonateButton />
-      <img src="assets/operator.png" className="page-banner" />
+      <img src={bannerImage} className="page-banner" />
       <p>
         Operator is a game in which the player tries to solve math puzzles
         within a given time limit to earn more time and advance to the next
