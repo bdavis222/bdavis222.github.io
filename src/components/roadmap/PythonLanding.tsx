@@ -4,7 +4,7 @@ import Footer from "../Footer";
 function PythonLanding() {
   return (
     <>
-      <h1 id="title">Introduction to Python</h1>
+      <h1 id="title">Intro to Python</h1>
       <h2 className="subtitle">
         An introductory course for beginners to programming
       </h2>
