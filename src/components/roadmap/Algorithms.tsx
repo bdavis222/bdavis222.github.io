@@ -22,8 +22,7 @@ function Algorithms() {
         </a>{" "}
         on data structures and algorithms (and doing the practice problems
         therein) for an overview of basic data structures (in Python). The
-        following are the most important videos in the playlist (check off each
-        item when you have completed it):
+        following are the most important videos in the playlist:
       </p>
       <div>
         <input type="checkbox" />{" "}

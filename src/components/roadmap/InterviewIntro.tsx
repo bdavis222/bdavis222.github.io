@@ -21,8 +21,7 @@ function InterviewIntro() {
         look at these problems now, and maybe even think of what you might do to
         try to solve them, but not actually try to solve them just yet. When
         interview prep begins, you will come back to these questions. For now,
-        just look at these problems, and check them off when you've looked at
-        them:
+        just look at these problems:
       </p>
       <div>
         <input type="checkbox" />{" "}

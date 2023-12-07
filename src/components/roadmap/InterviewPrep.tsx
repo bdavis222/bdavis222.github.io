@@ -21,8 +21,7 @@ function InterviewPrep() {
         </a>{" "}
         goes into a decent amount of depth in a short amount of time. I don't
         recommend focusing too much on all of these videos, but definitely watch
-        the videos covering the following topics, checking them off on
-        completion:
+        the videos covering the following topics:
       </p>
       <div>
         <input type="checkbox" />{" "}
@@ -52,7 +51,7 @@ function InterviewPrep() {
         Below are the questions you looked at before you started working on your
         software projects. Each problem usually has several approaches. For each
         of these two, I have listed a few approaches. Try to solve each with
-        each approach, and check off what you are able to finish:
+        each approach:
       </p>
       <ul>
         <li>
