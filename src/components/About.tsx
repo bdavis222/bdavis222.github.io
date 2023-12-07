@@ -39,11 +39,11 @@ function About() {
       <h2>About the Author</h2>
       <ProfileCard />
       <p>
-        I am a software engineer with several years of teaching and
-        collaborative work experience in academia and the software industry. I
-        received my PhD in astrophysics in 2022, and have worked in software
-        ever since. My background in mathematics and computational techniques
-        drives my interest in much of the software I create.
+        I am a software engineer with over ten years of teaching and
+        collaborative work experience in academia. I received my Ph.D. in
+        astrophysics in 2022, and have worked in the software industry ever
+        since. My background in mathematics and computational techniques drives
+        my interest in many of the personal software products I create.
       </p>
       <h3>Experience</h3>
       <h4>
