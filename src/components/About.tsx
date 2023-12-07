@@ -23,18 +23,18 @@ function About() {
           (including this website itself, written in TypeScript using the React
           library)
         </i>
-        . All of these products are free to use, and instructions for their
-        installation and use are provided for each. To see these products, visit
-        the <a href="/">software page</a>.
+        . All of these are free to use, and instructions for their installation
+        and use are provided for each. To see these products, visit the{" "}
+        <a href="/">software</a> page.
       </p>
       <p>
         In addition to these free-to-use software products, this site also
-        provides a free <a href="/#/roadmap">software engineering roadmap</a>,
+        provides a free software engineering <a href="/#/roadmap">roadmap</a>,
         which is a simple step-by-step guide for those interested in pursuing a
         career in software engineering. This is also found on the software page.
-        Within that guide is an{" "}
-        <a href="/#/python">introductory Python programming course</a>, for
-        users who are brand new to programming and want to get started learning.
+        Within that guide is an introductory Python programming{" "}
+        <a href="/#/python">course</a>, for users who are brand new to
+        programming and want to get started learning.
       </p>
       <h2>About the Author</h2>
       <ProfileCard />
