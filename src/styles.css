@@ -385,8 +385,7 @@ input[type="checkbox"] {
 /* Profile card */
 .profile-card-container {
   border-radius: 10px;
-  width: 270px;
-  height: 100px;
+  width: fit-content;
 }
 .profile-card-container a:hover {
   text-decoration: none;
@@ -412,6 +411,7 @@ input[type="checkbox"] {
   color: white;
   font-weight: 800;
   font-size: large;
+  width: fit-content;
 }
 .profile-title {
   position: relative;
@@ -421,6 +421,7 @@ input[type="checkbox"] {
   font-weight: 200;
   font-style: italic;
   font-size: large;
+  width: fit-content;
 }
 .profile-icon {
   border-radius: 4px;
