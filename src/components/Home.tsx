@@ -41,8 +41,8 @@ function Home() {
         color="#000000"
       />
       <p>
-        To see my public repositories, visit my{" "}
-        <a href="https://github.com/bdavis222/">GitHub</a> page.
+        Click the button above to visit my GitHub page and see my public
+        repositories. I enjoy collaboration with others on personal projects!
       </p>
       <h2>Contact</h2>
       <p>
