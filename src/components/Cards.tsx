@@ -12,6 +12,14 @@ function Cards() {
     "assets/html-logo.png",
     "assets/css-logo.png",
   ];
+  const pythonCourseIcons = [
+    "assets/jupyter-logo.png",
+    "assets/python-logo.png",
+    "assets/react-logo.png",
+    "assets/typescript-logo.png",
+    "assets/html-logo.png",
+    "assets/css-logo.png",
+  ];
   return (
     <>
       <div className="row">
@@ -44,7 +52,7 @@ function Cards() {
           icons={["assets/cpp-logo.png"]}
         />
         <Card
-          title="Lake Conroe RV Resort"
+          title="Lake Conroe RV Site"
           description="The company website for Lake Conroe RV Resort"
           link="https://www.lakeconroervresort.com"
           newTab
@@ -52,8 +60,15 @@ function Cards() {
           icons={reactIcons}
         />
         <Card
+          title="Intro Python Course"
+          description="An interactive Python course for beginners"
+          link="/#/python"
+          image="assets/python.png"
+          icons={pythonCourseIcons}
+        />
+        <Card
           title="Software Engineering Roadmap"
-          description="A website for people pursuing programming jobs"
+          description="A starter guide for software careers"
           link="/#/roadmap"
           image="assets/roadmap.png"
           icons={reactIcons}

@@ -4,8 +4,12 @@ import Footer from "../Footer";
 function PythonLanding() {
   return (
     <>
-      <h1 id="title">Intro to Python Programming</h1>
+      <h1 id="title">Introduction to Python</h1>
+      <h2 className="subtitle">
+        An introductory course for beginners to programming
+      </h2>
       <DonateButton />
+      <img src="assets/python.png" className="page-banner" />
       <p>
         Welcome! This is an interactive course designed to teach Python
         programming to beginners with no programming experience.
