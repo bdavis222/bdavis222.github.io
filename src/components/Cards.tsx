@@ -15,10 +15,6 @@ function Cards() {
   const pythonCourseIcons = [
     "assets/jupyter-logo.png",
     "assets/python-logo.png",
-    "assets/react-logo.png",
-    "assets/typescript-logo.png",
-    "assets/html-logo.png",
-    "assets/css-logo.png",
   ];
   return (
     <>
