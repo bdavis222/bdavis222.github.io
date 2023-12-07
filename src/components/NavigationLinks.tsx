@@ -3,12 +3,14 @@ function NavigationLinks() {
     <>
       <p className="footer-nav">
         <a href="/#/about">About</a>
-        &nbsp; &nbsp; | &nbsp; &nbsp;
-        <a href="/">Software</a>
-        &nbsp; &nbsp; | &nbsp; &nbsp;
+        &nbsp; | &nbsp;
+        <a href="/#/software">Software</a>
+        &nbsp; | &nbsp;
         <a href="https://github.com/bdavis222/" target="_blank">
           GitHub
         </a>
+        &nbsp; | &nbsp;
+        <a href="/">Home</a>
       </p>
     </>
   );

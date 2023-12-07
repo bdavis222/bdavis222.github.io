@@ -1,6 +1,8 @@
 import DonateButton from "./DonateButton";
 import Footer from "./Footer";
+import PersonalBlurb from "./PersonalBlurb";
 import ProfileCard from "./ProfileCard";
+import SoftwareBlurb from "./SoftwareBlurb";
 
 function About() {
   const bannerImage = "assets/about-banner.png";
@@ -17,16 +19,7 @@ function About() {
     <>
       <h1>About This Website</h1>
       <DonateButton />
-      <p>
-        This page showcases several different software products{" "}
-        <i>
-          (including this website itself, written in TypeScript using the React
-          library)
-        </i>
-        . All of these are free to use, and instructions for their installation
-        and use are provided for each. To see these products, visit the{" "}
-        <a href="/">software</a> page.
-      </p>
+      <SoftwareBlurb />
       <p>
         In addition to these free-to-use software products, this site also
         provides a free software engineering <a href="/#/roadmap">roadmap</a>,
@@ -37,14 +30,13 @@ function About() {
         programming and want to get started learning.
       </p>
       <h2>About the Author</h2>
-      <ProfileCard />
-      <p>
-        I am a software engineer with over ten years of teaching and
-        collaborative work experience in academia. I received my Ph.D. in
-        astrophysics in 2022, and have worked in the software industry ever
-        since. My background in mathematics and computational techniques drives
-        my interest in many of the personal software products I create.
-      </p>
+      <ProfileCard
+        link="https://www.linkedin.com/in/briandavis123/"
+        icon="assets/linkedin-logo.png"
+        description="Software Engineer"
+        color="#20486e"
+      />
+      <PersonalBlurb />
       <h3>Experience</h3>
       <h4>
         <img

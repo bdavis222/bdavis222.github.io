@@ -11,6 +11,7 @@ import Roadmap from "./components/roadmap/Roadmap";
 import PythonLanding from "./components/roadmap/PythonLanding";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/About";
+import Home from "./components/Home";
 
 class App extends React.Component {
   render() {
@@ -18,8 +19,9 @@ class App extends React.Component {
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Releases />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/software" element={<Releases />} />
           <Route path="/dotscanner" element={<DotScanner />} />
           <Route path="/pypimaker" element={<PypiMaker />} />
           <Route path="/operator" element={<Operator />} />
