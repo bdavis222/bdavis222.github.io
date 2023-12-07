@@ -21,7 +21,10 @@ function Gravity() {
       </p>
       <p>
         Gravity was written in C++ using the{" "}
-        <a href="https://www.sfml-dev.org">SFML library</a>.
+        <a href="https://www.sfml-dev.org" target="_blank">
+          SFML library
+        </a>
+        .
       </p>
       <hr />
       <h2>Gameplay Demo</h2>

@@ -17,7 +17,7 @@ function Operator() {
       </p>
       <p>
         Operator was written for iOS in Swift using the{" "}
-        <a href="https://developer.apple.com/xcode/swiftui/">
+        <a href="https://developer.apple.com/xcode/swiftui/" target="_blank">
           SwiftUI development framework
         </a>
         .

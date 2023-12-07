@@ -5,8 +5,10 @@ function StartingPypiMaker() {
       <h3>Dependencies</h3>
       <ul>
         <li>
-          <a href="https://www.python.org/downloads/">Python 3</a> must be
-          installed before PyPI Maker can be installed.
+          <a href="https://www.python.org/downloads/" target="_blank">
+            Python 3
+          </a>{" "}
+          must be installed before PyPI Maker can be installed.
         </li>
       </ul>
       <h3>Installation</h3>

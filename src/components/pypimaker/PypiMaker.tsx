@@ -35,7 +35,10 @@ function PypiMaker() {
       <h2>Development</h2>
       <p>
         To contribute to the project, please visit the project's{" "}
-        <a href="https://github.com/bdavis222/pypi-maker">GitHub page</a>.
+        <a href="https://github.com/bdavis222/pypi-maker" target="_blank">
+          GitHub page
+        </a>
+        .
       </p>
       <hr />
       <Footer />

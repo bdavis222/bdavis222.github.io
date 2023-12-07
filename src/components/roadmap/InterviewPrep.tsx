@@ -16,7 +16,10 @@ function InterviewPrep() {
       <p>
         Possibly the most famous source for interview prep is the book,{" "}
         <i>Cracking the Coding Interview</i>. The{" "}
-        <a href="https://www.youtube.com/watch?v=shs0KM3wKv8&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK">
+        <a
+          href="https://www.youtube.com/watch?v=shs0KM3wKv8&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK"
+          target="_blank"
+        >
           HackerRank YouTube playlist
         </a>{" "}
         goes into a decent amount of depth in a short amount of time. I don't
@@ -25,25 +28,37 @@ function InterviewPrep() {
       </p>
       <div>
         <input type="checkbox" />{" "}
-        <a href="https://www.youtube.com/watch?v=zaBhtODEL0w&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=2">
+        <a
+          href="https://www.youtube.com/watch?v=zaBhtODEL0w&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=2"
+          target="_blank"
+        >
           Algorithms: Graph Search, DFS and BFS
         </a>
       </div>
       <div>
         <input type="checkbox" />{" "}
-        <a href="https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7">
+        <a
+          href="https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7"
+          target="_blank"
+        >
           Data Structures: Heaps
         </a>
       </div>
       <div>
         <input type="checkbox" />{" "}
-        <a href="https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=9">
+        <a
+          href="https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=9"
+          target="_blank"
+        >
           Data Structures: Tries
         </a>
       </div>
       <div>
         <input type="checkbox" />{" "}
-        <a href="https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=10">
+        <a
+          href="https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=10"
+          target="_blank"
+        >
           Algorithms: Memoization and Dynamic Programming
         </a>
       </div>
@@ -55,7 +70,9 @@ function InterviewPrep() {
       </p>
       <ul>
         <li>
-          <a href="https://leetcode.com/problems/two-sum/">Two Sum</a>
+          <a href="https://leetcode.com/problems/two-sum/" target="_blank">
+            Two Sum
+          </a>
         </li>
         <div>
           <input type="checkbox" /> Brute-force{" "}
@@ -71,7 +88,10 @@ function InterviewPrep() {
           <input type="checkbox" /> Most optimized <i>O(n)</i> method
         </div>
         <li>
-          <a href="https://leetcode.com/problems/univalued-binary-tree/">
+          <a
+            href="https://leetcode.com/problems/univalued-binary-tree/"
+            target="_blank"
+          >
             Univalued Binary Tree
           </a>
         </li>
@@ -85,16 +105,21 @@ function InterviewPrep() {
       <h3>AlgoExpert</h3>
       <p>
         In my opinion, the best resource for interview prep is{" "}
-        <a href="https://www.algoexpert.io/product">AlgoExpert</a>. At the time
-        of writing this document, the site had 160 interview questions with
-        detailed, guided solutions (in Python) for each. The site costs about
-        $100 for a year of access (and you can search online for a 10% discount
-        code), but it is well worth it, in my opinion, if it will make the
-        difference between getting a job or not.
+        <a href="https://www.algoexpert.io/product" target="_blank">
+          AlgoExpert
+        </a>
+        . At the time of writing this document, the site had 160 interview
+        questions with detailed, guided solutions (in Python) for each. The site
+        costs about $100 for a year of access (and you can search online for a
+        10% discount code), but it is well worth it, in my opinion, if it will
+        make the difference between getting a job or not.
       </p>
       <p>
         The path I recommend for solving problems on AlgoExpert is laid out in{" "}
-        <a href="https://docs.google.com/spreadsheets/d/1gV1s_hSnmRRM3qbjhMVzgptdbSHwMMinL5Zpw8fdtFA">
+        <a
+          href="https://docs.google.com/spreadsheets/d/1gV1s_hSnmRRM3qbjhMVzgptdbSHwMMinL5Zpw8fdtFA"
+          target="_blank"
+        >
           this spreadsheet
         </a>{" "}
         (make a copy of it so you can edit your copy). To track your progress,
@@ -153,7 +178,10 @@ function InterviewPrep() {
         AlgoExpert. Just try your best on each problem, and watch the videos
         when you get stuck. You will learn the patterns if you keep going. (And
         for a more direct look at the patterns themselves, I recommend{" "}
-        <a href="https://www.educative.io/courses/grokking-coding-interview-patterns-java">
+        <a
+          href="https://www.educative.io/courses/grokking-coding-interview-patterns-java"
+          target="_blank"
+        >
           Grokking the Coding Interview
         </a>
         .)

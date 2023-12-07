@@ -4,10 +4,12 @@ function Uploading() {
       <h2>Uploading Your Finished Project to PyPI</h2>
       <p>
         If you don't yet have an account on PyPI,{" "}
-        <a href="https://pypi.org/account/register/">register for one</a>. Once
-        you've set up your account and you're ready to upload your package to
-        PyPI (e.g., after you have updated the generated template README.md file
-        to your liking), run the following command:
+        <a href="https://pypi.org/account/register/" target="_blank">
+          register for one
+        </a>
+        . Once you've set up your account and you're ready to upload your
+        package to PyPI (e.g., after you have updated the generated template
+        README.md file to your liking), run the following command:
       </p>
       <code>pypimaker upload</code>
       <p>

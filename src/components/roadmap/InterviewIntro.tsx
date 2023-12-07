@@ -25,11 +25,16 @@ function InterviewIntro() {
       </p>
       <div>
         <input type="checkbox" />{" "}
-        <a href="https://leetcode.com/problems/two-sum/">Two Sum</a>
+        <a href="https://leetcode.com/problems/two-sum/" target="_blank">
+          Two Sum
+        </a>
       </div>
       <div>
         <input type="checkbox" />{" "}
-        <a href="https://leetcode.com/problems/univalued-binary-tree/">
+        <a
+          href="https://leetcode.com/problems/univalued-binary-tree/"
+          target="_blank"
+        >
           Univalued Binary Tree
         </a>
       </div>

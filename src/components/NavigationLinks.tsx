@@ -6,11 +6,9 @@ function NavigationLinks() {
         &nbsp; &nbsp; | &nbsp; &nbsp;
         <a href="/">Software</a>
         &nbsp; &nbsp; | &nbsp; &nbsp;
-        <a href="https://github.com/bdavis222/">GitHub</a>
-        <br />
-        <a href="/#/terms">Terms of Service</a>
-        &nbsp; &nbsp; | &nbsp; &nbsp;
-        <a href="/#/copyright">Copyright Policy</a>
+        <a href="https://github.com/bdavis222/" target="_blank">
+          GitHub
+        </a>
       </p>
     </>
   );

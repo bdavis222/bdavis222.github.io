@@ -14,13 +14,15 @@ function Resume() {
       />
       <p>
         An example of a strong resume can be found{" "}
-        <a href="https://www.careercup.com/resume">here</a>. It is crucial to
-        highlight your technical skills, and not skills you may have from a
-        previous career that are not as relevant in software engineering. For
-        example, one may have written several scientific papers in an academic
-        career, but it is much more important to highlight software projects,
-        since there is not likely to be as much relevant software work
-        experience.
+        <a href="https://www.careercup.com/resume" target="_blank">
+          here
+        </a>
+        . It is crucial to highlight your technical skills, and not skills you
+        may have from a previous career that are not as relevant in software
+        engineering. For example, one may have written several scientific papers
+        in an academic career, but it is much more important to highlight
+        software projects, since there is not likely to be as much relevant
+        software work experience.
       </p>
       <h3>Job Applications</h3>
       <p>

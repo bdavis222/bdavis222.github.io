@@ -11,8 +11,6 @@ import Roadmap from "./components/roadmap/Roadmap";
 import PythonLanding from "./components/roadmap/PythonLanding";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/About";
-import CopyrightPolicy from "./components/CopyrightPolicy";
-import TermsOfService from "./components/TermsOfService";
 
 class App extends React.Component {
   render() {
@@ -28,8 +26,6 @@ class App extends React.Component {
           <Route path="/gravity" element={<Gravity />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/python" element={<PythonLanding />} />
-          <Route path="/copyright" element={<CopyrightPolicy />} />
-          <Route path="/terms" element={<TermsOfService />} />
         </Routes>
       </HashRouter>
     );
