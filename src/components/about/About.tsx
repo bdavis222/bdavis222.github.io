@@ -34,44 +34,50 @@ function About() {
       <LinkedInCard />
       <PersonalBlurb />
       <h3>Experience</h3>
-      <CompanyInfo
-        name="Google"
-        jobTitle="Software Engineer"
-        dates="April 2022 - Present"
-        icon="assets/google-name.png"
-      />
-      <ul style={{ marginBottom: 60 }}>
-        <li>Developing features for Google Drive Android</li>
-      </ul>
-      <CompanyInfo
-        name="Penn State University"
-        jobTitle="Research Assistant"
-        dates="August 2016 - April 2022"
-        icon="assets/psu-name.png"
-      />
-      <ul style={{ marginBottom: 60 }}>
-        <li>Ph.D. in astronomy &amp; astrophysics, May 2022</li>
-        <li>M.S. in astronomy &amp; astrophysics, May 2018</li>
-        <li>
-          Ph.D. Thesis:{" "}
-          <i>Late-stage Evolution of Low- and Intermediate-mass Stars</i>
-        </li>
-      </ul>
-      <CompanyInfo
-        name="University of Colorado"
-        jobTitle="Research Assistant"
-        dates="April 2015 - May 2016"
-        icon="assets/cu-name.png"
-      />
-      <ul style={{ marginBottom: 40 }}>
-        <li>B.A. in astrophysics, May 2016</li>
-        <li>
-          Honors Thesis:{" "}
-          <i>
-            Adaptive Optics-Assisted Integral Field Spectroscopy of NGC 5506
-          </i>
-        </li>
-      </ul>
+      <div className="company-card">
+        <CompanyInfo
+          name="Google"
+          jobTitle="Software Engineer"
+          dates="Apr 2022 - Present"
+          icon="assets/google-name.png"
+        />
+        <ul className="company-achievements">
+          <li>Developing features for Google Drive Android</li>
+        </ul>
+      </div>
+      <div className="company-card">
+        <CompanyInfo
+          name="Penn State"
+          jobTitle="Research Assistant"
+          dates="Aug 2016 - Apr 2022"
+          icon="assets/psu-name.png"
+        />
+        <ul className="company-achievements">
+          <li>Ph.D. in astronomy &amp; astrophysics, May 2022</li>
+          <li>M.S. in astronomy &amp; astrophysics, May 2018</li>
+          <li>
+            Ph.D. Thesis:{" "}
+            <i>Late-stage Evolution of Low- and Intermediate-mass Stars</i>
+          </li>
+        </ul>
+      </div>
+      <div className="company-card">
+        <CompanyInfo
+          name="CU Boulder"
+          jobTitle="Research Assistant"
+          dates="Apr 2015 - May 2016"
+          icon="assets/cu-name.png"
+        />
+        <ul className="company-achievements">
+          <li>B.A. in astrophysics, May 2016</li>
+          <li>
+            Honors Thesis:{" "}
+            <i>
+              Adaptive Optics-Assisted Integral Field Spectroscopy of NGC 5506
+            </i>
+          </li>
+        </ul>
+      </div>
       <h3>Skills</h3>
       <div>
         <img

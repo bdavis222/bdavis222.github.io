@@ -26,7 +26,7 @@ function PythonLanding() {
         programming to beginners with no programming experience.
       </p>
       <p>Donations are appreciated, but not required.</p>
-      <p style={{ color: "red" }}>
+      <p className="warning-color">
         <em>
           For best results, use the <strong>Google Chrome</strong> browser for
           this course. Other browsers are known to have issues running Python

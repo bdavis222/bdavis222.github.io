@@ -1,11 +1,55 @@
 :root {
+  --lightBackgroundColor: white;
+  --lightTextColor: #242424;
+  --lightLinkColor: #a332ff;
+  --lightLinkHoverColor: #7101cd;
+  --lightBoldColor: #282828;
+  --lightFooterColor: #9b9b9b;
+  --lightH1Color: #1560bd;
+  --lightH2Color: #1877f2;
+  --lightH3Color: #787878;
+  --lightCardBackgroundColor: white;
+  --lightCardBorderColor: #9b9b9b;
+  --lightCardTextColor: black;
+  --lightCardShadowColor: rgba(0, 0, 0, 0.4);
+  --lightCardShadowHoverColor: rgba(0, 0, 0, 0.8);
+  --lightCompanyCardBackgroundColor: rgb(242, 242, 242);
+  --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
+  --lightSubtitleColor: #808080;
+  --lightRedTextColor: rgb(206, 0, 0);
+  --lightGrayTextColor: rgb(91, 91, 91);
+  --lightLinkedInCardColor: #20486e;
+  --lightGitHubCardColor: black;
+
+  --darkBackgroundColor: black;
+  --darkTextColor: white;
+  --darkLinkColor: #d5a2ff;
+  --darkLinkHoverColor: #e8cbff;
+  --darkBoldColor: #dcdcdc;
+  --darkFooterColor: #535353;
+  --darkH1Color: #2e8cff;
+  --darkH2Color: #75b3ff;
+  --darkH3Color: #a0a0a0;
+  --darkCardBackgroundColor: #242424;
+  --darkCardBorderColor: #242424;
+  --darkCardTextColor: white;
+  --darkCardShadowColor: rgb(92, 92, 92);
+  --darkCardShadowHoverColor: rgb(136, 136, 136);
+  --darkCompanyCardBackgroundColor: #242424;
+  --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
+  --darkSubtitleColor: #b9b9b9;
+  --darkRedTextColor: rgb(244, 77, 77);
+  --darkGrayTextColor: rgb(183, 183, 183);
+  --darkLinkedInCardColor: #20486e;
+  --darkGitHubCardColor: #242424;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 500;
 
   color-scheme: light dark;
-  color: #242424;
-  background-color: white;
+  color: var(--lightTextColor);
+  background-color: var(--lightBackgroundColor);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,15 +63,15 @@
 }
 a {
   font-weight: 500;
-  color: #a332ff;
+  color: var(--lightLinkColor);
   text-decoration: inherit;
 }
 a:hover {
-  color: #7101cd;
+  color: var(--lightLinkHoverColor);
   text-decoration: underline;
 }
 b {
-  color: #282828;
+  color: var(--lightBoldColor);
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -47,6 +91,7 @@ code {
 footer {
   font-size: 80%;
   text-align: center;
+  color: var(--lightFooterColor);
 }
 hr {
   margin-top: 35px;
@@ -57,16 +102,16 @@ h1 {
   font-size: 2.2em;
   line-height: 1.1;
   margin-bottom: 10px;
-  color: #1560bd;
+  color: var(--lightH1Color);
 }
 h2 {
   font-size: 1.6em;
   margin-bottom: 10px;
-  color: #1877f2;
+  color: var(--lightH2Color);
 }
 h3 {
   font-size: 1.3em;
-  color: #787878;
+  color: var(--lightH3Color);
   margin-bottom: 25px;
 }
 iframe {
@@ -75,13 +120,6 @@ iframe {
 }
 input[type="checkbox"] {
   margin-left: 20px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
 }
 
 #root {
@@ -94,7 +132,7 @@ input[type="checkbox"] {
   text-align: left;
   font-style: italic;
   font-weight: 500;
-  color: #808080;
+  color: var(--lightSubtitleColor);
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -102,6 +140,13 @@ input[type="checkbox"] {
   text-align: center;
 }
 .icon {
+  max-height: 20px;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: -4px;
+}
+.black-icon {
   max-height: 20px;
   width: auto;
   padding-left: 5px;
@@ -120,15 +165,18 @@ input[type="checkbox"] {
   font-weight: 700;
 }
 .red-text {
-  color: rgb(206, 0, 0);
+  color: var(--lightRedTextColor);
   font-weight: 700;
+}
+.warning-color {
+  color: var(--lightRedTextColor);
 }
 .orange-text {
   color: rgb(255, 157, 0);
   font-weight: 700;
 }
 .gray-text {
-  color: gray;
+  color: var(--lightGrayTextColor);
   font-weight: 700;
 }
 .h3-thin {
@@ -172,11 +220,11 @@ input[type="checkbox"] {
 }
 .card-link {
   text-decoration: none;
-  color: black;
+  color: var(--lightTextColor);
 }
 .card-link:hover {
   text-decoration: none;
-  color: black;
+  color: var(--lightTextColor);
 }
 .card-icon {
   max-height: 15px;
@@ -201,19 +249,20 @@ input[type="checkbox"] {
   padding-top: 0px;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px 0 var(--lightCardShadowColor);
   transition: 0.3s;
   border-radius: 20px 20px 20px 20px;
-  border: solid 0.25px #9b9b9b;
+  border: solid 0.25px var(--lightCardBorderColor);
+  background-color: var(--lightCardBackgroundColor);
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 16px 0 var(--lightCardShadowHoverColor);
 }
 .card-image {
   width: 100%;
   height: 50%;
   border-radius: 20px 20px 0px 0px;
-  border: solid 0.25px #9b9b9b;
+  border: solid 0.25px var(--lightCardBorderColor);
 }
 .card-container {
   position: relative;
@@ -225,7 +274,7 @@ input[type="checkbox"] {
   font-size: 1.2em;
   text-align: center;
   font-style: italic;
-  color: #808080;
+  color: var(--lightSubtitleColor);
   margin-top: 0px;
 }
 .icon {
@@ -236,10 +285,17 @@ input[type="checkbox"] {
 }
 
 /* Resume company styling */
+.company-card {
+  background-color: var(--lightCompanyCardBackgroundColor);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
 .company-container {
   display: flex;
   height: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  padding: 10px;
 }
 .company-image-container {
   width: 90px;
@@ -262,7 +318,7 @@ input[type="checkbox"] {
   font-style: italic;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #808080;
+  color: var(--lightSubtitleColor);
 }
 .company-dates {
   font-size: small;
@@ -270,13 +326,16 @@ input[type="checkbox"] {
   font-style: italic;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #808080;
+  color: var(--lightSubtitleColor);
+}
+.company-achievements {
+  padding-top: 10px;
 }
 
 /* Donate button */
 .donate-button {
   padding: 5px;
-  filter: drop-shadow(2px 2px 2px #808080);
+  filter: var(--lightButtonFilter);
 }
 .donate-button:hover {
   opacity: 0.5;
@@ -322,13 +381,13 @@ input[type="checkbox"] {
   text-decoration: none;
   cursor: pointer;
   border-radius: 18px;
-  filter: drop-shadow(2px 2px 2px #808080);
+  filter: var(--lightButtonFilter);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 1px #303030;
 }
 .button:hover {
-  background-color: #808080;
+  background-color: var(--lightSubtitleColor);
   color: white;
   text-decoration: none;
 }
@@ -342,13 +401,13 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 .linkedin-card {
-  background-color: #20486e;
+  background-color: var(--lightLinkedInCardColor);
   border-radius: 10px;
   width: 270px;
   height: 100px;
 }
 .github-card {
-  background-color: #000000;
+  background-color: var(--lightGitHubCardColor);
   border-radius: 10px;
   width: 270px;
   height: 100px;
@@ -374,7 +433,7 @@ input[type="checkbox"] {
   position: relative;
   bottom: 122px;
   left: 105px;
-  color: rgb(173, 173, 173);
+  color: rgb(169, 169, 169);
   font-weight: 200;
   font-style: italic;
   font-size: large;
@@ -462,72 +521,87 @@ input[type="checkbox"] {
 /* Dark mode settings */
 @media (prefers-color-scheme: dark) {
   :root {
-    color: white;
-    background-color: #242424;
+    color: var(--darkTextColor);
+    background-color: var(--darkBackgroundColor);
   }
   a {
     font-weight: 500;
-    color: #dfb9ff;
+    color: var(--darkLinkColor);
     text-decoration: inherit;
   }
   a:hover {
-    color: #ebd5ff;
+    color: var(--darkLinkHoverColor);
     text-decoration: underline;
   }
   b {
-    color: #dcdcdc;
+    color: var(--darkBoldColor);
   }
   h1 {
-    color: #2e8cff;
+    color: var(--darkH1Color);
   }
   h2 {
-    color: #75b3ff;
+    color: var(--darkH2Color);
   }
   h3 {
-    color: #a0a0a0;
+    color: var(--darkH3Color);
+  }
+  .black-icon {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+  }
+  .button {
+    filter: var(--darkButtonFilter);
   }
   .card {
-    background-color: rgb(0, 0, 0);
-    border: solid 0.25px #535353;
-    box-shadow: 0 4px 8px 0 rgba(95, 95, 95, 0.4);
+    background-color: var(--darkCardBackgroundColor);
+    border: solid 0.25px var(--darkCardBorderColor);
+    box-shadow: 0 4px 8px 0 var(--darkCardShadowColor);
   }
   .card-image {
-    border: solid 0.25px #535353;
+    border: solid 0.25px var(--darkCardBorderColor);
   }
   .card-link {
     text-decoration: none;
-    color: white;
+    color: var(--darkTextColor);
   }
   .card-link:hover {
     text-decoration: none;
-    color: white;
+    color: var(--darkTextColor);
   }
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgb(136, 136, 136);
+    box-shadow: 0 8px 16px 0 var(--darkCardShadowHoverColor);
   }
   .card-title {
-    color: white;
+    color: var(--darkTextColor);
+  }
+  .company-card {
+    background-color: var(--darkCompanyCardBackgroundColor);
   }
   .donate-button {
-    filter: drop-shadow(2px 2px 2px rgba(208, 208, 208, 0.4));
+    filter: var(--darkButtonFilter);
   }
   .subtitle {
-    color: #b9b9b9;
+    color: var(--darkSubtitleColor);
   }
   .company-job-title {
-    font-size: medium;
-    font-weight: 300;
-    font-style: italic;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #b9b9b9;
+    color: var(--darkSubtitleColor);
   }
   .company-dates {
-    font-size: small;
-    font-weight: 300;
-    font-style: italic;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #b9b9b9;
+    color: var(--darkSubtitleColor);
+  }
+  .red-text {
+    color: var(--darkRedTextColor);
+  }
+  .warning-color {
+    color: var(--darkRedTextColor);
+  }
+  .gray-text {
+    color: var(--darkGrayTextColor);
+  }
+  .linkedin-card {
+    background-color: var(--darkLinkedInCardColor);
+  }
+  .github-card {
+    background-color: var(--darkGitHubCardColor);
   }
 }
