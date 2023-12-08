@@ -1,7 +1,8 @@
 import DonateButton from "./DonateButton";
 import Footer from "./Footer";
 import PersonalBlurb from "./PersonalBlurb";
-import ProfileCard from "./ProfileCard";
+import GitHubCard from "./profile-card/GitHubCard";
+import LinkedInCard from "./profile-card/LinkedInCard";
 import SoftwareBlurb from "./SoftwareBlurb";
 
 function Home() {
@@ -21,12 +22,7 @@ function Home() {
       <h2 className="subtitle">Software Engineer</h2>
       <DonateButton />
       <h2>About</h2>
-      <ProfileCard
-        link="https://www.linkedin.com/in/briandavis123/"
-        icon="assets/linkedin-logo.png"
-        description="Software Engineer"
-        color="#20486e"
-      />
+      <LinkedInCard />
       <PersonalBlurb />
       <p>
         Visit the <a href="/#/about">about</a> page for more.
@@ -34,12 +30,7 @@ function Home() {
       <h2>Software</h2>
       <SoftwareBlurb />
       <h2>GitHub</h2>
-      <ProfileCard
-        link="https://www.github.com/bdavis222"
-        icon="assets/github-logo.png"
-        description="bdavis222"
-        color="#000000"
-      />
+      <GitHubCard />
       <p>
         Click the button above to visit my GitHub page and see my public
         repositories. I enjoy collaboration with others on personal projects!

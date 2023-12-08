@@ -1,5 +1,6 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
+import LaunchCourseButton from "./LaunchCourseButton";
 
 function PythonLanding() {
   const bannerImage = "assets/python.png";
@@ -33,17 +34,7 @@ function PythonLanding() {
         </em>
       </p>
       <p>Click the button below to launch the course website in a new tab.</p>
-      <div className="button-container">
-        <div className="center-in-button-container">
-          <a
-            href="https://bdavis222.github.io/python-course"
-            target="_blank"
-            className="button"
-          >
-            Launch course
-          </a>
-        </div>
-      </div>
+      <LaunchCourseButton />
       <hr />
       <h2>Course structure</h2>
       <p>The course contains three main sections:</p>

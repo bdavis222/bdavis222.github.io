@@ -1,16 +1,16 @@
 interface Props {
+  type: string;
   link: string;
   icon: string;
   description: string;
-  color: string;
 }
 
-function ProfileCard({ link, icon, description, color }: Props) {
+function ProfileCard({ type, link, icon, description }: Props) {
   return (
     <>
       <div className="profile-card-container">
-        <a href={link}>
-          <div className="profile-card" style={{ backgroundColor: color }}>
+        <a href={link} target="_blank">
+          <div className={type + "-card"}>
             <img
               className="profile-image"
               src="assets/headshot.png"

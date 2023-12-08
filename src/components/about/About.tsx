@@ -1,8 +1,9 @@
-import DonateButton from "./DonateButton";
-import Footer from "./Footer";
-import PersonalBlurb from "./PersonalBlurb";
-import ProfileCard from "./ProfileCard";
-import SoftwareBlurb from "./SoftwareBlurb";
+import DonateButton from "../DonateButton";
+import Footer from "../Footer";
+import PersonalBlurb from "../PersonalBlurb";
+import LinkedInCard from "../profile-card/LinkedInCard";
+import SoftwareBlurb from "../SoftwareBlurb";
+import CompanyInfo from "./CompanyInfo";
 
 function About() {
   const bannerImage = "assets/about-banner.png";
@@ -30,37 +31,25 @@ function About() {
         programming and want to get started learning.
       </p>
       <h2>About the Author</h2>
-      <ProfileCard
-        link="https://www.linkedin.com/in/briandavis123/"
-        icon="assets/linkedin-logo.png"
-        description="Software Engineer"
-        color="#20486e"
-      />
+      <LinkedInCard />
       <PersonalBlurb />
       <h3>Experience</h3>
-      <h4>
-        <img
-          className="company-name"
-          src="assets/google-name.png"
-          alt="Google logo"
-        />
-      </h4>
-      <p className="subtitle-left">Software Engineer, April 2022 - Present</p>
-      <ul>
+      <CompanyInfo
+        name="Google"
+        jobTitle="Software Engineer"
+        dates="April 2022 - Present"
+        icon="assets/google-name.png"
+      />
+      <ul style={{ marginBottom: 60 }}>
         <li>Developing features for Google Drive Android</li>
       </ul>
-      <br />
-      <h4>
-        <img
-          className="company-name"
-          src="assets/psu-name.png"
-          alt="Penn State logo"
-        />
-      </h4>
-      <p className="subtitle-left">
-        Research Assistant, August 2016 - April 2022
-      </p>
-      <ul>
+      <CompanyInfo
+        name="Penn State University"
+        jobTitle="Research Assistant"
+        dates="August 2016 - April 2022"
+        icon="assets/psu-name.png"
+      />
+      <ul style={{ marginBottom: 60 }}>
         <li>Ph.D. in astronomy &amp; astrophysics, May 2022</li>
         <li>M.S. in astronomy &amp; astrophysics, May 2018</li>
         <li>
@@ -68,16 +57,13 @@ function About() {
           <i>Late-stage Evolution of Low- and Intermediate-mass Stars</i>
         </li>
       </ul>
-      <br />
-      <h4>
-        <img
-          className="company-name"
-          src="assets/cu-name.png"
-          alt="CU Boulder logo"
-        />
-      </h4>
-      <p className="subtitle-left">Research Assistant, April 2015 - May 2016</p>
-      <ul>
+      <CompanyInfo
+        name="University of Colorado"
+        jobTitle="Research Assistant"
+        dates="April 2015 - May 2016"
+        icon="assets/cu-name.png"
+      />
+      <ul style={{ marginBottom: 40 }}>
         <li>B.A. in astrophysics, May 2016</li>
         <li>
           Honors Thesis:{" "}

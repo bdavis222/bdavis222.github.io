@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: #242424;
-  background-color: rgba(255, 255, 255, 255);
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,11 +19,11 @@
 }
 a {
   font-weight: 500;
-  color: #8f07ff;
+  color: #a332ff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #7800db;
+  color: #7101cd;
   text-decoration: underline;
 }
 b {
@@ -65,7 +65,9 @@ h2 {
   color: #1877f2;
 }
 h3 {
+  font-size: 1.3em;
   color: #787878;
+  margin-bottom: 25px;
 }
 iframe {
   max-width: 100% !important;
@@ -150,6 +152,7 @@ input[type="checkbox"] {
   height: auto;
 }
 
+/* Software card styling */
 /* Float three columns side by side */
 .column {
   float: left;
@@ -157,19 +160,16 @@ input[type="checkbox"] {
   width: 33%;
   padding: 20px;
 }
-
 /* Remove extra left and right margins due to padding */
 .row {
   margin: 0px -10px;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .card-link {
   text-decoration: none;
   color: black;
@@ -178,7 +178,6 @@ input[type="checkbox"] {
   text-decoration: none;
   color: black;
 }
-
 .card-icon {
   max-height: 15px;
   width: auto;
@@ -201,26 +200,193 @@ input[type="checkbox"] {
   margin-bottom: 8px;
   padding-top: 0px;
 }
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   border-radius: 20px 20px 20px 20px;
+  border: solid 0.25px #9b9b9b;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
 }
-
 .card-image {
   width: 100%;
   height: 50%;
   border-radius: 20px 20px 0px 0px;
+  border: solid 0.25px #9b9b9b;
 }
-
 .card-container {
   position: relative;
   height: 150px;
   padding: 0px 16px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  text-align: center;
+  font-style: italic;
+  color: #808080;
+  margin-top: 0px;
+}
+.icon {
+  padding-left: 3px;
+  padding-right: 3px;
+  max-height: 20px;
+  width: auto;
+}
+
+/* Resume company styling */
+.company-container {
+  display: flex;
+  height: 55px;
+  margin-bottom: 30px;
+}
+.company-image-container {
+  width: 90px;
+  text-align: center;
+}
+.company-image {
+  padding-right: 18px;
+  height: 70px;
+  width: auto;
+}
+.company-name {
+  font-size: large;
+  font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.company-job-title {
+  font-size: medium;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #808080;
+}
+.company-dates {
+  font-size: small;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #808080;
+}
+
+/* Donate button */
+.donate-button {
+  padding: 5px;
+  filter: drop-shadow(2px 2px 2px #808080);
+}
+.donate-button:hover {
+  opacity: 0.5;
+}
+
+.donate-button-container {
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.center-in-donate-button-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Button to launch the Python course */
+.button-container {
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.center-in-button-container {
+  margin: 0px;
+  position: absolute;
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button {
+  background-color: #8cc751;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 18px;
+  filter: drop-shadow(2px 2px 2px #808080);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #303030;
+}
+.button:hover {
+  background-color: #808080;
+  color: white;
+  text-decoration: none;
+}
+
+/* Profile card */
+.profile-card-container {
+  border-radius: 10px;
+  width: fit-content;
+}
+.profile-card-container a:hover {
+  text-decoration: none;
+}
+.linkedin-card {
+  background-color: #20486e;
+  border-radius: 10px;
+  width: 270px;
+  height: 100px;
+}
+.github-card {
+  background-color: #000000;
+  border-radius: 10px;
+  width: 270px;
+  height: 100px;
+}
+.profile-image {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+}
+.profile-name {
+  position: relative;
+  bottom: 100px;
+  left: 105px;
+  color: white;
+  font-weight: 800;
+  font-size: large;
+  width: fit-content;
+}
+.profile-title {
+  position: relative;
+  bottom: 122px;
+  left: 105px;
+  color: rgb(173, 173, 173);
+  font-weight: 200;
+  font-style: italic;
+  font-size: large;
+  width: fit-content;
+}
+.profile-icon {
+  border-radius: 4px;
+  position: relative;
+  bottom: 205px;
+  left: 235px;
+  width: 25px;
+  height: auto;
 }
 
 /* Making the grid responsive to screen size */
@@ -293,141 +459,75 @@ input[type="checkbox"] {
   }
 }
 
-.subtitle {
-  font-size: 1.2em;
-  text-align: center;
-  font-style: italic;
-  color: #808080;
-  margin-top: 0px;
-}
-
-.subtitle-left {
-  text-align: left;
-  font-style: italic;
-  color: #808080;
-  margin-top: 0px;
-}
-
-.icon {
-  padding-left: 3px;
-  padding-right: 3px;
-  max-height: 20px;
-  width: auto;
-}
-
-.company-name {
-  padding-left: 3px;
-  padding-right: 3px;
-  max-height: 35px;
-  width: auto;
-}
-
-/* Donate button */
-.donate-button {
-  padding: 5px;
-  filter: drop-shadow(2px 2px 2px #808080);
-}
-.donate-button:hover {
-  opacity: 0.5;
-}
-
-.donate-button-container {
-  height: 35px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  position: relative;
-}
-.center-in-donate-button-container {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* Button to launch the Python course */
-.button-container {
-  height: 45px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  position: relative;
-}
-.center-in-button-container {
-  margin: 0px;
-  position: absolute;
-  width: 150px;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.button {
-  background-color: #8cc751;
-  border: none;
-  padding: 10px 15px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 18px;
-  filter: drop-shadow(2px 2px 2px #808080);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #303030;
-}
-.button:hover {
-  background-color: #808080;
-  color: white;
-  text-decoration: none;
-}
-
-/* Profile card */
-.profile-card-container {
-  border-radius: 10px;
-  width: fit-content;
-}
-.profile-card-container a:hover {
-  text-decoration: none;
-}
-.profile-card {
-  background-color: #20486e;
-  border-radius: 10px;
-  width: 270px;
-  height: 100px;
-}
-.profile-image {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 100px;
-  height: auto;
-  padding: 10px;
-}
-.profile-name {
-  position: relative;
-  bottom: 100px;
-  left: 105px;
-  color: white;
-  font-weight: 800;
-  font-size: large;
-  width: fit-content;
-}
-.profile-title {
-  position: relative;
-  bottom: 122px;
-  left: 105px;
-  color: rgb(173, 173, 173);
-  font-weight: 200;
-  font-style: italic;
-  font-size: large;
-  width: fit-content;
-}
-.profile-icon {
-  border-radius: 4px;
-  position: relative;
-  bottom: 205px;
-  left: 235px;
-  width: 25px;
-  height: auto;
+/* Dark mode settings */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: white;
+    background-color: #242424;
+  }
+  a {
+    font-weight: 500;
+    color: #dfb9ff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #ebd5ff;
+    text-decoration: underline;
+  }
+  b {
+    color: #dcdcdc;
+  }
+  h1 {
+    color: #2e8cff;
+  }
+  h2 {
+    color: #75b3ff;
+  }
+  h3 {
+    color: #a0a0a0;
+  }
+  .card {
+    background-color: rgb(0, 0, 0);
+    border: solid 0.25px #535353;
+    box-shadow: 0 4px 8px 0 rgba(95, 95, 95, 0.4);
+  }
+  .card-image {
+    border: solid 0.25px #535353;
+  }
+  .card-link {
+    text-decoration: none;
+    color: white;
+  }
+  .card-link:hover {
+    text-decoration: none;
+    color: white;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgb(136, 136, 136);
+  }
+  .card-title {
+    color: white;
+  }
+  .donate-button {
+    filter: drop-shadow(2px 2px 2px rgba(208, 208, 208, 0.4));
+  }
+  .subtitle {
+    color: #b9b9b9;
+  }
+  .company-job-title {
+    font-size: medium;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #b9b9b9;
+  }
+  .company-dates {
+    font-size: small;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #b9b9b9;
+  }
 }
