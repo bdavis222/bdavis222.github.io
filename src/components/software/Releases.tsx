@@ -1,6 +1,6 @@
 import Cards from "./Cards";
-import DonateButton from "./DonateButton";
-import Footer from "./Footer";
+import DonateButton from "../DonateButton";
+import Footer from "../Footer";
 
 function Releases() {
   const bannerImage = "assets/site-banner.png";

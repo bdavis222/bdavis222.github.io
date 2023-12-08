@@ -2,7 +2,7 @@ import "./styles.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Releases from "./components/Releases";
+import Releases from "./components/software/Releases";
 import DotScanner from "./components/dotscanner/DotScanner";
 import PypiMaker from "./components/pypimaker/PypiMaker";
 import Operator from "./components/operator/Operator";
@@ -10,7 +10,7 @@ import Gravity from "./components/gravity/Gravity";
 import Roadmap from "./components/roadmap/Roadmap";
 import ScrollToTop from "./components/ScrollToTop";
 import About from "./components/about/About";
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 import PythonLanding from "./components/python-course/PythonLanding";
 
 class App extends React.Component {

@@ -1,8 +1,8 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
-import PersonalBlurb from "../PersonalBlurb";
+import PersonalBlurb from "./PersonalBlurb";
 import LinkedInCard from "../profile-card/LinkedInCard";
-import SoftwareBlurb from "../SoftwareBlurb";
+import SoftwareBlurb from "./SoftwareBlurb";
 import CompanyInfo from "./CompanyInfo";
 
 function About() {

@@ -1,9 +1,9 @@
-import DonateButton from "./DonateButton";
-import Footer from "./Footer";
-import PersonalBlurb from "./PersonalBlurb";
-import GitHubCard from "./profile-card/GitHubCard";
-import LinkedInCard from "./profile-card/LinkedInCard";
-import SoftwareBlurb from "./SoftwareBlurb";
+import DonateButton from "../DonateButton";
+import Footer from "../Footer";
+import PersonalBlurb from "../about/PersonalBlurb";
+import GitHubCard from "../profile-card/GitHubCard";
+import LinkedInCard from "../profile-card/LinkedInCard";
+import SoftwareBlurb from "../about/SoftwareBlurb";
 
 function Home() {
   const bannerImage = "assets/about-banner.png";
