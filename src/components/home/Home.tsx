@@ -1,9 +1,8 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
-import PersonalBlurb from "../about/PersonalBlurb";
 import GitHubCard from "../profile-card/GitHubCard";
 import LinkedInCard from "../profile-card/LinkedInCard";
-import CompanyInfo from "../about/CompanyInfo";
+import CompanyInfo from "./CompanyInfo";
 import SoftwarePageCard from "../profile-card/SoftwarePageCard";
 
 function Home() {
@@ -26,7 +25,13 @@ function Home() {
       </div>
       <DonateButton />
       <h2>About</h2>
-      <PersonalBlurb />
+      <p>
+        I am a software engineer with over ten years of teaching and
+        collaborative work experience in academia. I received my Ph.D. in
+        astrophysics in 2022, and have worked in the software industry ever
+        since. My background in mathematics and computational techniques drives
+        my interest in many of the personal software products I create.
+      </p>
       <h2>Software</h2>
       <p>
         This page showcases several different software products{" "}
