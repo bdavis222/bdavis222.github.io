@@ -89,7 +89,7 @@ function Home() {
           </li>
         </ul>
       </div>
-      <h2>Skills</h2>
+      <h2 style={{ marginBottom: 22 }}>Skills</h2>
       <div>
         <img
           className="icon"
@@ -143,7 +143,7 @@ function Home() {
         Mathematical Modeling · Physics · Astrophysics · Research · Scientific
         Writing · Teaching · Public Speaking
       </p>
-      <h2>Publications</h2>
+      <h2 style={{ marginBottom: 22 }}>Publications</h2>
       <Publication
         title="A Recurrent Nova Super-Remnant in the Andromeda Galaxy"
         journal="nature"
@@ -163,7 +163,9 @@ function Home() {
         link="https://iopscience.iop.org/article/10.3847/1538-4357/aad3c4"
       />
       <div style={{ textAlign: "center", fontSize: "small" }}>
-        <a style={{ color: "gray" }} href="/#/publications">View all</a>
+        <a style={{ color: "gray" }} href="/#/publications">
+          View all
+        </a>
       </div>
       <h2>Contact</h2>
       <h3 style={{ marginTop: 0, marginBottom: -10 }}>GitHub</h3>
