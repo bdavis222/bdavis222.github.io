@@ -2,8 +2,6 @@
 
 > A GitHub profile site
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=UA5NL9MJSFMVY)
-
 This page was written in TypeScript using the React library.
 It showcases several software products that I have created and gives a brief overview about me. 
 
