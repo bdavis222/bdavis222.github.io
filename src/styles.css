@@ -357,26 +357,26 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 .publication-card {
-  background-color: var(--lightCompanyCardBackgroundColor)
+  background-color: var(--lightCompanyCardBackgroundColor);
   border-radius: 20px;
   padding: 20px;
   padding-left: 22px;
   margin-bottom: 20px;
 }
 publication-card.nature {
-  background-color: var(--lightPublicationColorNature)
+  background-color: var(--lightPublicationColorNature);
 }
 publication-card.apj {
-  background-color: var(--lightPublicationColorApj)
+  background-color: var(--lightPublicationColorApj);
 }
 publication-card.aj {
-  background-color: var(--lightPublicationColorAj)
+  background-color: var(--lightPublicationColorAj);
 }
 publication-card.rnaas {
-  background-color: var(--lightPublicationColorRnaas)
+  background-color: var(--lightPublicationColorRnaas);
 }
 publication-card.psu {
-  background-color: var(--lightPublicationColorPsu)
+  background-color: var(--lightPublicationColorPsu);
 }
 
 /* Donate button */
@@ -646,22 +646,22 @@ publication-card.psu {
     color: var(--darkTextColor);
   }
   .publication-card {
-  background-color: var(--darkCompanyCardBackgroundColor)
+  background-color: var(--darkCompanyCardBackgroundColor);
   }
   publication-card.nature {
-    color: var(--darkPublicationColorNature)
+    color: var(--darkPublicationColorNature);
   }
   publication-card.apj {
-    color: var(--darkPublicationColorApj)
+    color: var(--darkPublicationColorApj);
   }
   publication-card.aj {
-    color: var(--darkPublicationColorAj)
+    color: var(--darkPublicationColorAj);
   }
   publication-card.rnaas {
-    color: var(--darkPublicationColorRnaas)
+    color: var(--darkPublicationColorRnaas);
   }
   publication-card.psu {
-    color: var(--darkPublicationColorPsu)
+    color: var(--darkPublicationColorPsu);
   }
   .red-text {
     color: var(--darkRedTextColor);
