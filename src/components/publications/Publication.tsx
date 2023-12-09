@@ -7,7 +7,7 @@ interface Props {
 
 function Publication({ title, journal, date, link }: Props) {
   let journalName: string;
-  const cardClass = publication-card " + journal;
+  const cardClass = "publication-card " + journal;
   
   switch (journal) {
     case "nature":
