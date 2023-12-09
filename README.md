@@ -4,9 +4,8 @@
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=UA5NL9MJSFMVY)
 
-This page showcases several different software products _(including this website itself, written in TypeScript using the React library)_.
-All of these products are free to use, and instructions for their installation and use are provided for each.
-To see these products, visit the [software page](https://bdavis222.github.io).
+This page was written in TypeScript using the React library.
+It showcases several software products that I have created and gives a brief overview about me. 
 
 ## Development
 
