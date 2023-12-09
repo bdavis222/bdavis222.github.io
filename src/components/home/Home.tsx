@@ -4,7 +4,6 @@ import GitHubCard from "../profile-card/GitHubCard";
 import LinkedInCard from "../profile-card/LinkedInCard";
 import CompanyInfo from "./CompanyInfo";
 import SoftwarePageCard from "../profile-card/SoftwarePageCard";
-import Publication from "./Publication";
 
 function Home() {
   const bannerImage = "assets/about-banner.png";
