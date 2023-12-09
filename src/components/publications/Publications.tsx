@@ -13,7 +13,7 @@ function Publications() {
     .setAttribute("content", document.title);
   return (
     <>
-      <h1>{document.title}</h1>
+      <h1 style={{ marginBottom: 20 }}>{document.title}</h1>
       <Publication
         title="A Recurrent Nova Super-Remnant in the Andromeda Galaxy"
         journal="Nature"
