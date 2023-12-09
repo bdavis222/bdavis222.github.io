@@ -162,7 +162,7 @@ function Home() {
         date="Aug 2018"
         link="https://iopscience.iop.org/article/10.3847/1538-4357/aad3c4"
       />
-      <div style={{ textAlign: "center", fontSize: "small" }}>
+      <div style={{ textAlign: "center", fontSize: "small", color: "gray" }}>
         <a href="/#/publications">See all</a>
       </div>
       <h2>Contact</h2>
