@@ -22,25 +22,18 @@ function Home() {
       <h2 className="subtitle">Software Engineer</h2>
       <DonateButton />
       <h2>About</h2>
-      <LinkedInCard />
       <PersonalBlurb />
-      <p>
-        Visit the <a href="/#/about">about</a> page for more.
-      </p>
       <h2>Software</h2>
       <SoftwareBlurb />
-      <h2>GitHub</h2>
-      <GitHubCard />
-      <p>
-        Click the button above to visit my GitHub page and see my public
-        repositories. I enjoy collaboration with others on personal projects!
-      </p>
       <h2>Contact</h2>
       <p>
         If you have any questions, or wish to contact me, feel free to message
-        me on LinkedIn by clicking the button in the About section above to
-        visit my LinkedIn profile.
+        me on LinkedIn:
       </p>
+      <LinkedInCard />
+      <p>Also, feel free to visit my GitHub page and see my public
+        repositories. I enjoy collaboration with others on personal projects!
+      <GitHubCard />
       <hr />
       <Footer />
     </>
