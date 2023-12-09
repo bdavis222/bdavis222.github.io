@@ -21,7 +21,7 @@
   --lightGrayTextColor: rgb(91, 91, 91);
   --lightLinkedInCardColor: #315b82;
   --lightGitHubCardColor: #7a7a7a;
-  --lightSoftwarePageCardColor: rgb(81, 134, 115);
+  --lightSoftwarePageCardColor: rgb(102, 156, 138);
 
   --darkBackgroundColor: black;
   --darkTextColor: white;
@@ -44,7 +44,7 @@
   --darkRedTextColor: rgb(244, 77, 77);
   --darkGrayTextColor: rgb(183, 183, 183);
   --darkLinkedInCardColor: #20486e;
-  --darkGitHubCardColor: #242424;
+  --darkGitHubCardColor: #5b5b5b;
   --darkSoftwarePageCardColor: rgb(73, 111, 98);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
