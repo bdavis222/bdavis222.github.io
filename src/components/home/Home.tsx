@@ -7,7 +7,7 @@ import SoftwarePageCard from "../profile-card/SoftwarePageCard";
 
 function Home() {
   const bannerImage = "assets/about-banner.png";
-  document.title = "Brian Davis - Software Engineer";
+  document.title = "Brian Davis";
 
   document
     .querySelectorAll("meta[property=og\\:image]")[0]
