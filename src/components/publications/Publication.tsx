@@ -32,7 +32,7 @@ function Publication({ title, journal, date, link }: Props) {
   return (
     <div className="publication-container">
       <a href={link} target="_blank">
-        <div className="publication-card" style={{ backgroundColor: color }}>
+        <div className="publication-card" style={{ borderColor: color }}>
           <p style={{ margin: 0, fontWeight: 800, fontSize: "medium", color: "white" }}>
             {title}
           </p>
