@@ -644,9 +644,6 @@ publication-card.psu {
   .publication-container a {
     color: var(--darkTextColor);
   }
-  .publication-card {
-    background-color: var(--darkCompanyCardBackgroundColor);
-  }
   publication-card.nature {
     color: var(--darkPublicationColorNature)
   }
