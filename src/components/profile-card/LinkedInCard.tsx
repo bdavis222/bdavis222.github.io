@@ -6,7 +6,7 @@ function LinkedInCard() {
       type="linkedin"
       link="https://www.linkedin.com/in/briandavis123/"
       icon="assets/linkedin-logo.png"
-      description="Software Engineer"
+      description="briandavis123"
     />
   );
 }
