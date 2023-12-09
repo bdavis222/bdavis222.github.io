@@ -7,8 +7,8 @@ function SoftwareBlurb() {
         library)
       </i>
       . All of these are free to use, and instructions for their installation
-      and use are provided for each. To see these products, visit the{" "}
-      <a href="/#/software">software</a> page.
+      and use are provided for each. To see more, visit my{" "}
+      <a href="/#/software">software</a> page:
     </p>
   );
 }

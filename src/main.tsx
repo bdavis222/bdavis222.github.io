@@ -9,7 +9,6 @@ import Operator from "./components/operator/Operator";
 import Gravity from "./components/gravity/Gravity";
 import Roadmap from "./components/roadmap/Roadmap";
 import ScrollToTop from "./components/ScrollToTop";
-import About from "./components/about/About";
 import Home from "./components/home/Home";
 import PythonLanding from "./components/python-course/PythonLanding";
 
@@ -20,7 +19,6 @@ class App extends React.Component {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/software" element={<Releases />} />
           <Route path="/dotscanner" element={<DotScanner />} />
           <Route path="/pypimaker" element={<PypiMaker />} />

@@ -1,11 +1,12 @@
 interface Props {
   type: string;
+  title: string;
   link: string;
   icon: string;
   description: string;
 }
 
-function ProfileCard({ type, link, icon, description }: Props) {
+function ProfileCard({ type, title, link, icon, description }: Props) {
   return (
     <>
       <div className="profile-card-container">
@@ -16,8 +17,8 @@ function ProfileCard({ type, link, icon, description }: Props) {
               src="assets/headshot.png"
               alt="Headshot photo"
             />
-            <p className="profile-name">Brian Davis</p>
-            <p className="profile-title">{description}</p>
+            <p className="profile-name">{title}</p>
+            <p className="profile-description">{description}</p>
             <img className="profile-icon" src={icon} alt="Icon" />
           </div>
         </a>
