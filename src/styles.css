@@ -19,9 +19,9 @@
   --lightSubtitleColor: #808080;
   --lightRedTextColor: rgb(206, 0, 0);
   --lightGrayTextColor: rgb(91, 91, 91);
-  --lightLinkedInCardColor: #315b82;
+  --lightLinkedInCardColor: #2a4e6f;
   --lightGitHubCardColor: #7a7a7a;
-  --lightSoftwarePageCardColor: rgb(102, 156, 138);
+  --lightSoftwarePageCardColor: #457ec9;
 
   --darkBackgroundColor: black;
   --darkTextColor: white;
@@ -43,9 +43,9 @@
   --darkSubtitleColor: #b9b9b9;
   --darkRedTextColor: rgb(244, 77, 77);
   --darkGrayTextColor: rgb(183, 183, 183);
-  --darkLinkedInCardColor: #20486e;
+  --darkLinkedInCardColor: #1c4163;
   --darkGitHubCardColor: #5b5b5b;
-  --darkSoftwarePageCardColor: rgb(73, 111, 98);
+  --darkSoftwarePageCardColor: #2f609f;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -255,7 +255,7 @@ input[type="checkbox"] {
 .card {
   box-shadow: 0 4px 8px 0 var(--lightCardShadowColor);
   transition: 0.3s;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 20px;
   background-color: var(--lightCardBackgroundColor);
 }
 .card:hover {
@@ -336,6 +336,21 @@ input[type="checkbox"] {
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 15px;
+}
+
+/* Publication styling */
+.publication-container a {
+  text-decoration: none;
+  color: var(--lightTextColor);
+}
+.publication-container a:hover {
+  text-decoration: none;
+}
+.publication-card {
+  background-color: var(--lightCompanyCardBackgroundColor);
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 22px;
 }
 
 /* Donate button */
@@ -600,6 +615,12 @@ input[type="checkbox"] {
   }
   .company-dates {
     color: var(--darkSubtitleColor);
+  }
+  .publication-container a {
+    color: var(--darkTextColor);
+  }
+  .publication-card {
+    background-color: var(--darkCompanyCardBackgroundColor);
   }
   .red-text {
     color: var(--darkRedTextColor);

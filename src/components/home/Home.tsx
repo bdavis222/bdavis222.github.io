@@ -4,6 +4,7 @@ import GitHubCard from "../profile-card/GitHubCard";
 import LinkedInCard from "../profile-card/LinkedInCard";
 import CompanyInfo from "./CompanyInfo";
 import SoftwarePageCard from "../profile-card/SoftwarePageCard";
+import Publication from "./Publication";
 
 function Home() {
   const bannerImage = "assets/about-banner.png";
@@ -19,7 +20,7 @@ function Home() {
   return (
     <>
       <h1>Brian Davis</h1>
-      <h2 className="subtitle">Software Engineer</h2>
+      <h2 className="subtitle">Software Engineer | Ph.D.</h2>
       <div style={{ textAlign: "center" }}>
         <img className="profile-image" src="assets/headshot.png" alt="" />
       </div>
@@ -142,6 +143,13 @@ function Home() {
         Mathematical Modeling · Physics · Astrophysics · Research · Scientific
         Writing · Teaching · Public Speaking
       </p>
+      {/* <h2>Publications</h2>
+      <Publication
+        title="Late-stage Evolution of Low- and Intermediate-mass Stars"
+        journal="The Pennsylvania State University"
+        date="May 27, 2022"
+        link="https://etda.libraries.psu.edu/files/final_submissions/25432"
+      /> */}
       <h2>Contact</h2>
       <h3 style={{ marginTop: 0, marginBottom: -10 }}>GitHub</h3>
       <p>
