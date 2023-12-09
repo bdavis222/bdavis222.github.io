@@ -155,7 +155,7 @@ function Home() {
         me on LinkedIn:
       </p>
       <LinkedInCard />
-      <hr style={{ marginTop: 30 }} />
+      <hr />
       <Footer />
     </>
   );
