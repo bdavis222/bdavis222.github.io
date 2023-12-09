@@ -13,19 +13,19 @@ function Publication({ title, journal, date, link }: Props) {
       color = "#F0FFF0"
       break;
     case "The Astrophysical Journal":
-      color = "#F8F8FF";
+      color = "#E6E6FA";
       break;
     case "The Astronomical Journal":
-      color = "#FFFAFA";
+      color = "#FFE4E1";
       break;
     case "Research Notes of the AAS":
-      color = "yellow";
+      color = "#FFFFF0";
       break;
     case "The Pennsylvania State University":
       color = "#F0F8FF";
       break;
     default:
-      color = "#FFFFF0";
+      color = "#F5F5F5";
       break;
   }
   
