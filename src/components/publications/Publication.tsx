@@ -6,31 +6,40 @@ interface Props {
 }
 
 function Publication({ title, journal, date, link }: Props) {
-  const color = (function () {
-    switch (journal) {
-      case "Nature":
-        return { "green" };
-      case "The Astrophysical Journal":
-        return { "red" };
-      case "The Astronomical Journal":
-        return { "orange" };
-      case "Research Notes of the AAS":
-        return { "yellow" };
-      case "The Pennsylvania State University":
-        return { "blue" };
-    }
-  })();
+  let color: string;
+  
+  switch (journal) {
+    case "Nature":
+      color = "green"
+      break;
+    case "The Astrophysical Journal":
+      color = "red";
+      break;
+    case "The Astronomical Journal":
+      color = "orange";
+      break;
+    case "Research Notes of the AAS":
+      color = "yellow";
+      break;
+    case "The Pennsylvania State University":
+      color = "blue";
+      break;
+    default:
+      color = "gray";
+      break;
+  }
+  
   return (
     <div className="publication-container">
       <a href={link} target="_blank">
         <div className="publication-card" style={{ backgroundColor: color }}>
-          <p style={{ margin: 0, fontWeight: 800, fontSize: "medium" }}>
+          <p style={{ margin: 0, fontWeight: 800, fontSize: "medium", color: "white" }}>
             {title}
           </p>
-          <p style={{ margin: 0, fontStyle: "italic", fontSize: "medium" }}>
+          <p style={{ margin: 0, fontStyle: "italic", fontSize: "medium", color: "white" }}>
             {journal}
           </p>
-          <p style={{ margin: 0, fontSize: "small" }}>{date}</p>
+          <p style={{ margin: 0, fontSize: "small", color: "white" }}>{date}</p>
         </div>
       </a>
     </div>
