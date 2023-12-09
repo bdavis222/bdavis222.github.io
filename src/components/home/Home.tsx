@@ -163,7 +163,7 @@ function Home() {
         link="https://iopscience.iop.org/article/10.3847/1538-4357/aad3c4"
       />
       <div style={{ textAlign: "center", fontSize: "small" }}>
-        <a style={{ color: "gray" }} href="/#/publications">See all</a>
+        <a style={{ color: "gray" }} href="/#/publications">View all</a>
       </div>
       <h2>Contact</h2>
       <h3 style={{ marginTop: 0, marginBottom: -10 }}>GitHub</h3>
