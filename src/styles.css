@@ -364,19 +364,19 @@ input[type="checkbox"] {
   margin-bottom: 20px;
 }
 publication-card.nature {
-  color: var(--lightPublicationColorNature)
+  background-color: var(--lightPublicationColorNature)
 }
 publication-card.apj {
-  color: var(--lightPublicationColorApj)
+  background-color: var(--lightPublicationColorApj)
 }
 publication-card.aj {
-  color: var(--lightPublicationColorAj)
+  background-color: var(--lightPublicationColorAj)
 }
 publication-card.rnaas {
-  color: var(--lightPublicationColorRnaas)
+  background-color: var(--lightPublicationColorRnaas)
 }
 publication-card.psu {
-  color: var(--lightPublicationColorPsu)
+  background-color: var(--lightPublicationColorPsu)
 }
 
 /* Donate button */
