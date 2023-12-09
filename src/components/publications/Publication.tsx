@@ -7,7 +7,6 @@ interface Props {
 
 function Publication({ title, journal, date, link }: Props) {
   let journalName: string;
-  const cardClass = "publication-card " + journal;
   
   switch (journal) {
     case "nature":
@@ -33,7 +32,7 @@ function Publication({ title, journal, date, link }: Props) {
   return (
     <div className="publication-container">
       <a href={link} target="_blank">
-        <div className={cardClass}>
+        <div className={`publication-card ${journal}`}>
           <p style={{ margin: 0, fontWeight: 800, fontSize: "medium" }}>
             {title}
           </p>
