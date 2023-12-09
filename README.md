@@ -29,6 +29,14 @@ To run a local version of the site, run the following command:
 npm run dev
 ```
 
+or
+
+```
+npm run dev -- --host
+```
+
+The latter will give an address for other devices to connect to (to test on a mobile device, for example).
+
 ### Publishing changes
 
 The `static.yml` file within `.github/workflows/` will ensure that any changes pushed directly to the main branch of this repository will be published to the site.
