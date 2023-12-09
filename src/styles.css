@@ -357,6 +357,7 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 .publication-card {
+  background-color: var(--lightCompanyCardBackgroundColor)
   border-radius: 20px;
   padding: 20px;
   padding-left: 22px;
@@ -643,6 +644,9 @@ publication-card.psu {
   }
   .publication-container a {
     color: var(--darkTextColor);
+  }
+  .publication-card {
+  background-color: var(--darkCompanyCardBackgroundColor)
   }
   publication-card.nature {
     color: var(--darkPublicationColorNature)
