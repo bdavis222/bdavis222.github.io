@@ -351,6 +351,7 @@ input[type="checkbox"] {
   border-radius: 20px;
   padding: 20px;
   padding-left: 22px;
+  margin-bottom: 20px;
 }
 
 /* Donate button */
