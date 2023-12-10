@@ -23,7 +23,7 @@ function HomePublications() {
         journal="The Astrophysical Journal"
         date="Aug 2018"
         link="https://iopscience.iop.org/article/10.3847/1538-4357/aad3c4"
-        color="purple"
+        color="yellow"
       />
       <div style={{ textAlign: "center", fontSize: "small" }}>
         <a style={{ color: "gray" }} href="/#/publications">

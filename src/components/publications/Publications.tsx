@@ -19,7 +19,7 @@ function Publications() {
         journal="The Pennsylvania State University"
         date="May 2022"
         link="https://etda.libraries.psu.edu/files/final_submissions/25432"
-        color="blue"
+        color="green"
       />
       <Publication
         title="Yellow Post-asymptotic-giant-branch Stars as Standard Candles. I. Calibration of the Luminosity Function in Galactic Globular Clusters"
@@ -33,28 +33,28 @@ function Publications() {
         journal="The Astronomical Journal"
         date="Apr 2022"
         link="https://arxiv.org/abs/2204.07206"
-        color="red"
+        color="yellow"
       />
       <Publication
         title="A Census of AHB Stars in Galactic Globular Clusters"
         journal="The Astrophysical Journal"
         date="Feb 2022"
         link="https://iopscience.iop.org/article/10.3847/1538-4357/ac4224"
-        color="purple"
+        color="blue"
       />
       <Publication
         title="Toward Precision Cosmology With Improved PNLF Distances Using VLT-MUSE I. Methodology and Tests"
         journal="The Astrophysical Journal"
         date="Jul 2021"
         link="https://iopscience.iop.org/article/10.3847/1538-4357/ac02ca"
-        color="purple"
+        color="red"
       />
       <Publication
         title="Two Luminous Post-AGB Stars in the Galactic Globular Cluster M19"
         journal="The Astronomical Journal"
         date="Feb 2021"
         link="https://iopscience.iop.org/article/10.3847/1538-3881/abdbb3"
-        color="red"
+        color="green"
       />
       <Publication
         title="Hubble Space Telescope Spectroscopy of a Planetary Nebula in an M31 Open Cluster: Hot-bottom Burning at 3.4 M⊙"
@@ -68,35 +68,35 @@ function Publications() {
         journal="Nature"
         date="Jan 2019"
         link="https://www.nature.com/articles/s41586-018-0825-4.epdf?author_access_token=Efv4kYyb8NweZ1W1tYmiYdRgN0jAjWel9jnR3ZoTv0N8qBJDnwa59hGY4PDdFI5yg_gnOrjBQgwM9FCrVQsuZahhXf1Qwl_lZHr5DDGM34vvvO_OQYNvo7VsvJMiCWIlCU1wcJOxs7-ZwFTtSFhguQ%3D%3D"
-        color="green"
+        color="yellow"
       />
       <Publication
         title="The True Luminosities of Planetary Nebulae in M31’s Bulge: Massive Central Stars from an Old Stellar Population"
         journal="The Astrophysical Journal"
         date="Aug 2018"
         link="https://iopscience.iop.org/article/10.3847/1538-4357/aad3c4"
-        color="purple"
+        color="blue"
       />
       <Publication
         title="The Keck/OSIRIS Nearby AGN Survey (KONA) I. The Nuclear K-band Properties of Nearby AGN"
         journal="The Astrophysical Journal"
         date="May 2018"
         link="https://iopscience.iop.org/article/10.3847/1538-4357/aab9ad/meta"
-        color="purple"
+        color="red"
       />
       <Publication
         title="The Planetary Nebula Luminosity Function (PNLF): Contamination from Supernova Remnants"
         journal="Research Notes of the AAS"
         date="Feb 2018"
         link="https://iopscience.iop.org/article/10.3847/2515-5172/aab045"
-        color="yellow"
+        color="green"
       />
       <Publication
         title="The Recurrent Nova Candidate M31N 1966-08a = 1968-10c is a Galactic Flare Star"
         journal="Research Notes of the AAS"
         date="Dec 2017"
         link="https://iopscience.iop.org/article/10.3847/2515-5172/aaa086/meta"
-        color="yellow"
+        color="purple"
       />
       <hr />
       <Footer />
