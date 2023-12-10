@@ -4,6 +4,7 @@
   --lightLinkColor: #a332ff;
   --lightLinkHoverColor: #7101cd;
   --lightBoldColor: #393939;
+  --lightCodeBackgroundColor: #959595;
   --lightFooterColor: #9b9b9b;
   --lightFooterLinkColor: #68507c;
   --lightH1Color: #1560bd;
@@ -36,6 +37,7 @@
   --darkLinkColor: #d5a2ff;
   --darkLinkHoverColor: #e8cbff;
   --darkBoldColor: #dcdcdc;
+  --darkCodeBackgroundColor: #585858;
   --darkFooterColor: #535353;
   --darkFooterLinkColor: #eee3f7;
   --darkH1Color: #2e8cff;
@@ -103,7 +105,7 @@ body {
   min-height: 100vh;
 }
 code {
-  background-color: #8b8b8b;
+  background-color: var(--lightCodeBackgroundColor);
   color: white;
   font-weight: 800;
   padding: 3px;
@@ -637,6 +639,9 @@ p {
   }
   b {
     color: var(--darkBoldColor);
+  }
+  code {
+    background-color: var(--darkCodeBackgroundColor);
   }
   h1 {
     color: var(--darkH1Color);
