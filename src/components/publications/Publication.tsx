@@ -3,39 +3,17 @@ interface Props {
   journal: string;
   date: string;
   link: string;
+  color: string;
 }
 
-function Publication({ title, journal, date, link }: Props) {
-  let journalName: string;
-
-  switch (journal) {
-    case "nature":
-      journalName = "Nature";
-      break;
-    case "apj":
-      journalName = "The Astrophysical Journal";
-      break;
-    case "aj":
-      journalName = "The Astronomical Journal";
-      break;
-    case "rnaas":
-      journalName = "Research Notes of the AAS";
-      break;
-    case "psu":
-      journalName = "The Pennsylvania State University";
-      break;
-    default:
-      journalName = "Unknown Journal";
-      break;
-  }
-
+function Publication({ title, journal, date, link, color }: Props) {
   return (
     <div className="publication-container">
       <a href={link} target="_blank">
-        <div className={`publication-card ${journal}`}>
+        <div className={`publication-card ${color}`}>
           <p className="publication-title">{title}</p>
           <p style={{ margin: 0, fontStyle: "italic", fontSize: "medium" }}>
-            {journalName}
+            {journal}
           </p>
           <p className="publication-date">{date}</p>
         </div>

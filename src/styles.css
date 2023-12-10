@@ -373,19 +373,19 @@ p {
   padding-left: 22px;
   margin-bottom: 20px;
 }
-.publication-card.nature {
+.publication-card.green {
   background-color: var(--lightPublicationColorNature);
 }
-.publication-card.apj {
+.publication-card.purple {
   background-color: var(--lightPublicationColorApj);
 }
-.publication-card.aj {
+.publication-card.red {
   background-color: var(--lightPublicationColorAj);
 }
-.publication-card.rnaas {
+.publication-card.yellow {
   background-color: var(--lightPublicationColorRnaas);
 }
-.publication-card.psu {
+.publication-card.blue {
   background-color: var(--lightPublicationColorPsu);
 }
 .publication-title {
@@ -675,19 +675,19 @@ p {
   .publication-card {
     background-color: var(--darkCompanyCardBackgroundColor);
   }
-  .publication-card.nature {
+  .publication-card.green {
     background-color: var(--darkPublicationColorNature);
   }
-  .publication-card.apj {
+  .publication-card.purple {
     background-color: var(--darkPublicationColorApj);
   }
-  .publication-card.aj {
+  .publication-card.red {
     background-color: var(--darkPublicationColorAj);
   }
-  .publication-card.rnaas {
+  .publication-card.yellow {
     background-color: var(--darkPublicationColorRnaas);
   }
-  .publication-card.psu {
+  .publication-card.blue {
     background-color: var(--darkPublicationColorPsu);
   }
   .publication-title {
