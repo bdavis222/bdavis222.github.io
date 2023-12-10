@@ -31,7 +31,7 @@
   --lightPublicationDateColor: rgb(147, 147, 147);
 
   --darkBackgroundColor: black;
-  --darkTextColor: white;
+  --darkTextColor: rgb(230, 230, 230);
   --darkLinkColor: #d5a2ff;
   --darkLinkHoverColor: #e8cbff;
   --darkBoldColor: #dcdcdc;
@@ -114,6 +114,9 @@ footer {
 hr {
   margin-top: 35px;
   margin-bottom: 35px;
+  background-color: var(--lightFooterColor);
+  height: 1px;
+  border: 0;
 }
 h1 {
   text-align: center;
@@ -616,6 +619,9 @@ p {
   }
   h3 {
     color: var(--darkH3Color);
+  }
+  hr {
+    background-color: var(--darkFooterColor);
   }
   p {
     color: var(--darkTextColor);

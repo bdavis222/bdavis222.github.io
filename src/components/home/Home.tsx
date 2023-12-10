@@ -23,7 +23,12 @@ function Home() {
       <h1>Brian Davis</h1>
       <h2 className="subtitle">Software Engineer | Ph.D.</h2>
       <div style={{ textAlign: "center" }}>
-        <img className="profile-image" src="assets/headshot.png" alt="" />
+        <img
+          className="profile-image"
+          src="assets/headshot.png"
+          alt=""
+          style={{ marginBottom: -10 }}
+        />
       </div>
       <DonateButton />
       <About />
