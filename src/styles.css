@@ -33,7 +33,7 @@
   --lightPublicationColorBlue: #598ec2;
   --lightPublicationTitleColor: rgb(255, 255, 255);
   --lightPublicationDateColor: rgb(241, 241, 241);
-  --lightGrayLinkColor: #5a5a5a;
+  --lightGrayLinkColor: #474747;
 
   --darkBackgroundColor: black;
   --darkTextColor: rgb(230, 230, 230);
@@ -69,7 +69,7 @@
   --darkPublicationColorBlue: #24598d;
   --darkPublicationTitleColor: rgb(231, 231, 231);
   --darkPublicationDateColor: rgb(215, 215, 215);
-  --darkGrayLinkColor: rgb(199, 199, 199);
+  --darkGrayLinkColor: rgb(210, 210, 210);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
