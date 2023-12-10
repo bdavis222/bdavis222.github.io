@@ -11,7 +11,8 @@ function Software() {
           library)
         </i>
         . All of these are free to use, and instructions for their installation
-        and use are provided for each. To see more, visit my software page:
+        and use are provided for each. Click the button below to visit my
+        software page:
       </p>
       <SoftwarePageCard />
     </>

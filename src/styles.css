@@ -5,6 +5,7 @@
   --lightLinkHoverColor: #7101cd;
   --lightBoldColor: #393939;
   --lightFooterColor: #9b9b9b;
+  --lightFooterLinkColor: #68507c;
   --lightH1Color: #1560bd;
   --lightH2Color: #1877f2;
   --lightH3Color: #787878;
@@ -19,14 +20,14 @@
   --lightSubtitleColor: #808080;
   --lightRedTextColor: rgb(206, 0, 0);
   --lightGrayTextColor: rgb(91, 91, 91);
-  --lightLinkedInCardColor: #2a4e6f;
-  --lightGitHubCardColor: #4b4b4b;
-  --lightSoftwarePageCardColor: #4a76b0;
-  --lightPublicationColorNature: #d6ebd6;
-  --lightPublicationColorApj: #d2d2f9;
-  --lightPublicationColorAj: #fad4d0;
-  --lightPublicationColorRnaas: #fce9cc;
-  --lightPublicationColorPsu: #c0e0ff;
+  --lightLinkedInCardColor: #335e87;
+  --lightGitHubCardColor: #696969;
+  --lightSoftwarePageCardColor: #4b92ee;
+  --lightPublicationColorGreen: #cee6ce;
+  --lightPublicationColorPurple: #d1d1fb;
+  --lightPublicationColorRed: #fad4d0;
+  --lightPublicationColorYellow: #fce9cc;
+  --lightPublicationColorBlue: #badaf9;
   --lightPublicationTitleColor: rgb(73, 73, 73);
   --lightPublicationDateColor: rgb(147, 147, 147);
 
@@ -36,6 +37,7 @@
   --darkLinkHoverColor: #e8cbff;
   --darkBoldColor: #dcdcdc;
   --darkFooterColor: #535353;
+  --darkFooterLinkColor: #eee3f7;
   --darkH1Color: #2e8cff;
   --darkH2Color: #75b3ff;
   --darkH3Color: #a0a0a0;
@@ -52,12 +54,12 @@
   --darkGrayTextColor: rgb(183, 183, 183);
   --darkLinkedInCardColor: #1c4163;
   --darkGitHubCardColor: #2b2b2b;
-  --darkSoftwarePageCardColor: #2a5286;
-  --darkPublicationColorNature: #3a483a;
-  --darkPublicationColorApj: #3f3f66;
-  --darkPublicationColorAj: #533430;
-  --darkPublicationColorRnaas: #4b3e2b;
-  --darkPublicationColorPsu: #0f3051;
+  --darkSoftwarePageCardColor: #1b61bc;
+  --darkPublicationColorGreen: #4a634a;
+  --darkPublicationColorPurple: #474789;
+  --darkPublicationColorRed: #6a2016;
+  --darkPublicationColorYellow: #754f18;
+  --darkPublicationColorBlue: #053769;
   --darkPublicationTitleColor: rgb(231, 231, 231);
   --darkPublicationDateColor: rgb(144, 144, 144);
 
@@ -162,6 +164,9 @@ p {
 }
 .footer-nav {
   text-align: center;
+}
+.footer-link {
+  color: var(--lightFooterLinkColor);
 }
 .icon {
   max-height: 20px;
@@ -374,19 +379,19 @@ p {
   margin-bottom: 20px;
 }
 .publication-card.green {
-  background-color: var(--lightPublicationColorNature);
+  background-color: var(--lightPublicationColorGreen);
 }
 .publication-card.purple {
-  background-color: var(--lightPublicationColorApj);
+  background-color: var(--lightPublicationColorPurple);
 }
 .publication-card.red {
-  background-color: var(--lightPublicationColorAj);
+  background-color: var(--lightPublicationColorRed);
 }
 .publication-card.yellow {
-  background-color: var(--lightPublicationColorRnaas);
+  background-color: var(--lightPublicationColorYellow);
 }
 .publication-card.blue {
-  background-color: var(--lightPublicationColorPsu);
+  background-color: var(--lightPublicationColorBlue);
 }
 .publication-title {
   margin: 0;
@@ -470,12 +475,20 @@ p {
   text-decoration: none;
 }
 .linkedin-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   background-color: var(--lightLinkedInCardColor);
   border-radius: 10px;
   width: 270px;
   height: 100px;
 }
 .github-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   background-color: var(--lightGitHubCardColor);
   border-radius: 10px;
   width: 270px;
@@ -484,41 +497,49 @@ p {
 .software-page-card {
   background-color: var(--lightSoftwarePageCardColor);
   border-radius: 10px;
-  width: 270px;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 30px 15px 30px;
+}
+.profile-image-container {
+  width: 100px;
   height: 100px;
 }
 .profile-image {
-  position: relative;
-  top: 0px;
-  left: 0px;
   width: 100px;
   height: auto;
   padding: 10px;
 }
+.profile-info-container {
+  width: 120px;
+  margin-left: 5px;
+}
 .profile-name {
-  position: relative;
-  bottom: 100px;
-  left: 105px;
   color: white;
   font-weight: 800;
   font-size: large;
   width: fit-content;
+  margin-top: 23px;
+  margin-bottom: -3px;
+}
+.profile-name.no-img {
+  margin-top: 0px;
 }
 .profile-description {
-  position: relative;
-  bottom: 122px;
-  left: 105px;
   color: rgb(200, 200, 200);
   font-weight: 200;
   font-style: italic;
   font-size: large;
   width: fit-content;
+  margin: 0px;
+}
+.profile-icon-container {
+  text-align: left;
+  width: 25px;
+  margin: 10px;
 }
 .profile-icon {
   border-radius: 4px;
-  position: relative;
-  bottom: 205px;
-  left: 235px;
   width: 25px;
   height: auto;
 }
@@ -660,6 +681,9 @@ p {
   .donate-button {
     filter: var(--darkButtonFilter);
   }
+  .footer-link {
+    color: var(--darkFooterLinkColor);
+  }
   .subtitle {
     color: var(--darkSubtitleColor);
   }
@@ -676,19 +700,19 @@ p {
     background-color: var(--darkCompanyCardBackgroundColor);
   }
   .publication-card.green {
-    background-color: var(--darkPublicationColorNature);
+    background-color: var(--darkPublicationColorGreen);
   }
   .publication-card.purple {
-    background-color: var(--darkPublicationColorApj);
+    background-color: var(--darkPublicationColorPurple);
   }
   .publication-card.red {
-    background-color: var(--darkPublicationColorAj);
+    background-color: var(--darkPublicationColorRed);
   }
   .publication-card.yellow {
-    background-color: var(--darkPublicationColorRnaas);
+    background-color: var(--darkPublicationColorYellow);
   }
   .publication-card.blue {
-    background-color: var(--darkPublicationColorPsu);
+    background-color: var(--darkPublicationColorBlue);
   }
   .publication-title {
     color: var(--darkPublicationTitleColor);

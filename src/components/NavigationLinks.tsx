@@ -2,11 +2,17 @@ function NavigationLinks() {
   return (
     <>
       <p className="footer-nav">
-        <a href="/#/software">Software</a>
+        <a className="footer-link" href="/#/software">
+          Software
+        </a>
         &nbsp; | &nbsp;
-        <a href="/#/publications">Publications</a>
+        <a className="footer-link" href="/#/publications">
+          Publications
+        </a>
         &nbsp; | &nbsp;
-        <a href="/">Home</a>
+        <a className="footer-link" href="/">
+          Home
+        </a>
       </p>
     </>
   );
