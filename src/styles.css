@@ -5,8 +5,8 @@
   --lightLinkHoverColor: #7101cd;
   --lightBoldColor: #393939;
   --lightCodeBackgroundColor: #959595;
-  --lightFooterColor: #9b9b9b;
-  --lightFooterLinkColor: #68507c;
+  --lightFooterColor: #8b8b8b;
+  --lightFooterLinkColor: #5a5a5a;
   --lightH1Color: #1560bd;
   --lightH2Color: #1877f2;
   --lightH3Color: #787878;
@@ -41,8 +41,8 @@
   --darkLinkHoverColor: #e8cbff;
   --darkBoldColor: #dcdcdc;
   --darkCodeBackgroundColor: #585858;
-  --darkFooterColor: #535353;
-  --darkFooterLinkColor: #eee3f7;
+  --darkFooterColor: #4d4d4d;
+  --darkFooterLinkColor: rgb(220, 220, 220);
   --darkH1Color: #2e8cff;
   --darkH2Color: #75b3ff;
   --darkH3Color: #a0a0a0;
