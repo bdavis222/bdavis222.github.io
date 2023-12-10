@@ -23,13 +23,13 @@
   --lightLinkedInCardColor: #335e87;
   --lightGitHubCardColor: #696969;
   --lightSoftwarePageCardColor: #4b92ee;
-  --lightPublicationColorGreen: #cee6ce;
-  --lightPublicationColorPurple: #d1d1fb;
-  --lightPublicationColorRed: #fad4d0;
-  --lightPublicationColorYellow: #fce9cc;
-  --lightPublicationColorBlue: #badaf9;
-  --lightPublicationTitleColor: rgb(73, 73, 73);
-  --lightPublicationDateColor: rgb(147, 147, 147);
+  --lightPublicationColorGreen: #83ad83;
+  --lightPublicationColorPurple: #8181c3;
+  --lightPublicationColorRed: #c47065;
+  --lightPublicationColorYellow: #cca875;
+  --lightPublicationColorBlue: #4d87c1;
+  --lightPublicationTitleColor: rgb(255, 255, 255);
+  --lightPublicationDateColor: rgb(241, 241, 241);
 
   --darkBackgroundColor: black;
   --darkTextColor: rgb(230, 230, 230);
@@ -57,11 +57,11 @@
   --darkSoftwarePageCardColor: #1b61bc;
   --darkPublicationColorGreen: #4a634a;
   --darkPublicationColorPurple: #474789;
-  --darkPublicationColorRed: #6a2016;
+  --darkPublicationColorRed: #7f352c;
   --darkPublicationColorYellow: #754f18;
-  --darkPublicationColorBlue: #053769;
+  --darkPublicationColorBlue: #1c4e80;
   --darkPublicationTitleColor: rgb(231, 231, 231);
-  --darkPublicationDateColor: rgb(144, 144, 144);
+  --darkPublicationDateColor: rgb(215, 215, 215);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -396,12 +396,18 @@ p {
 .publication-title {
   margin: 0;
   font-weight: 800;
-  font-size: "medium";
+  font-size: medium;
   color: var(--lightPublicationTitleColor);
+}
+.publication-journal {
+  margin: 0;
+  font-style: italic;
+  font-size: medium;
+  color: var(--lightPublicationDateColor);
 }
 .publication-date {
   margin: 0;
-  font-size: "small";
+  font-size: small;
   color: var(--lightPublicationDateColor);
 }
 
@@ -446,7 +452,7 @@ p {
   transform: translate(-50%, -50%);
 }
 .button {
-  background-color: #8cc751;
+  background-color: #7fb44a;
   border: none;
   padding: 10px 15px;
   color: white;
@@ -716,6 +722,9 @@ p {
   }
   .publication-title {
     color: var(--darkPublicationTitleColor);
+  }
+  .publication-journal {
+    color: var(--darkPublicationDateColor);
   }
   .publication-date {
     color: var(--darkPublicationDateColor);
