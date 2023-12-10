@@ -10,6 +10,7 @@
   --lightH1Color: #1560bd;
   --lightH2Color: #1877f2;
   --lightH3Color: #787878;
+  --lightPageBannerBorder: 0.25px solid var(--lightBackgroundColor);
   --lightCardBackgroundColor: white;
   --lightCardDividingLineColor: #9b9b9b;
   --lightCardTextColor: black;
@@ -46,6 +47,7 @@
   --darkH1Color: #2e8cff;
   --darkH2Color: #75b3ff;
   --darkH3Color: #a0a0a0;
+  --darkPageBannerBorder: 0.25px solid #242424;
   --darkCardBackgroundColor: #242424;
   --darkCardDividingLineColor: #242424;
   --darkCardTextColor: white;
@@ -221,7 +223,7 @@ p {
 }
 
 .page-banner {
-  border: 0.25px solid gray;
+  border: var(--lightPageBannerBorder);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -728,6 +730,9 @@ p {
   }
   .company-dates {
     color: var(--darkCompanySubtitleColor);
+  }
+  .page-banner {
+    border: var(--darkPageBannerBorder);
   }
   .publication-container a {
     color: var(--darkTextColor);
