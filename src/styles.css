@@ -20,13 +20,15 @@
   --lightRedTextColor: rgb(206, 0, 0);
   --lightGrayTextColor: rgb(91, 91, 91);
   --lightLinkedInCardColor: #2a4e6f;
-  --lightGitHubCardColor: #7a7a7a;
-  --lightSoftwarePageCardColor: #457ec9;
-  --lightPublicationColorNature: "#d8e6d8";
-  --lightPublicationColorApj: "#e6e6fA";
-  --lightPublicationColorAj: "#ffe4e1";
-  --lightPublicationColorRnaas: "#ffefd5";
-  --lightPublicationColorPsu: "#d8dfe6";
+  --lightGitHubCardColor: #4b4b4b;
+  --lightSoftwarePageCardColor: #4a76b0;
+  --lightPublicationColorNature: #d6ebd6;
+  --lightPublicationColorApj: #d2d2f9;
+  --lightPublicationColorAj: #fad4d0;
+  --lightPublicationColorRnaas: #fce9cc;
+  --lightPublicationColorPsu: #c0e0ff;
+  --lightPublicationTitleColor: rgb(73, 73, 73);
+  --lightPublicationDateColor: rgb(147, 147, 147);
 
   --darkBackgroundColor: black;
   --darkTextColor: white;
@@ -49,13 +51,15 @@
   --darkRedTextColor: rgb(244, 77, 77);
   --darkGrayTextColor: rgb(183, 183, 183);
   --darkLinkedInCardColor: #1c4163;
-  --darkGitHubCardColor: #5b5b5b;
-  --darkSoftwarePageCardColor: #2f609f;
-  --darkPublicationColorNature: "#271927";
-  --darkPublicationColorApj: "#191905";
-  --darkPublicationColorAj: "#001b1e";
-  --darkPublicationColorRnaas: "#00102a";
-  --darkPublicationColorPsu: "#272019";
+  --darkGitHubCardColor: #2b2b2b;
+  --darkSoftwarePageCardColor: #2a5286;
+  --darkPublicationColorNature: #3a483a;
+  --darkPublicationColorApj: #3f3f66;
+  --darkPublicationColorAj: #533430;
+  --darkPublicationColorRnaas: #4b3e2b;
+  --darkPublicationColorPsu: #0f3051;
+  --darkPublicationTitleColor: rgb(231, 231, 231);
+  --darkPublicationDateColor: rgb(144, 144, 144);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -134,6 +138,9 @@ iframe {
 }
 input[type="checkbox"] {
   margin-left: 20px;
+}
+p {
+  color: var(--lightTextColor);
 }
 
 #root {
@@ -363,20 +370,31 @@ input[type="checkbox"] {
   padding-left: 22px;
   margin-bottom: 20px;
 }
-publication-card.nature {
+.publication-card.nature {
   background-color: var(--lightPublicationColorNature);
 }
-publication-card.apj {
+.publication-card.apj {
   background-color: var(--lightPublicationColorApj);
 }
-publication-card.aj {
+.publication-card.aj {
   background-color: var(--lightPublicationColorAj);
 }
-publication-card.rnaas {
+.publication-card.rnaas {
   background-color: var(--lightPublicationColorRnaas);
 }
-publication-card.psu {
+.publication-card.psu {
   background-color: var(--lightPublicationColorPsu);
+}
+.publication-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: "medium";
+  color: var(--lightPublicationTitleColor);
+}
+.publication-date {
+  margin: 0;
+  font-size: "small";
+  color: var(--lightPublicationDateColor);
 }
 
 /* Donate button */
@@ -599,6 +617,9 @@ publication-card.psu {
   h3 {
     color: var(--darkH3Color);
   }
+  p {
+    color: var(--darkTextColor);
+  }
   .black-icon {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
@@ -648,20 +669,26 @@ publication-card.psu {
   .publication-card {
     background-color: var(--darkCompanyCardBackgroundColor);
   }
-  publication-card.nature {
-    color: var(--darkPublicationColorNature);
+  .publication-card.nature {
+    background-color: var(--darkPublicationColorNature);
   }
-  publication-card.apj {
-    color: var(--darkPublicationColorApj);
+  .publication-card.apj {
+    background-color: var(--darkPublicationColorApj);
   }
-  publication-card.aj {
-    color: var(--darkPublicationColorAj);
+  .publication-card.aj {
+    background-color: var(--darkPublicationColorAj);
   }
-  publication-card.rnaas {
-    color: var(--darkPublicationColorRnaas);
+  .publication-card.rnaas {
+    background-color: var(--darkPublicationColorRnaas);
   }
-  publication-card.psu {
-    color: var(--darkPublicationColorPsu);
+  .publication-card.psu {
+    background-color: var(--darkPublicationColorPsu);
+  }
+  .publication-title {
+    color: var(--darkPublicationTitleColor);
+  }
+  .publication-date {
+    color: var(--darkPublicationDateColor);
   }
   .red-text {
     color: var(--darkRedTextColor);
