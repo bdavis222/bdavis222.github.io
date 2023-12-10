@@ -26,7 +26,7 @@ function HomePublications() {
         color="yellow"
       />
       <div style={{ textAlign: "center", fontSize: "small" }}>
-        <a style={{ color: "gray" }} href="/#/publications">
+        <a className="gray-link" href="/#/publications">
           View all
         </a>
       </div>

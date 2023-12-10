@@ -16,21 +16,24 @@
   --lightCardShadowColor: rgba(0, 0, 0, 0.4);
   --lightCardShadowHoverColor: rgba(0, 0, 0, 0.8);
   --lightCardHoverShadow: 0 8px 16px 0 var(--lightCardShadowHoverColor);
-  --lightCompanyCardBackgroundColor: rgb(242, 242, 242);
+  --lightCompanyCardBackgroundColor: rgb(238, 238, 238);
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
   --lightSubtitleColor: #808080;
+  --lightCompanySubtitleColor: rgb(116, 116, 116);
   --lightRedTextColor: rgb(206, 0, 0);
   --lightGrayTextColor: rgb(91, 91, 91);
   --lightLinkedInCardColor: #335e87;
   --lightGitHubCardColor: #696969;
   --lightSoftwarePageCardColor: #4b92ee;
+  --lightSoftwarePageCardDescriptionColor: rgb(219, 219, 219);
   --lightPublicationColorGreen: #83ad83;
   --lightPublicationColorPurple: #8181c3;
-  --lightPublicationColorRed: #c47065;
+  --lightPublicationColorRed: #c2796f;
   --lightPublicationColorYellow: #cca875;
-  --lightPublicationColorBlue: #4d87c1;
+  --lightPublicationColorBlue: #598ec2;
   --lightPublicationTitleColor: rgb(255, 255, 255);
   --lightPublicationDateColor: rgb(241, 241, 241);
+  --lightGrayLinkColor: #5a5a5a;
 
   --darkBackgroundColor: black;
   --darkTextColor: rgb(230, 230, 230);
@@ -52,18 +55,21 @@
   --darkCompanyCardBackgroundColor: #242424;
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
   --darkSubtitleColor: #b9b9b9;
+  --darkCompanySubtitleColor: #b9b9b9;
   --darkRedTextColor: rgb(244, 77, 77);
   --darkGrayTextColor: rgb(183, 183, 183);
   --darkLinkedInCardColor: #1c4163;
   --darkGitHubCardColor: #2b2b2b;
   --darkSoftwarePageCardColor: #1b61bc;
+  --darkSoftwarePageCardDescriptionColor: rgb(191, 191, 191);
   --darkPublicationColorGreen: #425a42;
-  --darkPublicationColorPurple: #444482;
-  --darkPublicationColorRed: #7d3a31;
-  --darkPublicationColorYellow: #7a5623;
-  --darkPublicationColorBlue: #21507f;
+  --darkPublicationColorPurple: #484880;
+  --darkPublicationColorRed: #814138;
+  --darkPublicationColorYellow: #7b5b2e;
+  --darkPublicationColorBlue: #24598d;
   --darkPublicationTitleColor: rgb(231, 231, 231);
   --darkPublicationDateColor: rgb(215, 215, 215);
+  --darkGrayLinkColor: rgb(199, 199, 199);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -349,7 +355,7 @@ p {
   font-style: italic;
   margin-top: 0px;
   margin-bottom: 0px;
-  color: var(--lightSubtitleColor);
+  color: var(--lightCompanySubtitleColor);
 }
 .company-dates {
   font-size: small;
@@ -411,6 +417,9 @@ p {
   margin: 0;
   font-size: small;
   color: var(--lightPublicationDateColor);
+}
+.gray-link {
+  color: var(--lightGrayLinkColor);
 }
 
 /* Donate button */
@@ -502,13 +511,6 @@ p {
   width: 270px;
   height: 100px;
 }
-.software-page-card {
-  background-color: var(--lightSoftwarePageCardColor);
-  border-radius: 10px;
-  width: fit-content;
-  height: fit-content;
-  padding: 15px 30px 15px 30px;
-}
 .profile-image-container {
   width: 100px;
   height: 100px;
@@ -530,9 +532,6 @@ p {
   margin-top: 23px;
   margin-bottom: -3px;
 }
-.profile-name.no-img {
-  margin-top: 0px;
-}
 .profile-description {
   color: rgb(200, 200, 200);
   font-weight: 200;
@@ -550,6 +549,31 @@ p {
   border-radius: 4px;
   width: 25px;
   height: auto;
+}
+
+/* Button to navigate to Software page */
+.software-page-card {
+  background-color: var(--lightSoftwarePageCardColor);
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 30px 15px 30px;
+}
+.software-page-button-title {
+  color: white;
+  font-weight: 800;
+  font-size: large;
+  width: fit-content;
+  margin-top: 0px;
+  margin-bottom: -3px;
+}
+.software-page-button-description {
+  color: var(--lightSoftwarePageCardDescriptionColor);
+  font-weight: 200;
+  font-style: italic;
+  font-size: medium;
+  width: fit-content;
+  margin: 0px;
 }
 
 /* Making the grid responsive to screen size */
@@ -699,10 +723,10 @@ p {
     color: var(--darkSubtitleColor);
   }
   .company-job-title {
-    color: var(--darkSubtitleColor);
+    color: var(--darkCompanySubtitleColor);
   }
   .company-dates {
-    color: var(--darkSubtitleColor);
+    color: var(--darkCompanySubtitleColor);
   }
   .publication-container a {
     color: var(--darkTextColor);
@@ -734,6 +758,9 @@ p {
   .publication-date {
     color: var(--darkPublicationDateColor);
   }
+  .gray-link {
+    color: var(--darkGrayLinkColor);
+  }
   .red-text {
     color: var(--darkRedTextColor);
   }
@@ -751,5 +778,8 @@ p {
   }
   .software-page-card {
     background-color: var(--darkSoftwarePageCardColor);
+  }
+  .software-page-button-description {
+    color: var(--darkSoftwarePageCardDescriptionColor);
   }
 }
