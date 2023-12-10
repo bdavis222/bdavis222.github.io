@@ -14,8 +14,8 @@
   --lightCardBackgroundColor: white;
   --lightCardDividingLineColor: #9b9b9b;
   --lightCardTextColor: black;
-  --lightCardShadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
-  --lightCardHoverShadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
+  --lightCardShadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
+  --lightCardHoverShadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
   --lightCompanyCardBackgroundColor: rgb(238, 238, 238);
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
   --lightSubtitleColor: #808080;
