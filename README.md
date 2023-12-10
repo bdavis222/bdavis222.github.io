@@ -1,4 +1,5 @@
-# Brian Davis - GitHub profile site
+# Brian Davis
+> Portfolio site
 
 This page was written in TypeScript using the React library.
 It showcases several software products that I have created and gives a brief overview about me. 
