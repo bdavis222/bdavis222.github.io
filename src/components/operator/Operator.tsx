@@ -46,7 +46,6 @@ function Operator() {
         selected, the difficulty will continue to ramp up with player
         performance.
       </p>
-      <hr />
       <Footer />
     </>
   );

@@ -103,7 +103,6 @@ function PythonLanding() {
         Follow along with the content in each lesson, tutorial, and project, and
         have fun learning!
       </p>
-      <hr />
       <Footer />
     </>
   );

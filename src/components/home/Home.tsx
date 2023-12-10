@@ -37,7 +37,6 @@ function Home() {
       <Skills />
       <HomePublications />
       <Contact />
-      <hr />
       <Footer />
     </>
   );

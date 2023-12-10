@@ -50,7 +50,6 @@ function Mocks() {
         is another site that allows people from around the world to give each
         other mock interviews for free.
       </p>
-      <hr />
     </>
   );
 }

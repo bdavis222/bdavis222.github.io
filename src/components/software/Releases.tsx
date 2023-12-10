@@ -18,7 +18,6 @@ function Releases() {
       <h1>{document.title}</h1>
       <DonateButton />
       <Cards />
-      <hr />
       <Footer />
     </>
   );

@@ -55,7 +55,6 @@ function DotScanner() {
         </a>
         .
       </p>
-      <hr />
       <Footer />
     </>
   );

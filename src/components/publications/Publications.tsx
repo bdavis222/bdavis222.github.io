@@ -98,7 +98,6 @@ function Publications() {
         link="https://iopscience.iop.org/article/10.3847/2515-5172/aaa086/meta"
         color="purple"
       />
-      <hr />
       <Footer />
     </>
   );

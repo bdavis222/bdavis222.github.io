@@ -51,7 +51,6 @@ function Gravity() {
         ship exploding. There are boost and missile power-ups that can be
         collected in the game to help the player navigate the levels.
       </p>
-      <hr />
       <Footer />
     </>
   );

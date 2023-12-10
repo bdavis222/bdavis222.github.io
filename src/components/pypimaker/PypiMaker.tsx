@@ -50,7 +50,6 @@ function PypiMaker() {
         </a>
         .
       </p>
-      <hr />
       <Footer />
     </>
   );
