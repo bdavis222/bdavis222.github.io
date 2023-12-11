@@ -518,6 +518,12 @@ p {
   height: auto;
   padding: 10px;
 }
+.headshot-image {
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  margin-bottom: -13px;
+}
 .profile-info-container {
   width: fit-content;
   margin-left: 5px;

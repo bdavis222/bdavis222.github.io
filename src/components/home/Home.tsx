@@ -24,10 +24,9 @@ function Home() {
       <h2 className="subtitle">Software Engineer | Ph.D.</h2>
       <div style={{ textAlign: "center" }}>
         <img
-          className="profile-image"
+          className="headshot-image"
           src="assets/headshot.png"
-          alt=""
-          style={{ marginBottom: -10 }}
+          alt="Headshot image"
         />
       </div>
       <DonateButton />
