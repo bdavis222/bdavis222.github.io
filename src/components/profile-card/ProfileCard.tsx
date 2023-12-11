@@ -12,7 +12,7 @@ function ProfileCard({ type, title, link, icon, description }: Props) {
       <a href={link} target="_blank">
         <div className={type + "-card"}>
           <div className="profile-image-container">
-            <img className="profile-image" src={icon} alt="Headshot photo" />
+            <img className="profile-image" src={icon} alt="Logo" />
           </div>
           <div className="profile-info-container">
             <p className="profile-name">{title}</p>

@@ -539,16 +539,6 @@ p {
   width: fit-content;
   margin: 0px;
 }
-.profile-icon-container {
-  text-align: left;
-  width: 25px;
-  margin: 10px;
-}
-.profile-icon {
-  border-radius: 4px;
-  width: 25px;
-  height: auto;
-}
 
 /* Button to navigate to Software page */
 .software-page-card {
