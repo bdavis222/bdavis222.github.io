@@ -528,14 +528,14 @@ p {
   font-weight: 800;
   font-size: large;
   width: fit-content;
-  margin-top: 9px;
+  margin-top: 11px;
   margin-bottom: -3px;
 }
 .profile-description {
-  color: rgb(200, 200, 200);
+  color: var(--lightSoftwarePageCardDescriptionColor);
   font-weight: 200;
   font-style: italic;
-  font-size: large;
+  font-size: medium;
   width: fit-content;
   margin: 0px;
 }
@@ -764,6 +764,9 @@ p {
   }
   .github-card {
     background-color: var(--darkGitHubCardColor);
+  }
+  .profile-description {
+    color: var(--darkSoftwarePageCardDescriptionColor);
   }
   .software-page-card {
     background-color: var(--darkSoftwarePageCardColor);
