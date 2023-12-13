@@ -137,6 +137,7 @@ h1 {
 }
 h2 {
   font-size: 1.6em;
+  margin-top: 40px;
   margin-bottom: 10px;
   color: var(--lightH2Color);
 }
@@ -328,6 +329,12 @@ p {
   margin-top: 0px;
   margin-bottom: 25px;
   padding: 10px;
+}
+.company-card.project {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .company-container {
   display: flex;

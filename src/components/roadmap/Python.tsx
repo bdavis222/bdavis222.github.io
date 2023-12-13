@@ -20,7 +20,6 @@ function Python() {
         to bring you up to speed. If you already know how to program in either
         Python or any other language, you can skip to the next section.
       </p>
-      <hr />
     </>
   );
 }

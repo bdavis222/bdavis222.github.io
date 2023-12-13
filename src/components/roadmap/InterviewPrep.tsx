@@ -186,7 +186,6 @@ function InterviewPrep() {
         </a>
         .)
       </p>
-      <hr />
     </>
   );
 }

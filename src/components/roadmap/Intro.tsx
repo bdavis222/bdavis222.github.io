@@ -34,7 +34,6 @@ function Intro() {
           <Icon type="calendar" />
         </li>
       </ol>
-      <hr />
     </>
   );
 }

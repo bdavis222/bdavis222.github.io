@@ -38,7 +38,6 @@ function InterviewIntro() {
           Univalued Binary Tree
         </a>
       </div>
-      <hr />
     </>
   );
 }

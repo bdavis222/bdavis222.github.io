@@ -160,7 +160,6 @@ function Algorithms() {
         do find yourself needing to understand a particular sorting method, this
         is still a very good source for learning those.
       </p>
-      <hr />
     </>
   );
 }

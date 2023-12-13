@@ -32,7 +32,6 @@ function Operator() {
         </a>
         .
       </p>
-      <hr />
       <h2>Gameplay Demo</h2>
       <p>Below is a demo of some of the gameplay in Operator.</p>
       <iframe

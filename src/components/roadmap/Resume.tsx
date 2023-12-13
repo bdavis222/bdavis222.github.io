@@ -39,7 +39,6 @@ function Resume() {
         remaining sections of this roadmap. You should continue applying for
         jobs regularly from now through the rest of the roadmap.
       </p>
-      <hr />
     </>
   );
 }

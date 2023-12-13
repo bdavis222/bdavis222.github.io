@@ -24,25 +24,18 @@ function PypiMaker() {
       <DonateButton />
       <img src={bannerImage} className="page-banner" />
       <p>
-        PyPI Maker is designed to simplify uploading and managing Python 
-        packages on the Python Package Index (PyPI). The program runs 
-        entirely within a window-based graphical user interface, so as to 
-        not require from the user any knowledge of the otherwise rather 
-        lengthy and tedious process involved in uploading and managing a 
-        package on PyPI.
+        PyPI Maker is designed to simplify uploading and managing Python
+        packages on the Python Package Index (PyPI). The program runs entirely
+        within a window-based graphical user interface, so as to not require
+        from the user any knowledge of the otherwise rather lengthy and tedious
+        process involved in uploading and managing a package on PyPI.
       </p>
       <p>Donations are appreciated, but not required.</p>
-      <hr />
       <StartingPypiMaker />
-      <hr />
       <Generating />
-      <hr />
       <Uploading />
-      <hr />
       <Resetting />
-      <hr />
       <Changing />
-      <hr />
       <h2>Development</h2>
       <p>
         To contribute to the project, please visit the project's{" "}

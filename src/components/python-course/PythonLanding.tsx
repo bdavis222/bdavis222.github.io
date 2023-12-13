@@ -66,7 +66,6 @@ function PythonLanding() {
           </p>
         </li>
       </ul>
-      <hr />
       <h2>Navigating the course</h2>
       <p>
         When the course website loads in the new tab you just opened, you will

@@ -31,21 +31,15 @@ function DotScanner() {
         where manual "by-eye" analysis is unreliable.
       </p>
       <p>Donations are appreciated, but not required.</p>
-      <hr />
       <StartingDotScanner />
-      <hr />
       <Configurations />
-      <hr />
       <ThresholdAdjustment />
-      <hr />
       <RegionSelection />
-      <hr />
       <h2>Citations</h2>
       <p>
         When using this program on data used in published works, please cite:
       </p>
       <p>Allen, H., Davis, B., Patel, J., & Gu, Y. 2023 (in prep.)</p>
-      <hr />
       <h2>Development</h2>
       <p>
         For more information, or to contribute to the project, please visit the
