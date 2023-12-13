@@ -163,6 +163,7 @@ p {
   padding: 2rem;
   text-align: left;
 }
+
 .subtitle {
   text-align: left;
   font-style: italic;
@@ -171,12 +172,34 @@ p {
   margin-top: 0px;
   margin-bottom: 5px;
 }
+
+/* General image styling */
+.page-banner {
+  border: var(--lightPageBannerBorder);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 530px;
+  height: auto;
+}
+.bordered-image {
+  border: 1px solid #808080;
+  border-radius: 10px;
+  margin: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer styling */
 .footer-nav {
   text-align: center;
 }
 .footer-link {
   color: var(--lightFooterLinkColor);
 }
+
+/* Icon styling */
 .icon {
   max-height: 20px;
   width: auto;
@@ -194,6 +217,8 @@ p {
 .icon-row {
   padding-bottom: 5px;
 }
+
+/* Text syling */
 .green-text {
   color: rgb(5, 168, 21);
   font-weight: 700;
@@ -206,8 +231,8 @@ p {
   color: var(--lightRedTextColor);
   font-weight: 700;
 }
-.warning-color {
-  color: var(--lightRedTextColor);
+.red-text.thin {
+  font-weight: 500;
 }
 .orange-text {
   color: rgb(255, 157, 0);
@@ -219,24 +244,6 @@ p {
 }
 .h3-thin {
   font-weight: 300;
-}
-
-.page-banner {
-  border: var(--lightPageBannerBorder);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  max-width: 530px;
-  height: auto;
-}
-
-.bordered-image {
-  border: 1px solid #808080;
-  border-radius: 10px;
-  margin: 5px;
-  max-width: 100%;
-  height: auto;
 }
 
 /* Software card styling */
@@ -438,7 +445,6 @@ p {
 .donate-button:hover {
   opacity: 0.5;
 }
-
 .donate-button-container {
   height: 35px;
   margin-top: 15px;
@@ -768,9 +774,6 @@ p {
     color: var(--darkGrayLinkColor);
   }
   .red-text {
-    color: var(--darkRedTextColor);
-  }
-  .warning-color {
     color: var(--darkRedTextColor);
   }
   .gray-text {
