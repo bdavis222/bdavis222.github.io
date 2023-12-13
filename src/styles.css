@@ -20,7 +20,7 @@
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
   --lightSubtitleColor: #808080;
   --lightCompanySubtitleColor: rgb(116, 116, 116);
-  --lightRedTextColor: rgb(240, 15, 15);
+  --lightRedTextColor: rgb(243, 64, 64);
   --lightGrayTextColor: rgb(91, 91, 91);
   --lightLinkedInCardColor: #5288bf;
   --lightGitHubCardColor: #6e6e6ed2;
@@ -56,7 +56,7 @@
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
   --darkSubtitleColor: #b9b9b9;
   --darkCompanySubtitleColor: #b9b9b9;
-  --darkRedTextColor: rgba(255, 46, 46, 0.932);
+  --darkRedTextColor: rgba(249, 78, 78, 0.932);
   --darkGrayTextColor: rgb(183, 183, 183);
   --darkLinkedInCardColor: #004a71;
   --darkGitHubCardColor: #2b2b2b;
@@ -235,7 +235,7 @@ p {
   font-weight: 500;
 }
 .orange-text {
-  color: rgb(255, 157, 0);
+  color: rgb(247, 153, 0);
   font-weight: 700;
 }
 .gray-text {
