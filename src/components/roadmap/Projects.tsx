@@ -13,8 +13,8 @@ function Projects() {
         calendarColor="orange"
       />
       <p>
-        Software projects are the best way to build your resume. If possible, it
-        is a great idea to post some code snippets and screenshots/videos of
+        Software projects are the easiest way to build your resume. If possible,
+        it is a great idea to post some code snippets and screenshots/videos of
         your projects on a website and link to that site on your resume (
         <a href="https://github.com" target="_blank">
           GitHub
@@ -37,7 +37,7 @@ function Projects() {
         </a>{" "}
         has free courses on the basics of most languages to get you started. The
         language you choose should be based on what project you want to
-        complete. Below are a couple of examples.
+        complete. Below are a few examples.
       </p>
       <div className="company-card project">
         <h3>
