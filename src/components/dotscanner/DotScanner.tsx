@@ -39,7 +39,9 @@ function DotScanner() {
       <p>
         When using this program on data used in published works, please cite:
       </p>
-      <p>Allen, H., Davis, B., Patel, J., & Gu, Y. 2023 (in prep.)</p>
+      <p>
+        Allen, H., Davis, B., Patel, J., & Gu, Y. 2024 <i>(in prep.)</i>
+      </p>
       <h2>Development</h2>
       <p>
         For more information, or to contribute to the project, please visit the
