@@ -10,12 +10,12 @@
   --lightH1Color: #1560bd;
   --lightH2Color: #1877f2;
   --lightH3Color: #787878;
+  --lightPageBannerBorder: 0.25px solid var(--lightBackgroundColor);
   --lightCardBackgroundColor: white;
   --lightCardDividingLineColor: #9b9b9b;
   --lightCardTextColor: black;
-  --lightCardShadowColor: rgba(0, 0, 0, 0.4);
-  --lightCardShadowHoverColor: rgba(0, 0, 0, 0.8);
-  --lightCardHoverShadow: 0 8px 16px 0 var(--lightCardShadowHoverColor);
+  --lightCardShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  --lightCardHoverShadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
   --lightCompanyCardBackgroundColor: rgb(238, 238, 238);
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
   --lightSubtitleColor: #808080;
@@ -46,12 +46,12 @@
   --darkH1Color: #2e8cff;
   --darkH2Color: #75b3ff;
   --darkH3Color: #a0a0a0;
+  --darkPageBannerBorder: 0.25px solid #313131;
   --darkCardBackgroundColor: #242424;
   --darkCardDividingLineColor: #242424;
   --darkCardTextColor: white;
-  --darkCardShadowColor: black;
-  --darkCardShadowHoverColor: rgb(136, 136, 136);
-  --darkCardHoverShadow: 0 0px 24px 0 var(--darkCardShadowHoverColor);
+  --darkCardShadow: 0 0 8px 0 #313131;
+  --darkCardHoverShadow: 0 0px 24px 0 rgb(136, 136, 136);
   --darkCompanyCardBackgroundColor: #242424;
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
   --darkSubtitleColor: #b9b9b9;
@@ -221,6 +221,7 @@ p {
 }
 
 .page-banner {
+  border: var(--lightPageBannerBorder);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -286,7 +287,7 @@ p {
   padding-top: 0px;
 }
 .card {
-  box-shadow: 0 4px 8px 0 var(--lightCardShadowColor);
+  box-shadow: var(--lightCardShadow);
   transition: 0.3s;
   border-radius: 20px;
   background-color: var(--lightCardBackgroundColor);
@@ -686,7 +687,7 @@ p {
   }
   .card {
     background-color: var(--darkCardBackgroundColor);
-    box-shadow: 0 4px 8px 0 var(--darkCardShadowColor);
+    box-shadow: var(--darkCardShadow);
   }
   .card-image {
     border-bottom: solid 0.25px var(--darkCardDividingLineColor);
@@ -722,6 +723,9 @@ p {
   }
   .company-dates {
     color: var(--darkCompanySubtitleColor);
+  }
+  .page-banner {
+    border: var(--darkPageBannerBorder);
   }
   .publication-container a {
     color: var(--darkTextColor);
