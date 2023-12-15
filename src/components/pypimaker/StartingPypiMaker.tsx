@@ -23,6 +23,25 @@ function StartingPypiMaker() {
           <code>pip</code> for some Python installations.)
         </em>
       </p>
+      <p>
+        To update PyPI Maker to the latest version, run the following command{" "}
+        <i>
+          (again, using <code>pip3</code> instead of <code>pip</code> for some
+          Python installations)
+        </i>
+        :
+      </p>
+      <code>pip install pypimaker --upgrade</code>
+      <p>
+        PyPI Maker can also be uninstalled at any time using the following
+        command{" "}
+        <i>
+          (again, using <code>pip3</code> instead of <code>pip</code> for some
+          Python installations)
+        </i>
+        :
+      </p>
+      <code>pip uninstall pypimaker</code>
     </>
   );
 }
