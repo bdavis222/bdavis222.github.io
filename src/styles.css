@@ -59,6 +59,7 @@
   --darkCompanyTitleColor: white;
   --darkCompanySubtitleColor: #b9b9b9;
   --darkCompanyAchievementsColor: rgb(230, 230, 230);
+  --darkProjectCardBackgroundColor: #242424;
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
   --darkSubtitleColor: #b9b9b9;
   --darkRedTextColor: rgba(249, 78, 78, 0.932);
@@ -730,14 +731,8 @@ p {
   .company-card {
     background-color: var(--darkCompanyCardBackgroundColor);
   }
-  .donate-button {
-    filter: var(--darkButtonFilter);
-  }
-  .footer-link {
-    color: var(--darkFooterLinkColor);
-  }
-  .subtitle {
-    color: var(--darkSubtitleColor);
+  .company-card.project {
+    background-color: var(--darkProjectCardBackgroundColor);
   }
   .company-name {
     color: var(--darkCompanyTitleColor);
@@ -750,6 +745,15 @@ p {
   }
   .company-achievements {
     color: var(--darkCompanyAchievementsColor);
+  }
+  .donate-button {
+    filter: var(--darkButtonFilter);
+  }
+  .footer-link {
+    color: var(--darkFooterLinkColor);
+  }
+  .subtitle {
+    color: var(--darkSubtitleColor);
   }
   .page-banner {
     border: var(--darkPageBannerBorder);
