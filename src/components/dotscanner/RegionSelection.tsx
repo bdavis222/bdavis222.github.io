@@ -35,8 +35,11 @@ function RegionSelection() {
       <p>
         <em>
           Note: the extraneous +[CATransaction synchronize] output in the
-          terminal window is a known bug in macOS 13 that will not affect your
-          data.
+          terminal window is a{" "}
+          <a href="https://developer.apple.com/forums/thread/722889">
+            known bug
+          </a>{" "}
+          in macOS that will not affect your data.
         </em>
       </p>
     </>
