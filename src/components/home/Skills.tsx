@@ -47,13 +47,19 @@ function Skills() {
         <img className="icon" src="assets/git-logo.png" alt="Git logo" />
       </div>
       <p>
-        Android Development · Jetpack Compose · Kotlin · Java · Python · iOS
-        Development · SwiftUI · Swift · C++ · JavaScript · TypeScript · HTML ·
-        CSS · React · SQL · R · Git · Clean Architecture · Model-View-ViewModel
-        (MVVM) · Model-View-Presenter (MVP) · Unit Testing · Android Studio ·
-        Xcode · Visual Studio Code · Image Processing · Computational Physics ·
-        Mathematical Modeling · Physics · Astrophysics · Research · Scientific
-        Writing · Teaching · Public Speaking
+        Android Development{"\u00A0"}· Jetpack Compose{"\u00A0"}· Kotlin
+        {"\u00A0"}· Java{"\u00A0"}· Python
+        {"\u00A0"}· iOS Development{"\u00A0"}· SwiftUI{"\u00A0"}· Swift
+        {"\u00A0"}· C++{"\u00A0"}· JavaScript{"\u00A0"}· TypeScript{"\u00A0"}·
+        HTML{"\u00A0"}· CSS{"\u00A0"}· React{"\u00A0"}· SQL{"\u00A0"}· R
+        {"\u00A0"}· Git{"\u00A0"}· Clean Architecture{"\u00A0"}·
+        Model-View-ViewModel (MVVM){"\u00A0"}· Model-View-Presenter (MVP)
+        {"\u00A0"}· Unit Testing
+        {"\u00A0"}· Android Studio{"\u00A0"}· Xcode{"\u00A0"}· Visual Studio
+        Code{"\u00A0"}· Image Processing{"\u00A0"}· Computational Physics
+        {"\u00A0"}· Mathematical Modeling{"\u00A0"}· Physics{"\u00A0"}·
+        Astrophysics{"\u00A0"}· Research{"\u00A0"}· Scientific Writing{"\u00A0"}
+        · Teaching{"\u00A0"}· Public Speaking
       </p>
     </>
   );
