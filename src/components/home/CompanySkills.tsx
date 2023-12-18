@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import getSkillsList from "./SkillsList";
 
 interface Props {
   skills: string[];
@@ -8,7 +9,7 @@ function CompanySkills({ skills }: Props) {
   const { width } = useWindowDimensions();
   const charLimit = Math.floor(width / 4.25);
   const [isShowMore, setIsShowMore] = useState(false);
-  const fullText = skills.join("\u00A0· ");
+  const fullText = getSkillsList(skills);
   const shortText = getShortenedText(fullText, charLimit);
 
   return (
