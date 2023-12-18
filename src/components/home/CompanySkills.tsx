@@ -1,21 +1,22 @@
 import { useState, useEffect } from "react";
 
 interface Props {
-  skills: string;
+  skills: string[];
 }
 
 function CompanySkills({ skills }: Props) {
   const { width } = useWindowDimensions();
-  const charLimit = Math.floor(width / 5);
+  const charLimit = Math.floor(width / 4.25);
   const [isShowMore, setIsShowMore] = useState(false);
-  const shortText = getShortenedText(skills, charLimit);
+  let fullText = skills.join("\u00A0· ");
+  const shortText = getShortenedText(fullText, charLimit);
 
   return (
     <>
       <p style={{ paddingLeft: 10, paddingRight: 10, fontSize: "small" }}>
         <b>Skills: </b>
-        {isShowMore ? skills : shortText}
-        {skills.length > charLimit && (
+        {isShowMore ? fullText : shortText}
+        {fullText.length > charLimit && (
           <a
             className="gray-link on-card"
             onClick={() => setIsShowMore(!isShowMore)}
@@ -34,11 +35,15 @@ function getShortenedText(text: string, charLimit: number) {
     return text;
   }
 
-  if (shortText.slice(-2) == "· ") {
-    shortText = text.substring(0, charLimit - 3);
-  } else if (shortText.slice(-1) == "·") {
+  if (shortText.slice(-1) == "\u00A0") {
+    shortText = text.substring(0, charLimit - 1);
+  } else if (shortText.slice(-2) == "\u00A0·") {
     shortText = text.substring(0, charLimit - 2);
-  } else if (shortText.slice(-1) == " ") {
+  } else if (shortText.slice(-2) == "· ") {
+    shortText = text.substring(0, charLimit - 3);
+  }
+
+  if (shortText.slice(-1) == " ") {
     shortText = text.substring(0, charLimit - 1);
   }
 

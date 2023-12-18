@@ -15,7 +15,24 @@ function Experience() {
         <ul className="company-achievements">
           <li>Developing features for Google Drive Android</li>
         </ul>
-        <CompanySkills skills="Java · Kotlin · Python · Android · Android Development · Jetpack Compose · Clean Architecture · Model-View-ViewModel (MVVM) · Model-View-Presenter (MVP) · Object-Oriented Programming · Unit Testing · Android Studio · SQL · Mobile Application Development · Software Development · Problem Solving · Bash · Unix · macOS" />
+        <CompanySkills
+          skills={[
+            "Java",
+            "Kotlin",
+            "Python",
+            "Android",
+            "Jetpack Compose",
+            "Unit Testing",
+            "Clean Architecture",
+            "Model-View-ViewModel (MVVM)",
+            "Model-View-Presenter (MVP)",
+            "Android Studio",
+            "SQL",
+            "Bash",
+            "Unix",
+            "macOS",
+          ]}
+        />
       </div>
       <div className="company-card">
         <CompanyInfo
@@ -32,7 +49,31 @@ function Experience() {
             <i>Late-stage Evolution of Low- and Intermediate-mass Stars</i>
           </li>
         </ul>
-        <CompanySkills skills="Python · C++ · Object-Oriented Programming · Unit Testing · JavaScript · SQL · R · Software Development · Problem Solving · Bash · Unix · macOS · Windows · LaTeX · Image Processing · Computational Physics · Mathematical Modeling · Physics · Astrophysics · Astronomy · Research · Scientific Writing · Teaching · Public Speaking" />
+        <CompanySkills
+          skills={[
+            "Python",
+            "C++",
+            "JavaScript",
+            "SQL",
+            "R",
+            "Unit Testing",
+            "Bash",
+            "Unix",
+            "LaTeX",
+            "Image Processing",
+            "Computational Physics",
+            "Mathematical Modeling",
+            "Physics",
+            "Astrophysics",
+            "Astronomy",
+            "Research",
+            "Scientific Writing",
+            "Teaching",
+            "Public Speaking",
+            "macOS",
+            "Windows",
+          ]}
+        />
       </div>
       <div className="company-card">
         <CompanyInfo
@@ -50,7 +91,24 @@ function Experience() {
             </i>
           </li>
         </ul>
-        <CompanySkills skills="Python · Object-Oriented Programming · Software Development · Problem Solving · Bash · Unix · macOS · LaTeX · Image Processing · Computational Physics · Mathematical Modeling · Physics · Astrophysics · Astronomy · Research · Scientific Writing · Public Speaking" />
+        <CompanySkills
+          skills={[
+            "Python",
+            "Bash",
+            "Unix",
+            "LaTeX",
+            "Image Processing",
+            "Computational Physics",
+            "Mathematical Modeling",
+            "Physics",
+            "Astrophysics",
+            "Astronomy",
+            "Research",
+            "Scientific Writing",
+            "Public Speaking",
+            "macOS",
+          ]}
+        />
       </div>
     </>
   );
