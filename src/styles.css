@@ -18,7 +18,7 @@
   --lightCardHoverShadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
   --lightCompanyCardBackgroundColor: rgb(238, 238, 238);
   --lightCompanyTitleColor: black;
-  --lightCompanySubtitleColor: #565656;
+  --lightCompanySubtitleColor: #383838;
   --lightCompanyAchievementsColor: rgb(29, 29, 29);
   --lightProjectCardBackgroundColor: #efefef;
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
@@ -57,7 +57,7 @@
   --darkCardHoverShadow: 0 0px 24px 0 rgb(136, 136, 136);
   --darkCompanyCardBackgroundColor: #242424;
   --darkCompanyTitleColor: white;
-  --darkCompanySubtitleColor: #b9b9b9;
+  --darkCompanySubtitleColor: #d8d8d8;
   --darkCompanyAchievementsColor: rgb(230, 230, 230);
   --darkProjectCardBackgroundColor: #242424;
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
@@ -373,7 +373,7 @@ p {
   color: var(--lightCompanyTitleColor);
 }
 .company-job-title {
-  font-size: medium;
+  font-size: 0.9em;
   font-weight: 300;
   font-style: italic;
   margin-top: 0px;
@@ -381,7 +381,7 @@ p {
   color: var(--lightCompanySubtitleColor);
 }
 .company-dates {
-  font-size: small;
+  font-size: 0.7em;
   font-weight: 300;
   font-style: italic;
   margin-top: 0px;
@@ -443,6 +443,7 @@ p {
   color: var(--lightPublicationDateColor);
 }
 .gray-link {
+  font-size: small;
   color: var(--lightGrayLinkColor);
 }
 

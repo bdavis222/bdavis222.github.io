@@ -26,7 +26,7 @@ function HomePublications() {
           },
         ]}
       />
-      <div style={{ textAlign: "center", fontSize: "small" }}>
+      <div style={{ textAlign: "center" }}>
         <a className="gray-link" href="/#/publications">
           View all
         </a>
