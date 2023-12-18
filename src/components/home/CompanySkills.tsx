@@ -8,7 +8,7 @@ function CompanySkills({ skills }: Props) {
   const { width } = useWindowDimensions();
   const charLimit = Math.floor(width / 4.25);
   const [isShowMore, setIsShowMore] = useState(false);
-  let fullText = skills.join("\u00A0· ");
+  const fullText = skills.join("\u00A0· ");
   const shortText = getShortenedText(fullText, charLimit);
 
   return (
