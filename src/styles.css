@@ -37,6 +37,7 @@
   --lightPublicationTitleColor: rgb(255, 255, 255);
   --lightPublicationDateColor: rgb(241, 241, 241);
   --lightGrayLinkColor: #474747;
+  --lightCardGrayLinkColor: rgb(127, 127, 127);
 
   --darkBackgroundColor: black;
   --darkTextColor: rgb(230, 230, 230);
@@ -76,6 +77,7 @@
   --darkPublicationTitleColor: rgb(231, 231, 231);
   --darkPublicationDateColor: rgb(215, 215, 215);
   --darkGrayLinkColor: rgb(210, 210, 210);
+  --darkCardGrayLinkColor: rgb(159, 159, 159);
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -446,6 +448,12 @@ p {
   font-size: small;
   color: var(--lightGrayLinkColor);
 }
+.gray-link.on-card {
+  color: var(--lightCardGrayLinkColor);
+}
+.gray-link.on-card:hover {
+  color: var(--lightLinkHoverColor);
+}
 
 /* Donate button */
 .donate-button {
@@ -791,6 +799,12 @@ p {
   }
   .gray-link {
     color: var(--darkGrayLinkColor);
+  }
+  .gray-link.on-card {
+    color: var(--darkCardGrayLinkColor);
+  }
+  .gray-link.on-card:hover {
+    color: var(--darkLinkHoverColor);
   }
   .red-text {
     color: var(--darkRedTextColor);

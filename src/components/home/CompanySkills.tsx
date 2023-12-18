@@ -16,7 +16,10 @@ function CompanySkills({ skills }: Props) {
         <b>Skills: </b>
         {isShowMore ? skills : shortText}
         {skills.length > charLimit && (
-          <a className="gray-link" onClick={() => setIsShowMore(!isShowMore)}>
+          <a
+            className="gray-link on-card"
+            onClick={() => setIsShowMore(!isShowMore)}
+          >
             {isShowMore ? "" : "Show\u00A0more"}
           </a>
         )}
