@@ -8,10 +8,19 @@ function StartingDotScanner() {
           <a href="https://www.python.org/downloads/" target="_blank">
             Python 3
           </a>{" "}
-          must be installed before Dot Scanner can be installed.{" "}
-          <strong>Python 2 is not supported.</strong>
+          must be installed before Dot Scanner can be installed.
         </li>
       </ul>
+      <p>
+        <strong>Python 2 is not supported. </strong>To make sure you have Python
+        3 installed, open a terminal window and run the following command:
+      </p>
+      <code>python3 --version</code>
+      <p>
+        This should give version number (i.e., Python 3.x.x). If a "command not
+        found" message is shown instead, then Python 3 is not properly
+        installed.
+      </p>
       <h3>Installation</h3>
       <p>
         To install Dot Scanner, open a terminal window and run the following
@@ -53,7 +62,7 @@ function StartingDotScanner() {
         <strong>Note:</strong> if you are getting an error when trying to run
         the program, run the following command to check your Python version:
       </p>
-      <code>python --version</code>
+      <code>python3 --version</code>
       <p>
         Python 2 is <em>not</em> supported, and Python 3 <em>must</em> be
         installed to run Dot Scanner.
