@@ -3,7 +3,7 @@ import Timings from "./Timings";
 function Python() {
   return (
     <>
-      <h2>Basic Python</h2>
+      <h2>Basic Programming</h2>
       <Timings
         timerMin="2"
         timerMax="4 weeks"
