@@ -22,7 +22,7 @@ function Python() {
         that a good understanding of object-oriented programming (OOP) is 
         essential to success in software engineering. If you do not have a 
         solid grasp of OOP, please look over the lessons 
-        on <span className="gray-text">classes</span> and <span className="gray-text">inheritance</span> in 
+        on <span className="green-text">classes</span> and <span className="green-text">inheritance</span> in 
         the introductory Python course.
       </p>
     </>
