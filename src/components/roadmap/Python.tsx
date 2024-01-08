@@ -17,12 +17,14 @@ function Python() {
         <a href="/#/python" target="_blank">
           introductory Python course
         </a>{" "}
-        to bring you up to speed. If you already know how to program in either
+        to bring you up to speed. If you already know how to program in either 
         Python or any other language, you can skip to the next section. Note 
         that a good understanding of object-oriented programming (OOP) is 
         essential to success in software engineering. If you do not have a 
-        solid grasp of OOP, please look over the lessons on classes and 
-        inheritance in the introductory Python course.
+        solid grasp of OOP, please look over the lessons on 
+        <span className="gray-text">classes</span> and 
+        <span className="gray-text">inheritance</span> in the introductory 
+        Python course.
       </p>
     </>
   );
