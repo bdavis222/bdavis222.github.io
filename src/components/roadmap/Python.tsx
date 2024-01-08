@@ -23,7 +23,7 @@ function Python() {
         essential to success in software engineering. If you do not have a 
         solid grasp of OOP, please look over the lessons 
         on <span className="green-text">classes</span> and <span className="green-text">inheritance</span> in 
-        the introductory Python course.
+        the introductory Python course (and also do the corresponding tutorials).
       </p>
     </>
   );
