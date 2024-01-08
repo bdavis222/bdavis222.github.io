@@ -21,9 +21,8 @@ function Python() {
         Python or any other language, you can skip to the next section. Note 
         that a good understanding of object-oriented programming (OOP) is 
         essential to success in software engineering. If you do not have a 
-        solid grasp of OOP, please look over the lessons on 
-        <span className="gray-text">classes</span> and 
-        <span className="gray-text">inheritance</span> in the introductory 
+        solid grasp of OOP, please look over the lessons on <span className="gray-text">classes</span> 
+        and <span className="gray-text">inheritance</span> in the introductory 
         Python course.
       </p>
     </>
