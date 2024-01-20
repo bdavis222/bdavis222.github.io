@@ -20,16 +20,15 @@ function Home() {
 
   return (
     <>
-      <h1>Brian Davis</h1>
-      <h2 className="subtitle">Software Engineer | Ph.D.</h2>
-      <div style={{ textAlign: "center" }}>
+      <div className="home-header">
+        <h1>Brian Davis</h1>
+        <h2 className="subtitle">Software Engineer | Ph.D.</h2>
         <img
           className="headshot-image"
           src="assets/headshot.png"
           alt="Headshot image"
         />
       </div>
-      <DonateButton />
       <About />
       <Software />
       <Experience />

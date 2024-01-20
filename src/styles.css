@@ -172,6 +172,11 @@ p {
   text-align: left;
 }
 
+.home-header {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  text-align: center;
+}
 .subtitle {
   text-align: left;
   font-style: italic;
