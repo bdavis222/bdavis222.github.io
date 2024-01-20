@@ -1,4 +1,3 @@
-import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 import About from "./About";
 import Software from "./Software";
