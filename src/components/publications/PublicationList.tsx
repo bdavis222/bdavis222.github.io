@@ -6,6 +6,7 @@ interface Props {
     journal: string;
     date: string;
     link: string;
+    abstract: string;
   }[];
 }
 
@@ -13,6 +14,8 @@ function PublicationList({ publications }: Props) {
   const colors = ["green", "purple", "yellow"]; // "blue" and "red" are other options
   let publicationList: {}[] = [];
   publications.forEach((publication, index) => {
+    const abstract =
+      publication["abstract"] != "" ? publication["abstract"] : "";
     publicationList.push(
       <Publication
         title={publication["title"]}
@@ -20,6 +23,7 @@ function PublicationList({ publications }: Props) {
         date={publication["date"]}
         link={publication["link"]}
         color={colors[index % colors.length]}
+        abstract={abstract}
       />
     );
   });
