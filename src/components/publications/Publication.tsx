@@ -18,7 +18,7 @@ function Publication({ title, journal, date, link, color, abstract }: Props) {
           {abstract != "" && (
             <div style={{ paddingTop: 5 }}>
               <p className="publication-date">
-                <b>Abstract:</b> {abstract}
+                <strong>Abstract:</strong> {abstract}
               </p>
             </div>
           )}
