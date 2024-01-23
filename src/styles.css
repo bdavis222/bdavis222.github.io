@@ -20,7 +20,7 @@
   --lightCompanyTitleColor: black;
   --lightCompanySubtitleColor: #383838;
   --lightCompanyAchievementsColor: rgb(29, 29, 29);
-  --lightHrOnCompanyCardColor: rgb(197, 197, 197);
+  --lightHrOnCompanyCardColor: rgb(211, 211, 211);
   --lightProjectCardBackgroundColor: #efefef;
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
   --lightSubtitleColor: #808080;
@@ -62,7 +62,7 @@
   --darkCompanyTitleColor: white;
   --darkCompanySubtitleColor: #d8d8d8;
   --darkCompanyAchievementsColor: rgb(230, 230, 230);
-  --darkHrOnCompanyCardColor: rgb(109, 109, 109);
+  --darkHrOnCompanyCardColor: #414141;
   --darkProjectCardBackgroundColor: #242424;
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
   --darkSubtitleColor: #b9b9b9;
@@ -180,6 +180,12 @@ p {
 .home-header {
   margin-bottom: -10px;
   text-align: center;
+}
+.invisible-link {
+  text-decoration: none;
+}
+.invisible-link:hover {
+  text-decoration: none;
 }
 .subtitle {
   text-align: left;

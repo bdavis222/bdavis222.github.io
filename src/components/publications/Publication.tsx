@@ -12,19 +12,19 @@ interface Props {
 function Publication({ title, journal, date, link, color, abstract }: Props) {
   const expanded = abstract != "";
   return (
-    <div className="publication-container">
-      <div className={`publication-card ${color}`}>
-        <div>
-          <a className="normal-link-on-card" href={link} target="_blank">
+    <a className="invisible-link" href={link} target="_blank">
+      <div className="publication-container">
+        <div className={`publication-card ${color}`}>
+          <div>
             <p className="publication-title">{title}</p>
             <p className="publication-journal">{journal}</p>
             <p className="publication-date">{date}</p>
             {expanded && <hr className="hr-on-publication-card" />}
-          </a>
+          </div>
+          {expanded && <Abstract fullText={abstract} />}
         </div>
-        {expanded && <Abstract fullText={abstract} />}
       </div>
-    </div>
+    </a>
   );
 }
 
