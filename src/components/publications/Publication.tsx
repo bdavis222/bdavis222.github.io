@@ -22,7 +22,7 @@ function Publication({ title, journal, date, link, color, abstract }: Props) {
             {expanded && <hr className="hr-on-publication-card" />}
           </a>
         </div>
-        {expanded && <Abstract fullText={abstract} expanded={expanded} />}
+        {expanded && <Abstract fullText={abstract} />}
       </div>
     </div>
   );
