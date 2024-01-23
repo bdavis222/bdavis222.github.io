@@ -20,6 +20,7 @@
   --lightCompanyTitleColor: black;
   --lightCompanySubtitleColor: #383838;
   --lightCompanyAchievementsColor: rgb(29, 29, 29);
+  --lightHrOnCompanyCardColor: rgb(197, 197, 197);
   --lightProjectCardBackgroundColor: #efefef;
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
   --lightSubtitleColor: #808080;
@@ -36,6 +37,7 @@
   --lightPublicationColorBlue: #598ec2;
   --lightPublicationTitleColor: rgb(255, 255, 255);
   --lightPublicationDateColor: rgb(241, 241, 241);
+  --lightHrOnPublicationCardColor: rgb(208, 208, 208);
   --lightGrayLinkColor: #474747;
   --lightCardGrayLinkColor: rgb(127, 127, 127);
 
@@ -60,6 +62,7 @@
   --darkCompanyTitleColor: white;
   --darkCompanySubtitleColor: #d8d8d8;
   --darkCompanyAchievementsColor: rgb(230, 230, 230);
+  --darkHrOnCompanyCardColor: rgb(109, 109, 109);
   --darkProjectCardBackgroundColor: #242424;
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
   --darkSubtitleColor: #b9b9b9;
@@ -76,6 +79,7 @@
   --darkPublicationColorBlue: #235485;
   --darkPublicationTitleColor: rgb(231, 231, 231);
   --darkPublicationDateColor: rgb(215, 215, 215);
+  --darkHrOnPublicationCardColor: rgb(158, 158, 158);
   --darkGrayLinkColor: rgb(210, 210, 210);
   --darkCardGrayLinkColor: rgb(159, 159, 159);
 
@@ -395,6 +399,13 @@ p {
   margin-bottom: 0px;
   color: var(--lightCompanySubtitleColor);
 }
+.hr-on-company-card {
+  margin-top: -5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--lightHrOnCompanyCardColor);
+}
 .company-achievements {
   padding-top: 10px;
   padding-left: 30px;
@@ -449,6 +460,11 @@ p {
   font-size: small;
   color: var(--lightPublicationDateColor);
 }
+.publication-abstract {
+  margin: 0;
+  font-size: small;
+  color: var(--lightPublicationTitleColor);
+}
 .gray-link {
   font-size: small;
   color: var(--lightGrayLinkColor);
@@ -458,6 +474,11 @@ p {
 }
 .gray-link.on-card:hover {
   color: var(--lightLinkHoverColor);
+}
+.hr-on-publication-card {
+  margin-top: 7px;
+  margin-bottom: 2px;
+  background-color: var(--lightHrOnPublicationCardColor);
 }
 
 /* Donate button */
@@ -802,6 +823,9 @@ p {
   .publication-date {
     color: var(--darkPublicationDateColor);
   }
+  .publication-abstract {
+    color: var(--darkPublicationTitleColor);
+  }
   .gray-link {
     color: var(--darkGrayLinkColor);
   }
@@ -810,6 +834,12 @@ p {
   }
   .gray-link.on-card:hover {
     color: var(--darkLinkHoverColor);
+  }
+  .hr-on-publication-card {
+    background-color: var(--darkHrOnPublicationCardColor);
+  }
+  .hr-on-company-card {
+    background-color: var(--darkHrOnCompanyCardColor);
   }
   .red-text {
     color: var(--darkRedTextColor);

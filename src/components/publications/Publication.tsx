@@ -1,3 +1,5 @@
+import Abstract from "./Abstract";
+
 interface Props {
   title: string;
   journal: string;
@@ -8,22 +10,20 @@ interface Props {
 }
 
 function Publication({ title, journal, date, link, color, abstract }: Props) {
+  const expanded = abstract != "";
   return (
     <div className="publication-container">
-      <a href={link} target="_blank">
-        <div className={`publication-card ${color}`}>
-          <p className="publication-title">{title}</p>
-          <p className="publication-journal">{journal}</p>
-          <p className="publication-date">{date}</p>
-          {abstract != "" && (
-            <div style={{ paddingTop: 5 }}>
-              <p className="publication-date">
-                <strong>Abstract:</strong> {abstract}
-              </p>
-            </div>
-          )}
+      <div className={`publication-card ${color}`}>
+        <div>
+          <a className="normal-link-on-card" href={link} target="_blank">
+            <p className="publication-title">{title}</p>
+            <p className="publication-journal">{journal}</p>
+            <p className="publication-date">{date}</p>
+            {expanded && <hr className="hr-on-publication-card" />}
+          </a>
         </div>
-      </a>
+        {expanded && <Abstract fullText={abstract} expanded={expanded} />}
+      </div>
     </div>
   );
 }

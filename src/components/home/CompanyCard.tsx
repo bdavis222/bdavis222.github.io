@@ -30,6 +30,7 @@ function CompanyCard({
           <li key={index}>{accomplishment}</li>
         ))}
       </ul>
+      <hr className="hr-on-company-card" />
       <CompanySkills skills={skills} />
     </div>
   );
