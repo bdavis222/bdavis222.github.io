@@ -10,6 +10,16 @@ function PublicationList({ publications, expanded }: Props) {
   const publicationList: {}[] = [];
   const allPublications = [
     {
+      title:
+        "Dot Scanner: Open-source Software for Quantitative Live-cell Imagining in planta",
+      shortTitle: "Dot Scanner: Software for Live-cell Imagining in planta",
+      journal: "The Plant Journal",
+      date: "Feb 2024",
+      link: "https://onlinelibrary.wiley.com/journal/1365313x",
+      abstract:
+        "Confocal microscopy has greatly aided our understanding of the major callular processes and trafficking pathways responsible for plant growth and development. However, a drawback of these studies is that they often rely on the manual analysis of a vast number of images, which is time-consuming, error-prone, and subject to bias. To overcome these limitations, we developed Dot Scanner, a Python program for analyzing densities, lifetimes, and displacements of flourescently tagged particles in an unbiased, automate, and efficient manner. Dot Scanner was validated by performing side by side analysis in Fiji-ImageJ of particles involved in cellulose biosynthesis. We found that the particle densities and lifetimes were comparable in both Dot Scanner and Fiji-ImageJ, verifying the accuracy of Dot Scanner. Dot Scanner largely outperforms Fiji-ImageJ, since it suffers far less selection bias when calculating particle lifetimes and is much more efficient as distinguishing between weak signals and background signal caused by bleaching. Not only does Dot Scanner obtain much more robust results, but it is a highly efficient program, since it automates much of the analyses, shortening workflow durations from weeks to minutes. This free and accessible program will be a highly advantageous tool for analyzing live-cell imaging in plants.",
+    },
+    {
       title: "Late-stage Evolution of Low- and Intermediate-mass Stars",
       shortTitle: "Late-stage Evolution of Low- and Intermediate-mass Stars",
       journal: "The Pennsylvania State University",
