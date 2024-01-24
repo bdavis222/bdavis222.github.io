@@ -17,7 +17,11 @@ function CompanySkills({ skills }: Props) {
     <>
       <a
         className="invisible-link skills"
-        onClick={() => setIsShowMore(!isShowMore)}
+        onClick={() => {
+          if (charLimit < 999) {
+            setIsShowMore(!isShowMore);
+          }
+        }}
       >
         <p className="company-skills-text">
           <b>Skills: </b>
