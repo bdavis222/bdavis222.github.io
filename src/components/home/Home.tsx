@@ -21,7 +21,7 @@ function Home() {
     <>
       <div className="home-header">
         <h1>Brian Davis</h1>
-        <h2 className="subtitle">Software Engineer | Ph.D.</h2>
+        <h2 className="subtitle">Software Engineer, Ph.D.</h2>
         <img
           className="headshot-image"
           src="assets/headshot.png"

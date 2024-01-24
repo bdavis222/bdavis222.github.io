@@ -14,7 +14,7 @@ function Contact() {
       <h3 style={{ marginTop: 30, marginBottom: -10 }}>LinkedIn</h3>
       <p>
         If you have any questions, or wish to contact me, feel free to message
-        me on LinkedIn:
+        me on LinkedIn.
       </p>
       <LinkedInCard />
     </>

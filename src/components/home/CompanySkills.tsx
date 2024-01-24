@@ -7,25 +7,30 @@ interface Props {
 
 function CompanySkills({ skills }: Props) {
   const { width } = useWindowDimensions();
-  const charLimit = Math.floor(width / 4.25);
+  const charLimit =
+    width < 362 ? 80 : width > 630 ? 999 : Math.floor(width / 3.6);
   const [isShowMore, setIsShowMore] = useState(false);
   const fullText = getSkillsList(skills);
   const shortText = getShortenedText(fullText, charLimit);
 
   return (
     <>
-      <p style={{ paddingLeft: 10, paddingRight: 10, fontSize: "small" }}>
-        <b>Skills: </b>
-        {isShowMore ? fullText : shortText}
-        {fullText.length > charLimit && (
-          <a
-            className="gray-link on-card"
-            onClick={() => setIsShowMore(!isShowMore)}
-          >
-            {isShowMore ? "" : "Show\u00A0more"}
-          </a>
-        )}
-      </p>
+      <a
+        className="invisible-link skills"
+        onClick={() => setIsShowMore(!isShowMore)}
+      >
+        <p className="company-skills-text">
+          <b>Skills: </b>
+
+          {isShowMore ? fullText : shortText}
+
+          {fullText.length > charLimit && (
+            <span className="gray-link on-card">
+              {isShowMore ? "" : "Show\u00A0more"}
+            </span>
+          )}
+        </p>
+      </a>
     </>
   );
 }

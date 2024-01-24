@@ -10,6 +10,7 @@
   --lightH1Color: #1560bd;
   --lightH2Color: #1877f2;
   --lightH3Color: #787878;
+  --lightHrColor: rgba(0, 0, 0, 0.1);
   --lightPageBannerBorder: 0.25px solid var(--lightBackgroundColor);
   --lightCardBackgroundColor: white;
   --lightCardDividingLineColor: #9b9b9b;
@@ -24,7 +25,9 @@
   --lightProjectCardBackgroundColor: #efefef;
   --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
   --lightSubtitleColor: #808080;
+  --lightGreenTextColor: rgb(5, 164, 21);
   --lightRedTextColor: rgb(243, 64, 64);
+  --lightOrangeTextColor: rgb(227, 126, 2);
   --lightGrayTextColor: rgb(91, 91, 91);
   --lightLinkedInCardColor: #5288bf;
   --lightGitHubCardColor: #6e6e6ed2;
@@ -53,6 +56,7 @@
   --darkH1Color: #2e8cff;
   --darkH2Color: #75b3ff;
   --darkH3Color: #a0a0a0;
+  --darkHrColor: rgba(255, 255, 255, 0.15);
   --darkPageBannerBorder: 0.25px solid #313131;
   --darkCardBackgroundColor: #242424;
   --darkCardDividingLineColor: #242424;
@@ -67,7 +71,9 @@
   --darkProjectCardBackgroundColor: #242424;
   --darkButtonFilter: drop-shadow(2px 2px 2px rgba(121, 121, 121, 0.4));
   --darkSubtitleColor: #b9b9b9;
-  --darkRedTextColor: rgba(249, 78, 78, 0.932);
+  --darkGreenTextColor: rgb(6, 175, 23);
+  --darkRedTextColor: rgb(240, 77, 77);
+  --darkOrangeTextColor: rgb(243, 150, 0);
   --darkGrayTextColor: rgb(183, 183, 183);
   --darkLinkedInCardColor: #004a71;
   --darkGitHubCardColor: #2b2b2b;
@@ -75,7 +81,7 @@
   --darkSoftwarePageCardDescriptionColor: rgb(191, 191, 191);
   --darkPublicationColorGreen: #466446;
   --darkPublicationColorPurple: #484880;
-  --darkPublicationColorRed: #763d35;
+  --darkPublicationColorRed: #76332a;
   --darkPublicationColorYellow: #92672c;
   --darkPublicationColorBlue: #235485;
   --darkPublicationColorPrimaryGray: #3d3d3d;
@@ -138,7 +144,7 @@ footer {
 hr {
   margin-top: 35px;
   margin-bottom: 35px;
-  background-color: var(--lightFooterColor);
+  background-color: var(--lightHrColor);
   height: 1px;
   border: 0;
 }
@@ -180,11 +186,14 @@ p {
 }
 
 .home-header {
-  margin-bottom: -10px;
+  margin-bottom: -5px;
   text-align: center;
 }
 .invisible-link {
   text-decoration: none;
+}
+.invisible-link.skills {
+  color: var(--lightTextColor);
 }
 .invisible-link:hover {
   text-decoration: none;
@@ -196,6 +205,8 @@ p {
   color: var(--lightSubtitleColor);
   margin-top: 0px;
   margin-bottom: 5px;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 /* General image styling */
@@ -245,7 +256,7 @@ p {
 
 /* Text syling */
 .green-text {
-  color: rgb(5, 168, 21);
+  color: var(--lightGreenTextColor);
   font-weight: 700;
 }
 .blue-text {
@@ -260,7 +271,7 @@ p {
   font-weight: 500;
 }
 .orange-text {
-  color: rgb(247, 153, 0);
+  color: var(--lightOrangeTextColor);
   font-weight: 700;
 }
 .gray-text {
@@ -340,13 +351,6 @@ p {
   padding: 0px 16px;
 }
 
-.subtitle {
-  font-size: 1.2em;
-  text-align: center;
-  font-style: italic;
-  color: var(--lightSubtitleColor);
-  margin-top: 0px;
-}
 .icon {
   padding-left: 3px;
   padding-right: 3px;
@@ -406,6 +410,11 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--lightCompanySubtitleColor);
+}
+.company-skills-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
 }
 .hr-on-company-card {
   margin-top: -5px;
@@ -778,7 +787,7 @@ p {
     color: var(--darkH3Color);
   }
   hr {
-    background-color: var(--darkFooterColor);
+    background-color: var(--darkHrColor);
   }
   p {
     color: var(--darkTextColor);
@@ -834,6 +843,9 @@ p {
   }
   .footer-link {
     color: var(--darkFooterLinkColor);
+  }
+  .invisible-link.skills {
+    color: var(--darkTextColor);
   }
   .subtitle {
     color: var(--darkSubtitleColor);
@@ -892,8 +904,14 @@ p {
   .hr-on-company-card {
     background-color: var(--darkHrOnCompanyCardColor);
   }
+  .green-text {
+    color: var(--darkGreenTextColor);
+  }
   .red-text {
     color: var(--darkRedTextColor);
+  }
+  .orange-text {
+    color: var(--darkOrangeTextColor);
   }
   .gray-text {
     color: var(--darkGrayTextColor);

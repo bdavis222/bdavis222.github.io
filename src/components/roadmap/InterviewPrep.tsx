@@ -32,7 +32,7 @@ function InterviewPrep() {
           href="https://www.youtube.com/watch?v=zaBhtODEL0w&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=2"
           target="_blank"
         >
-          Algorithms: Graph Search, DFS and BFS
+          DFS and BFS
         </a>
       </div>
       <div>
@@ -41,7 +41,7 @@ function InterviewPrep() {
           href="https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7"
           target="_blank"
         >
-          Data Structures: Heaps
+          Heaps
         </a>
       </div>
       <div>
@@ -50,7 +50,7 @@ function InterviewPrep() {
           href="https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=9"
           target="_blank"
         >
-          Data Structures: Tries
+          Tries
         </a>
       </div>
       <div>
@@ -59,7 +59,7 @@ function InterviewPrep() {
           href="https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=10"
           target="_blank"
         >
-          Algorithms: Memoization and Dynamic Programming
+          Memoization and DP
         </a>
       </div>
       <p>
