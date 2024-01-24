@@ -508,7 +508,7 @@ p {
 }
 .publication-abstract {
   margin: 0;
-  font-size: medium;
+  font-size: small;
   color: var(--lightPublicationTitleColor);
 }
 .gray-link {
