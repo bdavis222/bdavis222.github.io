@@ -35,6 +35,8 @@
   --lightPublicationColorRed: #c2796f;
   --lightPublicationColorYellow: #cca875;
   --lightPublicationColorBlue: #598ec2;
+  --lightPublicationColorPrimaryGray: #9c9c9c;
+  --lightPublicationColorSecondaryGray: #acacac;
   --lightPublicationTitleColor: rgb(255, 255, 255);
   --lightPublicationDateColor: rgb(241, 241, 241);
   --lightHrOnPublicationCardColor: rgb(208, 208, 208);
@@ -77,6 +79,8 @@
   --darkPublicationColorRed: #763d35;
   --darkPublicationColorYellow: #92672c;
   --darkPublicationColorBlue: #235485;
+  --darkPublicationColorPrimaryGray: #3d3d3d;
+  --darkPublicationColorSecondaryGray: #2b2b2b;
   --darkPublicationTitleColor: rgb(231, 231, 231);
   --darkPublicationDateColor: rgb(215, 215, 215);
   --darkHrOnPublicationCardColor: rgb(158, 158, 158);
@@ -449,6 +453,12 @@ p {
 .publication-card.blue {
   background-color: var(--lightPublicationColorBlue);
 }
+.publication-card.primaryGray {
+  background-color: var(--lightPublicationColorPrimaryGray);
+}
+.publication-card.secondaryGray {
+  background-color: var(--lightPublicationColorSecondaryGray);
+}
 .publication-title {
   margin: 0;
   font-weight: 800;
@@ -819,6 +829,12 @@ p {
   }
   .publication-card.blue {
     background-color: var(--darkPublicationColorBlue);
+  }
+  .publication-card.primaryGray {
+    background-color: var(--darkPublicationColorPrimaryGray);
+  }
+  .publication-card.secondaryGray {
+    background-color: var(--darkPublicationColorSecondaryGray);
   }
   .publication-title {
     color: var(--darkPublicationTitleColor);

@@ -7,10 +7,18 @@ interface Props {
   link: string;
   color: string;
   abstract: string;
+  expanded: boolean;
 }
 
-function Publication({ title, journal, date, link, color, abstract }: Props) {
-  const expanded = abstract != "";
+function Publication({
+  title,
+  journal,
+  date,
+  link,
+  color,
+  abstract,
+  expanded,
+}: Props) {
   return (
     <a className="invisible-link" href={link} target="_blank">
       <div className="publication-container">
