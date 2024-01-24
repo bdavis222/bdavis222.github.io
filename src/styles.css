@@ -33,13 +33,12 @@
   --lightPublicationColorGreen: #83ad83;
   --lightPublicationColorPurple: #8181c3;
   --lightPublicationColorRed: #c2796f;
-  --lightPublicationColorYellow: #cca875;
+  --lightPublicationColorYellow: #d8a763;
   --lightPublicationColorBlue: #598ec2;
   --lightPublicationColorPrimaryGray: #9c9c9c;
   --lightPublicationColorSecondaryGray: #acacac;
   --lightPublicationTitleColor: rgb(255, 255, 255);
   --lightPublicationDateColor: rgb(241, 241, 241);
-  --lightHrOnPublicationCardColor: rgb(208, 208, 208);
   --lightGrayLinkColor: #474747;
   --lightCardGrayLinkColor: rgb(127, 127, 127);
 
@@ -83,7 +82,6 @@
   --darkPublicationColorSecondaryGray: #2b2b2b;
   --darkPublicationTitleColor: rgb(231, 231, 231);
   --darkPublicationDateColor: rgb(215, 215, 215);
-  --darkHrOnPublicationCardColor: rgb(158, 158, 158);
   --darkGrayLinkColor: rgb(210, 210, 210);
   --darkCardGrayLinkColor: rgb(159, 159, 159);
 
@@ -424,6 +422,26 @@ p {
 }
 
 /* Publication styling */
+.publication-column-left {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+.publication-column-right {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+}
+/* Remove extra left and right margins due to padding */
+.publication-row {
+  margin: 0px 0px;
+}
+/* Clear floats after the columns */
+.publication-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .publication-container a {
   text-decoration: none;
   color: var(--lightTextColor);
@@ -437,6 +455,9 @@ p {
   padding: 20px;
   padding-left: 22px;
   margin-bottom: 20px;
+}
+.publication-card.short {
+  height: 105px;
 }
 .publication-card.green {
   background-color: var(--lightPublicationColorGreen);
@@ -478,7 +499,7 @@ p {
 }
 .publication-abstract {
   margin: 0;
-  font-size: small;
+  font-size: medium;
   color: var(--lightPublicationTitleColor);
 }
 .gray-link {
@@ -492,9 +513,9 @@ p {
   color: var(--lightLinkHoverColor);
 }
 .hr-on-publication-card {
-  margin-top: 7px;
-  margin-bottom: 2px;
-  background-color: var(--lightHrOnPublicationCardColor);
+  margin-top: 10px;
+  margin-bottom: 9px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Donate button */
@@ -646,6 +667,11 @@ p {
 }
 
 /* Making the grid responsive to screen size */
+@media screen and (max-width: 1120px) {
+  .publication-card.short {
+    height: 130px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .column {
     height: 325px;
@@ -686,6 +712,21 @@ p {
   .column {
     height: 288px;
     width: 50%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .publication-column-left {
+    float: left;
+    width: 100%;
+    padding-right: 0px;
+  }
+  .publication-column-right {
+    float: left;
+    width: 100%;
+    padding-left: 0px;
+  }
+  .publication-card.short {
+    height: fit-content;
   }
 }
 @media screen and (max-width: 700px) {
@@ -856,9 +897,6 @@ p {
   }
   .gray-link.on-card:hover {
     color: var(--darkLinkHoverColor);
-  }
-  .hr-on-publication-card {
-    background-color: var(--darkHrOnPublicationCardColor);
   }
   .hr-on-company-card {
     background-color: var(--darkHrOnCompanyCardColor);

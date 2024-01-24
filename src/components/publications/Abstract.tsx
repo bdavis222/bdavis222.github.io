@@ -4,7 +4,7 @@ interface Props {
 
 function Abstract({ fullText }: Props) {
   return (
-    <p className="publication-abstract" style={{ paddingTop: 5 }}>
+    <p className="publication-abstract">
       <strong>Abstract: </strong>
       {fullText}
     </p>

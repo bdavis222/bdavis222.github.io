@@ -2,12 +2,11 @@ import Publication from "./Publication";
 
 interface Props {
   publications: number[];
-  // colors: string[]; // "green", "purple", "yellow" "blue", "red", "primaryGray", or "secondaryGray"
   expanded: boolean;
 }
 
 function PublicationList({ publications, expanded }: Props) {
-  const colors = ["green", "purple", "red", "yellow"];
+  const colors = ["green", "purple", "red", "yellow"]; // Other options are "blue", "primaryGray", and "secondaryGray"
   const publicationList: {}[] = [];
   const allPublications = [
     {
@@ -82,7 +81,7 @@ function PublicationList({ publications, expanded }: Props) {
     },
     {
       title: "A Recurrent Nova Super-Remnant in the Andromeda Galaxy",
-      shortTitle: "A Recurrent Nova Super-Remnant in the Andromeda Galaxy",
+      shortTitle: "A Recurrent Nova Super-Remnant in Andromeda",
       journal: "Nature",
       date: "Jan 2019",
       link: "https://www.nature.com/articles/s41586-018-0825-4.epdf?author_access_token=Efv4kYyb8NweZ1W1tYmiYdRgN0jAjWel9jnR3ZoTv0N8qBJDnwa59hGY4PDdFI5yg_gnOrjBQgwM9FCrVQsuZahhXf1Qwl_lZHr5DDGM34vvvO_OQYNvo7VsvJMiCWIlCU1wcJOxs7-ZwFTtSFhguQ%3D%3D",
@@ -139,15 +138,25 @@ function PublicationList({ publications, expanded }: Props) {
   publicationNumbers.forEach((publicationNumber, index) => {
     const publication = allPublications[publicationNumber];
     publicationList.push(
-      <Publication
-        title={expanded ? publication["title"] : publication["shortTitle"]}
-        journal={publication["journal"]}
-        date={publication["date"]}
-        link={publication["link"]}
-        color={colors[index % colors.length]}
-        abstract={publication["abstract"]}
-        expanded={expanded}
-      />
+      <div
+        className={
+          expanded
+            ? ""
+            : index % 2 == 0
+            ? "publication-column-left"
+            : "publication-column-right"
+        }
+      >
+        <Publication
+          title={expanded ? publication["title"] : publication["shortTitle"]}
+          journal={publication["journal"]}
+          date={publication["date"]}
+          link={publication["link"]}
+          color={colors[index % colors.length]}
+          abstract={publication["abstract"]}
+          expanded={expanded}
+        />
+      </div>
     );
   });
 
