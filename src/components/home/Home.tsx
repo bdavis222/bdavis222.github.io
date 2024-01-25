@@ -7,7 +7,7 @@ import HomePublications from "./HomePublications";
 import Contact from "./Contact";
 
 function Home() {
-  const bannerImage = "assets/about-banner.png";
+  const bannerImage = "assets/site-banner.png";
   document.title = "Brian Davis";
 
   document
