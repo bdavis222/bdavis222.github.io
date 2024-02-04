@@ -104,7 +104,7 @@ function InterviewPrep() {
         </div>
       </ul>
 
-      <h3>Interview Question Patterns</h3>
+      <h3 id="patterns">Interview Question Patterns</h3>
       <p>
         The only way to get really good at interview problems is to do lots 
         of them. But there are countless problems to choose from, so does one 
@@ -207,7 +207,7 @@ function InterviewPrep() {
         problems. This is why the detailed solution videos are so valuable on
         AlgoExpert. Just try your best on each problem, and watch the videos
         when you get stuck. You will learn the patterns if you keep going. 
-        For more help on patterns, see the Interview Question Patterns subsection above.
+        For more help on patterns, see the <a href="#patterns">Interview Question Patterns</a> subsection above.
       </p>
     </>
   );
