@@ -22,7 +22,7 @@ function InterviewPrep() {
         >
           HackerRank YouTube playlist
         </a>{" "}
-        goes into a decent amount of depth in a short amount of time. I don't
+        goes into a decent amount of depth on the book's concepts in a short amount of time. I don't
         recommend focusing too much on all of these videos, but definitely watch
         the videos covering the following topics:
       </p>
@@ -102,6 +102,34 @@ function InterviewPrep() {
           <input type="checkbox" /> Breadth-first search
         </div>
       </ul>
+      <h3>Interview Question Patterns</h3>
+      <p>
+        The only way to get really good at interview problems is to do lots 
+        of them. But there are countless problems to choose from, so does one 
+        have to <i>memorize all of them?</i> Luckily, most problems fall into 
+        one of a few different patterns, and knowledge of these can greatly 
+        simplify the process. There are two good great sources on patterns 
+        that I recommend:
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://algo.monster"
+            target="_blank"
+          >
+            AlgoMonster
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.educative.io/courses/grokking-coding-interview-patterns-java"
+            target="_blank"
+          >
+            Grokking the Coding Interview
+          </a>
+        </li>
+      </ul>
+
       <h3>AlgoExpert</h3>
       <p>
         In my opinion, the best resource for interview prep is{" "}
@@ -176,15 +204,8 @@ function InterviewPrep() {
         normal! It takes a while to learn the patterns to be able to solve these
         problems. This is why the detailed solution videos are so valuable on
         AlgoExpert. Just try your best on each problem, and watch the videos
-        when you get stuck. You will learn the patterns if you keep going. (And
-        for a more direct look at the patterns themselves, I recommend{" "}
-        <a
-          href="https://www.educative.io/courses/grokking-coding-interview-patterns-java"
-          target="_blank"
-        >
-          Grokking the Coding Interview
-        </a>
-        .)
+        when you get stuck. You will learn the patterns if you keep going. 
+        For more help on patterns, see the Interview Question Patterns subsection above.
       </p>
     </>
   );
