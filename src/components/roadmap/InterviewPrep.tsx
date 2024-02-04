@@ -138,7 +138,7 @@ function InterviewPrep() {
         <a href="https://www.algoexpert.io/product" target="_blank">
           AlgoExpert
         </a>
-        . At the time of writing this document, the site had 160 interview
+        . At the time of writing this, the AlgoExpert site had 160 interview
         questions with detailed, guided solutions (in Python) for each. The site
         costs about $100 for a year of access (and you can search online for a
         10% discount code), but it is well worth it, in my opinion, if it will
