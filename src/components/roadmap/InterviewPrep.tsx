@@ -104,7 +104,9 @@ function InterviewPrep() {
         </div>
       </ul>
 
-      <h3 id="patterns">Interview Question Patterns</h3>
+      <div id="patterns">
+        <h3>Interview Question Patterns</h3>
+      </div>
       <p>
         The only way to get really good at interview problems is to do lots 
         of them. But there are countless problems to choose from, so does one 
