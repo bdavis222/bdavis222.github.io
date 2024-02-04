@@ -12,6 +12,7 @@ function InterviewPrep() {
         timerMaxColor="red"
         calendarColor="orange"
       />
+
       <h3>Cracking the Coding Interview</h3>
       <p>
         Possibly the most famous source for interview prep is the book,{" "}
@@ -102,6 +103,7 @@ function InterviewPrep() {
           <input type="checkbox" /> Breadth-first search
         </div>
       </ul>
+
       <h3>Interview Question Patterns</h3>
       <p>
         The only way to get really good at interview problems is to do lots 
@@ -132,7 +134,7 @@ function InterviewPrep() {
 
       <h3>AlgoExpert</h3>
       <p>
-        In my opinion, the best resource for interview prep is{" "}
+        In my opinion, the overall best resource for interview prep is{" "}
         <a href="https://www.algoexpert.io/product" target="_blank">
           AlgoExpert
         </a>
