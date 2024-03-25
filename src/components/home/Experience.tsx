@@ -12,6 +12,7 @@ function Experience() {
         accomplishments={[
           <li>Developing features for Google Drive Android</li>,
           <li>Leading projects for several organizational priorities</li>,
+          <li>Earned Google readability in multiple languages</li>,
           <li>Consistently maintaning a high performance rating</li>,
         ]}
         skills={[
