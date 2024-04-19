@@ -13,7 +13,7 @@ function Experience() {
           <li>Developing features for Google Drive Android</li>,
           <li>Promoted for high performance and leadership (2024)</li>,
           <li>Leading projects for several organizational priorities</li>,
-          <li>Earned Google readability in multiple languages</li>,
+          <li>Earned Google readability in multiple programming languages</li>,
         ]}
         skills={[
           "Java",
