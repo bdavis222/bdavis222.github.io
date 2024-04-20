@@ -40,7 +40,12 @@ function DotScanner() {
         When using this program on data used in published works, please cite:
       </p>
       <p>
-        Allen, H., Davis, B., Patel, J., & Gu, Y. 2024 <i>(in prep.)</i>
+        Allen, H., Davis, B., Patel, J. and Gu, Y. (2024), Dot Scanner:
+        open-source software for quantitative live-cell imaging in planta.{" "}
+        <i>Plant Journal</i>.{" "}
+        <a href="https://doi.org/10.1111/tpj.16662" target="_blank">
+          https://doi.org/10.1111/tpj.16662
+        </a>
       </p>
       <h2>Development</h2>
       <p>
