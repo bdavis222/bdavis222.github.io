@@ -11,7 +11,7 @@ function Experience() {
         icon="assets/google-name.png"
         accomplishments={[
           <li>Developing features for Google Drive Android</li>,
-          <li>Promoted for high performance and leadership (2024)</li>,
+          <li>Promoted for outstanding performance and leadership</li>,
           <li>Leading projects for several organizational priorities</li>,
           <li>Earned Google readability in multiple programming languages</li>,
         ]}
