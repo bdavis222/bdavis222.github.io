@@ -12,7 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./components/home/Home";
 import PythonLanding from "./components/python-course/PythonLanding";
 import Publications from "./components/publications/Publications";
-import PythonCourseMobile from "./components/python-course-mobile/PythonCourseMobile";
+import PythonCourseMobile from "./components/python-course/PythonCourseMobile";
 
 class App extends React.Component {
   render() {
