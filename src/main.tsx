@@ -12,6 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./components/home/Home";
 import PythonLanding from "./components/python-course/PythonLanding";
 import Publications from "./components/publications/Publications";
+import PythonCourseMobile from "./components/python-course-mobile/PythonCourseMobile";
 
 class App extends React.Component {
   render() {
@@ -28,6 +29,10 @@ class App extends React.Component {
           <Route path="/gravity" element={<Gravity />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/python" element={<PythonLanding />} />
+          <Route
+            path="/python-course-mobile"
+            element={<PythonCourseMobile />}
+          />
         </Routes>
       </HashRouter>
     );

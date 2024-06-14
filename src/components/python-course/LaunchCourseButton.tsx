@@ -1,15 +1,13 @@
 function LaunchCourseButton() {
   return (
-    <div className="button-container">
-      <div className="center-in-button-container">
-        <a
-          href="https://bdavis222.github.io/python-course"
-          target="_blank"
-          className="button"
-        >
-          Launch course
-        </a>
-      </div>
+    <div className="python-course-button-container">
+      <a
+        href="https://bdavis222.github.io/python-course"
+        target="_blank"
+        className="python-course-button interactive"
+      >
+        Interactive course
+      </a>
     </div>
   );
 }

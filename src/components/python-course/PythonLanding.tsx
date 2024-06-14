@@ -1,6 +1,7 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 import LaunchCourseButton from "./LaunchCourseButton";
+import ViewCourseButton from "./ViewCourseButton";
 
 function PythonLanding() {
   const bannerImage = "assets/python.png";
@@ -29,12 +30,21 @@ function PythonLanding() {
       <p className="red-text thin">
         <em>
           For best results, use the <strong>Google Chrome</strong> browser for
-          this course. Other browsers are known to have issues running Python
-          code in the course's web interface.
+          the interactive course. Other browsers are known to have issues
+          running Python code in the course's web interface.
         </em>
       </p>
-      <p>Click the button below to launch the course website in a new tab.</p>
+      <p>
+        Click the green <i>interactive course button</i> for the full course
+        with all of the interactive lessons, tutorials, and projects.
+      </p>
+      <p>
+        Click the blue <i>mobile-friendly course</i> button to access the
+        read-only mobile version of the course. This version is not interactive,
+        and only contains the course lessons for viewing.
+      </p>
       <LaunchCourseButton />
+      <ViewCourseButton />
       <hr />
       <h2>Course structure</h2>
       <p>The course contains three main sections:</p>

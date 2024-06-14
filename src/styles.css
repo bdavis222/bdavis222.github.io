@@ -550,24 +550,14 @@ p {
   transform: translate(-50%, -50%);
 }
 
-/* Button to launch the Python course */
-.button-container {
+/* Buttons to launch the Python course */
+.python-course-button-container {
   height: 45px;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: -15px;
   position: relative;
 }
-.center-in-button-container {
-  margin: 0px;
-  position: absolute;
-  width: 150px;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.button {
-  background-color: #7fb44a;
+.python-course-button {
   border: none;
   padding: 10px 15px;
   color: white;
@@ -580,8 +570,13 @@ p {
   font-weight: bold;
   text-shadow: 1px 1px 1px #303030;
 }
-.button:hover {
-  background-color: var(--lightSubtitleColor);
+.python-course-button.interactive {
+  background-color: #71a340;
+}
+.python-course-button.mobile {
+  background-color: #4a81b4;
+}
+.python-course-button:hover {
   color: white;
   text-decoration: none;
 }
@@ -796,7 +791,7 @@ p {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
   }
-  .button {
+  .python-course-button {
     filter: var(--darkButtonFilter);
   }
   .card {
