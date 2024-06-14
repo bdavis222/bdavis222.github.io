@@ -1,6 +1,6 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
-import LaunchInteractiveCourseButton from "./LaunchCourseButton";
+import LaunchInteractiveCourseButton from "./LaunchInteractiveCourseButton";
 import ViewMobileCourseButton from "./ViewCourseButton";
 
 function PythonLanding() {
