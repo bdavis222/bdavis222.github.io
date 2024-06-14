@@ -1,4 +1,4 @@
-function BeginMobileCourseButton() {
+function LaunchMobileCourseButton() {
   return (
     <div className="python-course-button-container">
       <a href="lessons/00_intro.html" className="python-course-button green">
@@ -8,4 +8,4 @@ function BeginMobileCourseButton() {
   );
 }
 
-export default BeginMobileCourseButton;
+export default LaunchMobileCourseButton;

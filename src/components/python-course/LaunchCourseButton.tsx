@@ -1,4 +1,4 @@
-function LaunchCourseButton() {
+function LaunchInteractiveCourseButton() {
   return (
     <div className="python-course-button-container">
       <a
@@ -11,4 +11,4 @@ function LaunchCourseButton() {
   );
 }
 
-export default LaunchCourseButton;
+export default LaunchInteractiveCourseButton;
