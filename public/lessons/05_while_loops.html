@@ -14282,13 +14282,13 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The syntax for while-loops consists of the following:</p>
 
-<pre><code>while &lt;condition&gt;:
-    &lt;code&gt;</code></pre>
+<p><code style="font-size: x-small;">while &lt;condition&gt;:
+    &lt;code&gt;</code></p>
 <p>The reserved word "while" is used, followed by a true/false condition and a colon, and then <strong>the code indented below that is run while that condition remains true.</strong></p>
 <p>So, a while-loop with a condition of "5 is greater than 2" would look like the following:</p>
 
-<pre><code>while 5 &gt; 2:
-    &lt;code&gt;</code></pre>
+<p><code style="font-size: x-small;">while 5 &gt; 2:
+    &lt;code&gt;</code></p>
 <p>However, note that 5 will <em>always</em> be greater than 2, so the indented code will run infinitely! Don't do this! If you accidentally cause an infinite loop like this, make sure to press the stop button (to the right of the Run button) at the top of the screen, followed by the restart button. Then you can fix your code and re-run it.</p>
 <p>So, how can we write a while-loop that runs properly? Consider the following:</p>
 
@@ -14720,12 +14720,13 @@ Loop count: 9
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>How does this work? Remember the basic structure of a while-loop:</p>
 
-<pre><code>while &lt;conditional&gt;:
-    &lt;commands indented by 1 tab (usually 4 spaces)&gt;
+<pre><code style="font-size: x-small;">while &lt;conditional&gt;:
+    &lt;commands indented by 1 tab&gt;
     &lt;more commands&gt;
     &lt;more commands&gt;
-    &lt;...&gt;</code></pre>
-<p><code>&lt;eventually exit loop and return to no indent&gt;</code></p>
+    &lt;...&gt;
+    &lt;eventually exit loop&gt;
+&lt;return to no indent&gt;</code></pre>
 <p>The <code>&lt;conditional&gt;</code> must evaluate to True or False.</p>
 <p>Note that the <code>and</code> reserved word requires that <em>both</em> conditions are true for the loop to run. The first condition (<code>True</code>) is always true, but eventually the second condition (<code>count &lt; maxCount</code>) is false, so the condition that condition 1 <em>and</em> condition 2 are both true is <code>False</code> at that point.</p>
 <p>If we had used the reserved word <code>or</code> instead of <code>and</code>, this loop would still be infinite, as the first condition (<code>True</code>) is <em>always</em> true, so the condition that either condition 1 <em>or</em> condition 2 is true would remain <code>True</code>!</p>
