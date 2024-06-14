@@ -11,7 +11,7 @@ function Footer({ disclaimer = "" }: Props) {
       <hr />
       <NavigationLinks />
       {disclaimer && <footer>{disclaimer}</footer>}
-      <footer>&copy; Copyright {year} Brian Davis. All Rights Reserved.</footer>
+      <footer>Copyright &copy;{year} Brian Davis. All Rights Reserved.</footer>
     </>
   );
 }

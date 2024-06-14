@@ -23,6 +23,7 @@ function Cards() {
           title="Dot Scanner"
           description="Software designed for analysis of microscope imaging data"
           link="/#/dotscanner"
+          newTab
           image="assets/dotscanner.png"
           icons={["assets/python-logo.png"]}
         />
@@ -30,6 +31,7 @@ function Cards() {
           title="PyPI Maker"
           description="Software designed for simplifying PyPI Python package setups"
           link="/#/pypimaker"
+          newTab
           image="assets/pypimaker.png"
           icons={["assets/python-logo.png"]}
         />
@@ -37,6 +39,7 @@ function Cards() {
           title="Operator"
           description="An original math puzzle game with procedurally generated levels"
           link="/#/operator"
+          newTab
           image="assets/operator.png"
           icons={iosIcons}
         />
@@ -44,6 +47,7 @@ function Cards() {
           title="Gravity"
           description="An original spaceflight game with a built-in level editor"
           link="/#/gravity"
+          newTab
           image="assets/gravity.png"
           icons={["assets/cpp-logo.png"]}
         />
@@ -59,6 +63,7 @@ function Cards() {
           title="Intro Python Course"
           description="An interactive Python course for beginners"
           link="/#/python"
+          newTab
           image="assets/python.png"
           icons={pythonCourseIcons}
         />
@@ -66,6 +71,7 @@ function Cards() {
           title="Software Engineering Roadmap"
           description="A guide for starting a software career"
           link="/#/roadmap"
+          newTab
           image="assets/roadmap.png"
           icons={reactIcons}
         />

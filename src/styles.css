@@ -23,7 +23,7 @@
   --lightCompanyAchievementsColor: rgb(29, 29, 29);
   --lightHrOnCompanyCardColor: rgb(211, 211, 211);
   --lightProjectCardBackgroundColor: #efefef;
-  --lightButtonFilter: drop-shadow(2px 2px 2px #808080);
+  --lightButtonFilter: drop-shadow(1px 1px 1px #808080);
   --lightSubtitleColor: #808080;
   --lightGreenTextColor: rgb(5, 164, 21);
   --lightRedTextColor: rgb(243, 64, 64);
@@ -568,13 +568,16 @@ p {
   filter: var(--lightButtonFilter);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #303030;
+  text-shadow: 0.5px 0.5px 2px #0d0d0d;
 }
-.python-course-button.interactive {
+.python-course-button.green {
   background-color: #71a340;
 }
-.python-course-button.mobile {
+.python-course-button.blue {
   background-color: #4a81b4;
+}
+.python-course-button.gold {
+  background-color: rgb(224, 180, 61);
 }
 .python-course-button:hover {
   color: white;

@@ -35,11 +35,11 @@ function PythonLanding() {
         </em>
       </p>
       <p>
-        Click the green <i>interactive course button</i> for the full course
-        with all of the interactive lessons, tutorials, and projects.
+        Click the blue <i>interactive course button</i> for the full course with
+        all of the interactive lessons, tutorials, and projects.
       </p>
       <p>
-        Click the blue <i>mobile-friendly course</i> button to access the
+        Click the gold <i>mobile-friendly course</i> button to access the
         read-only mobile version of the course. This version is not interactive,
         and only contains the course lessons for viewing.
       </p>
