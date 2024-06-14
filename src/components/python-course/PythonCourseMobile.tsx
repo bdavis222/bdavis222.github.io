@@ -92,7 +92,7 @@ function PythonCourseMobile() {
             <a href="lessons/18_plotting.html">Plotting</a>
           </li>
           <li>
-            <a href="lessons/19_nd_arrays.html">N-dimensional arrays</a>
+            <a href="lessons/19_nd_arrays.html">Multi-dimensional arrays</a>
           </li>
           <li>
             <a href="lessons/20_images.html">Images</a>
