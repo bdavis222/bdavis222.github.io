@@ -102,7 +102,7 @@ function PythonCourseMobile() {
           </li>
         </ol>
         <p>
-          Each of these sections are numbered as in the{" "}
+          For parity, each of the above sections are numbered as they are in the{" "}
           <a href="https://bdavis222.github.io/python-course">
             fully interactive
           </a>{" "}
