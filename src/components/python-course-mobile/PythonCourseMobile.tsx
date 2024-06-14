@@ -28,7 +28,8 @@ function PythonCourseMobile() {
             Note: Due to the small sizes of mobile screens, all of the code
             cells in this mobile version of the course are horizontally
             scrollable.
-          </i>
+          </i>{" "}
+          Click the button below to begin.
         </p>
         <BeginMobileCourseButton />
         <h2 style={{ marginTop: 30 }}>Table of Contents</h2>
