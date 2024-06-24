@@ -571,13 +571,13 @@ p {
   text-shadow: 0.5px 0.5px 2px #0d0d0d;
 }
 .python-course-button.green {
-  background-color: #71a340;
+  background-color: #85c744;
 }
 .python-course-button.blue {
   background-color: #4a81b4;
 }
 .python-course-button.gold {
-  background-color: rgb(232, 188, 64);
+  background-color: rgb(245, 193, 48);
 }
 .python-course-button:hover {
   color: white;
