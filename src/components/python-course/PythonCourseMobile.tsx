@@ -3,7 +3,7 @@ import Footer from "../Footer";
 import LinkButton from "../LinkButton";
 
 function PythonCourseMobile() {
-  const bannerImage = "assets/python.png";
+  const bannerImage = "assets/python-mobile.png";
   document.title = "Intro to Python";
 
   document
