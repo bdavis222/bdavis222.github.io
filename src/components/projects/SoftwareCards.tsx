@@ -6,16 +6,6 @@ function SoftwareCards() {
     "assets/swiftui-logo.png",
     "assets/swift-logo.png",
   ];
-  const reactIcons = [
-    "assets/react-logo.png",
-    "assets/typescript-logo.png",
-    "assets/html-logo.png",
-    "assets/css-logo.png",
-  ];
-  const pythonCourseIcons = [
-    "assets/jupyter-logo.png",
-    "assets/python-logo.png",
-  ];
   return (
     <>
       <div className="row">
@@ -50,30 +40,6 @@ function SoftwareCards() {
           newTab
           image="assets/gravity.png"
           icons={["assets/cpp-logo.png"]}
-        />
-        <Card
-          title="Lake Conroe RV Site"
-          description="The company website for Lake Conroe RV Resort"
-          link="https://www.lakeconroervresort.com"
-          newTab
-          image="assets/lake-conroe.png"
-          icons={reactIcons}
-        />
-        <Card
-          title="Intro Python Course"
-          description="An interactive Python course for beginners"
-          link="/#/python"
-          newTab
-          image="assets/python.png"
-          icons={pythonCourseIcons}
-        />
-        <Card
-          title="Software Engineering Roadmap"
-          description="A guide for starting a software career"
-          link="/#/roadmap"
-          newTab
-          image="assets/roadmap.png"
-          icons={reactIcons}
         />
       </div>
     </>

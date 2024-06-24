@@ -1,6 +1,6 @@
 import Timings from "./Timings";
 
-function Projects() {
+function ResumeProjects() {
   return (
     <>
       <h2>Software Projects</h2>
@@ -243,4 +243,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ResumeProjects;

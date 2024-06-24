@@ -4,9 +4,9 @@ import InterviewIntro from "./InterviewIntro";
 import InterviewPrep from "./InterviewPrep";
 import Intro from "./Intro";
 import Mocks from "./Mocks";
-import Projects from "./Projects";
 import Python from "./Python";
 import Resume from "./Resume";
+import ResumeProjects from "./ResumeProjects";
 
 function Roadmap() {
   const bannerImage = "assets/roadmap.png";
@@ -25,7 +25,7 @@ function Roadmap() {
       <Python />
       <Algorithms />
       <InterviewIntro />
-      <Projects />
+      <ResumeProjects />
       <Resume />
       <InterviewPrep />
       <Mocks />

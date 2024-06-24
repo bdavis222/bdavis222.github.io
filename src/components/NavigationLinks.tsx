@@ -2,8 +2,8 @@ function NavigationLinks() {
   return (
     <>
       <p className="footer-nav">
-        <a className="footer-link" href="/#/software">
-          Software
+        <a className="footer-link" href="/#/projects">
+          Projects
         </a>
         &nbsp; | &nbsp;
         <a className="footer-link" href="/#/publications">

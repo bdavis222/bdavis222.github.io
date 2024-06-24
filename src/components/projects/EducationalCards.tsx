@@ -1,6 +1,6 @@
 import Card from "../Card";
 
-function SoftwareCards() {
+function EducationalCards() {
   const reactIcons = [
     "assets/react-logo.png",
     "assets/typescript-logo.png",
@@ -43,4 +43,4 @@ function SoftwareCards() {
   );
 }
 
-export default SoftwareCards;
+export default EducationalCards;

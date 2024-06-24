@@ -1,10 +1,12 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
+import EducationalCards from "./EducationalCards";
+import SoftwareCards from "./SoftwareCards";
 import WebsiteCards from "./WebsiteCards";
 
-function Websites() {
+function Projects() {
   const bannerImage = "assets/site-banner.png";
-  document.title = "Websites";
+  document.title = "Projects";
 
   document
     .querySelectorAll("meta[property=og\\:image]")[0]
@@ -17,10 +19,15 @@ function Websites() {
     <>
       <h1>{document.title}</h1>
       <DonateButton />
+      <h2>Software</h2>
+      <SoftwareCards />
+      <h2>Websites</h2>
       <WebsiteCards />
+      <h2>Educational Materials</h2>
+      <EducationalCards />
       <Footer />
     </>
   );
 }
 
-export default Websites;
+export default Projects;
