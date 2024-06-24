@@ -49,6 +49,14 @@ function SoftwareCards() {
           image="assets/crater-sim.png"
           icons={["assets/python-logo.png"]}
         />
+        <Card
+          title="RC Spec"
+          description="Software for quick analysis of amateur stellar spectra"
+          link="/#/rcspec"
+          newTab
+          image="assets/rc-spec.png"
+          icons={["assets/python-logo.png"]}
+        />
       </div>
     </>
   );

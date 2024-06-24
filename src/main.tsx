@@ -14,6 +14,7 @@ import Publications from "./components/publications/Publications";
 import PythonCourseMobile from "./components/python-course/PythonCourseMobile";
 import Projects from "./components/projects/Projects";
 import CraterSim from "./components/cratersim/CraterSim";
+import RCSpec from "./components/rcspec/RCSpec";
 
 class App extends React.Component {
   render() {
@@ -29,6 +30,7 @@ class App extends React.Component {
           <Route path="/operator" element={<Operator />} />
           <Route path="/gravity" element={<Gravity />} />
           <Route path="/cratersim" element={<CraterSim />} />
+          <Route path="/rcspec" element={<RCSpec />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/python" element={<PythonLanding />} />
           <Route
