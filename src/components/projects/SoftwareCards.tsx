@@ -50,11 +50,11 @@ function SoftwareCards() {
           icons={["assets/python-logo.png"]}
         />
         <Card
-          title="RC Spec"
+          title="Quick Spec"
           description="Software for quick analysis of amateur stellar spectra"
-          link="/#/rcspec"
+          link="/#/quickspec"
           newTab
-          image="assets/rc-spec.png"
+          image="assets/quick-spec.png"
           icons={["assets/python-logo.png"]}
         />
       </div>

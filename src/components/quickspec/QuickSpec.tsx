@@ -1,12 +1,12 @@
 import ConstructionPage from "../ConstructionPage";
 
-function RCSpec() {
+function QuickSpec() {
   return (
     <ConstructionPage
-      title="RC Spec"
+      title="Quick Spec"
       subtitle="Software for quick analysis of amateur stellar spectra"
     />
   );
 }
 
-export default RCSpec;
+export default QuickSpec;
