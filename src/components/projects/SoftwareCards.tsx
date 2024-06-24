@@ -41,6 +41,14 @@ function SoftwareCards() {
           image="assets/pypimaker.png"
           icons={["assets/python-logo.png"]}
         />
+        <Card
+          title="Crater Sim"
+          description="Software for simulating crater saturation on celestial bodies"
+          link="/#/cratersim"
+          newTab
+          image="assets/crater-sim.png"
+          icons={["assets/python-logo.png"]}
+        />
       </div>
     </>
   );

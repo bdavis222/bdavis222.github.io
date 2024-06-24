@@ -13,6 +13,7 @@ import PythonLanding from "./components/python-course/PythonLanding";
 import Publications from "./components/publications/Publications";
 import PythonCourseMobile from "./components/python-course/PythonCourseMobile";
 import Projects from "./components/projects/Projects";
+import CraterSim from "./components/cratersim/CraterSim";
 
 class App extends React.Component {
   render() {
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Route path="/pypimaker" element={<PypiMaker />} />
           <Route path="/operator" element={<Operator />} />
           <Route path="/gravity" element={<Gravity />} />
+          <Route path="/cratersim" element={<CraterSim />} />
           <Route path="/roadmap" element={<Roadmap />} />
           <Route path="/python" element={<PythonLanding />} />
           <Route
