@@ -5,7 +5,7 @@ import LinkButton from "../LinkButton";
 function PythonCourseMobile() {
   const showContent = true;
   const bannerImage = "assets/python.png";
-  document.title = "Python Programming";
+  document.title = "Intro to Python";
 
   document
     .querySelectorAll("meta[property=og\\:image]")[0]
@@ -18,7 +18,9 @@ function PythonCourseMobile() {
     return (
       <>
         <h1 id="title">{document.title}</h1>
-        <h2 className="subtitle">Lessons for beginners</h2>
+        <h2 className="subtitle">
+          A mobile course for beginners to programming
+        </h2>
         <DonateButton />
         <img src={bannerImage} className="page-banner" />
         <p>

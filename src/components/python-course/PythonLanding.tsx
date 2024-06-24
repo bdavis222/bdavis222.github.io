@@ -17,7 +17,7 @@ function PythonLanding() {
     <>
       <h1 id="title">{document.title}</h1>
       <h2 className="subtitle">
-        An introductory course for beginners to programming
+        An interactive course for beginners to programming
       </h2>
       <DonateButton />
       <img src={bannerImage} className="page-banner" />
@@ -28,29 +28,24 @@ function PythonLanding() {
       <p>Donations are appreciated, but not required.</p>
       <p className="red-text thin">
         <em>
-          For best results, use the <strong>Google Chrome</strong> browser for
-          the interactive course. Other browsers are known to have issues
-          running Python code in the course's web interface.
+          For best results, use the <strong>Google Chrome</strong> browser on a
+          desktop computer. Other browsers are known to have issues running
+          Python code in the course's web interface, and mobile phones are not
+          recommended.
         </em>
       </p>
       <p>
-        Click the blue <i>interactive course button</i> for the full course with
-        all of the interactive lessons, tutorials, and projects.
-      </p>
-      <p>
-        Click the gold <i>mobile-friendly course</i> button to access the
-        read-only mobile version of the course. This version is not interactive,
-        and only contains the course lessons for viewing.
+        Note that a <a href="/#/python-course-mobile">mobile version</a> of the
+        course is also available, but that lacks the interactive features
+        provided by this course, and should only be used for review. Click the
+        button below for the full course with all of the interactive lessons,
+        tutorials, and projects. More details on how the course works are
+        included below.
       </p>
       <LinkButton
-        label="Interactive course"
+        label="Begin course"
         link="https://bdavis222.github.io/python-course"
-        color="blue"
-      />
-      <LinkButton
-        label="Mobile-friendly course"
-        link="/#/python-course-mobile"
-        color="gold"
+        color="green"
       />
       <hr />
       <h2>Course structure</h2>

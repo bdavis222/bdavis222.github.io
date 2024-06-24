@@ -15,9 +15,17 @@ function EducationalCards() {
     <>
       <div className="row">
         <Card
+          title="Software Engineering Roadmap"
+          description="A guide for starting a software career"
+          link="/#/roadmap"
+          newTab
+          image="assets/roadmap.png"
+          icons={reactIcons}
+        />
+        <Card
           title="Interactive Python Course"
           description="An interactive beginner Python course"
-          link="https://bdavis222.github.io/python-course"
+          link="/#/python"
           newTab
           image="assets/python.png"
           icons={pythonCourseIcons}
@@ -29,14 +37,6 @@ function EducationalCards() {
           newTab
           image="assets/python.png"
           icons={pythonCourseIcons}
-        />
-        <Card
-          title="Software Engineering Roadmap"
-          description="A guide for starting a software career"
-          link="/#/roadmap"
-          newTab
-          image="assets/roadmap.png"
-          icons={reactIcons}
         />
       </div>
     </>
