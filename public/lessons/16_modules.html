@@ -6,149 +6,150 @@
 <title>Modules</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 <style type="text/css">
-  .fab-container {
-  width: 20%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  z-index: 5;
-  position: fixed;
-  top: 25px;
-  left: 25px; 
-}
-
-#toggle {
-  -webkit-appearance: none;
-}
-
-.fab {
-  position: absolute;
-  z-index: 999;
-  width: 50px;
-  height: 50px;
-  background: #8974FB;
-  border-radius: 100%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0px;
-
-  &:before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: #fff;
-    transform: rotate(90deg);
-    transition: all 0.4s ease;
-  }
-  &:after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: #fff;
-    transition: all 0.4s ease;
-  }
-}
-
-.fab-nav {
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  background: #fff;
-  border-radius: 5px;
-  transform: translateY(0%);
-  box-shadow: 2px 3px 10px 0 rgba(81, 81, 81, 0.1);
-  border: 1px solid #e4e4e4;
-  padding: 10px;
-
-  ul {
-    overflow:hidden;
-    overflow-y:scroll;
-    height:395px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  a {
-    text-align: left;
-    margin: 10px 0;
-    color: #000000;
-    text-decoration: none;
-    font-family: sans-serif;
-    letter-spacing: 1.5px;
-    font-size: 14px;
-    
-    &:hover {
-      color: #898989;
-    }
-  }
-}
-
-#toggle:checked ~ .fab-nav {
-  opacity: 1;
-  transform: translateY(10%);
-}
-
-#toggle:checked ~ .fab:before {
-  transform: rotate(225deg);
-}
-
-#toggle:checked ~ .fab:after {
-  transform: rotate(135deg);
-}
-
-@media (max-width: 640px) {
+  @charset "UTF-8";
   .fab-container {
     width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 5;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    filter: drop-shadow(2px 2px 2px #c6c6c6);
   }
-}
-@media (max-height: 600px) {
-  .fab-nav ul {
-    height:244px;
+  
+  #toggle {
+    -webkit-appearance: none;
+    appearance: none;
   }
-}
-@media (max-height: 450px) {
-  .fab-nav ul {
-    height:168px;
+  
+  .fab {
+    position: absolute;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    background: #72df66;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+  
+    &:before {
+      position: absolute;
+      top: 20px;
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: #fff;
+      transition: all 0.4s ease;
+    }
+    &:after {
+      position: absolute;
+      bottom: 20px;
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: #fff;
+      transition: all 0.4s ease;
+    }
   }
-}
-</style>
-
-<div class="fab-container">
-  <input type="checkbox" id="toggle"/>
-  <label class="fab" for="toggle"></label>
-  <nav class="fab-nav">
-    <ul>
-      <a href="00_intro.html">00:&nbsp;Introduction</a>
-      <a href="01_basics.html">01:&nbsp;Basics</a>
-      <a href="02_tuples.html">02:&nbsp;Tuples</a>
-      <a href="03_lists.html">03:&nbsp;Lists</a>
-      <a href="04_conditionals.html">04:&nbsp;Conditionals</a>
-      <a href="05_while_loops.html">05:&nbsp;While-loops</a>
-      <a href="06_for_loops.html">06:&nbsp;For-loops</a>
-      <a href="07_sublists.html">07:&nbsp;Sublists</a>
-      <a href="08_functions.html">08:&nbsp;Functions</a>
-      <a href="09_documentation.html">09:&nbsp;Documentation</a>
-      <a href="10_files.html">10:&nbsp;Files</a>
-      <a href="11_sets.html">11:&nbsp;Sets</a>
-      <a href="12_dictionaries.html">12:&nbsp;Dictionaries</a>
-      <a href="13_classes.html">13:&nbsp;Classes</a>
-      <a href="14_inheritance.html">14:&nbsp;Inheritance</a>
-      <a href="15_error_handling.html">15:&nbsp;Error handling</a>
-      <a href="16_modules.html" style="color: #8974FB;">16:&nbsp;Modules</a>
-      <a href="17_numpy_arrays.html">17:&nbsp;Numpy arrays</a>
-      <a href="18_plotting.html">18:&nbsp;Plotting</a>
-      <a href="19_nd_arrays.html">19:&nbsp;Multi-dimensional arrays</a>
-      <a href="20_images.html">20:&nbsp;Images</a>
-      <a href="21_modularization.html">21:&nbsp;Modularization</a>
-    </ul>
-  </nav>
-</div>
+  
+  .fab-nav {
+    display: none;
+    transition: all 0.4s ease-in-out;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px 0 rgba(81, 81, 81, 0.1);
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+  
+    ul {
+      overflow:hidden;
+      overflow-y:scroll;
+      max-height: fit-content;
+      height: calc(100vh - 210px);
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    a {
+      text-align: left;
+      margin: 10px 0;
+      color: #000000;
+      text-decoration: none;
+      font-family: sans-serif;
+      letter-spacing: 1.5px;
+      font-size: 14px;
+      
+      &:hover {
+        color: #898989;
+      }
+    }
+  }
+  
+  #toggle:checked ~ .fab {
+    background: #df6666;
+  }
+  
+  #toggle:checked ~ .fab-nav {
+    display: flex;
+    transform: translateY(30px) translateX(15px);
+  }
+  
+  #toggle:checked ~ .fab:before {
+    transform: rotate(225deg) translateY(-2px) translateX(-3px);
+  }
+  
+  #toggle:checked ~ .fab:after {
+    transform: rotate(135deg) translateY(3px) translateX(-3px);
+  }
+  
+  @media (max-height: 280px) {
+    .fab-container {
+      display: none;
+    }
+    .fab-nav {
+      display: none;
+    }
+  }
+  </style>
+  
+  <div class="fab-container">
+    <input type="checkbox" id="toggle"/>
+    <label class="fab" for="toggle"></label>
+    <nav class="fab-nav">
+      <ul>
+        <a href="00_intro.html">00:&nbsp;Introduction</a>
+        <a href="01_basics.html">01:&nbsp;Basics</a>
+        <a href="02_tuples.html">02:&nbsp;Tuples</a>
+        <a href="03_lists.html">03:&nbsp;Lists</a>
+        <a href="04_conditionals.html">04:&nbsp;Conditionals</a>
+        <a href="05_while_loops.html">05:&nbsp;While-loops</a>
+        <a href="06_for_loops.html">06:&nbsp;For-loops</a>
+        <a href="07_sublists.html">07:&nbsp;Sublists</a>
+        <a href="08_functions.html">08:&nbsp;Functions</a>
+        <a href="09_documentation.html">09:&nbsp;Documentation</a>
+        <a href="10_files.html">10:&nbsp;Files</a>
+        <a href="11_sets.html">11:&nbsp;Sets</a>
+        <a href="12_dictionaries.html">12:&nbsp;Dictionaries</a>
+        <a href="13_classes.html">13:&nbsp;Classes</a>
+        <a href="14_inheritance.html">14:&nbsp;Inheritance</a>
+        <a href="15_error_handling.html">15:&nbsp;Error handling</a>
+        <a href="16_modules.html" style="color: #54c248; font-weight: 700;">16:&nbsp;Modules</a>
+        <a href="17_numpy_arrays.html">17:&nbsp;Numpy arrays</a>
+        <a href="18_plotting.html">18:&nbsp;Plotting</a>
+        <a href="19_nd_arrays.html">19:&nbsp;Multi-dimensional arrays</a>
+        <a href="20_images.html">20:&nbsp;Images</a>
+        <a href="21_modularization.html">21:&nbsp;Modularization</a>
+      </ul>
+    </nav>
+  </div>
 
 <style type="text/css">
     pre { line-height: 125%; margin: 0; }
@@ -985,7 +986,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 | The full license is in the file LICENSE, distributed with this software.
 |----------------------------------------------------------------------------*/
 
-@charset "UTF-8";
 /*!
 
 Copyright 2015-present Palantir Technologies, Inc. All rights reserved.
@@ -14507,7 +14507,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 style="color: #1560bd; id="Running-.py-Files">Running .py Files<a class="anchor-link" href="#Running-.py-Files">&#182;</a></h1>
+<h1 style="color: #1560bd;" id="Running-.py-Files">Running .py Files<a class="anchor-link" href="#Running-.py-Files">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
