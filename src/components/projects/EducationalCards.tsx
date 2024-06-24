@@ -11,6 +11,15 @@ function EducationalCards() {
     "assets/jupyter-logo.png",
     "assets/python-logo.png",
   ];
+  const mobilePythonCourseIcons = [
+    "assets/jupyter-logo.png",
+    "assets/python-logo.png",
+    "assets/react-logo.png",
+    "assets/typescript-logo.png",
+    "assets/javascript-logo.png",
+    "assets/html-logo.png",
+    "assets/css-logo.png",
+  ];
   return (
     <>
       <div className="row">
@@ -28,7 +37,7 @@ function EducationalCards() {
           link="/#/python-course-mobile"
           newTab
           image="assets/python-mobile.png"
-          icons={pythonCourseIcons}
+          icons={mobilePythonCourseIcons}
         />
         <Card
           title="Software Engineering Roadmap"

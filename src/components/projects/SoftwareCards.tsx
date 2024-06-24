@@ -18,14 +18,6 @@ function SoftwareCards() {
           icons={["assets/python-logo.png"]}
         />
         <Card
-          title="PyPI Maker"
-          description="Software designed for simplifying PyPI Python package setups"
-          link="/#/pypimaker"
-          newTab
-          image="assets/pypimaker.png"
-          icons={["assets/python-logo.png"]}
-        />
-        <Card
           title="Operator"
           description="An original math puzzle game with procedurally generated levels"
           link="/#/operator"
@@ -40,6 +32,14 @@ function SoftwareCards() {
           newTab
           image="assets/gravity.png"
           icons={["assets/cpp-logo.png"]}
+        />
+        <Card
+          title="PyPI Maker"
+          description="Software designed for simplifying PyPI Python package setups"
+          link="/#/pypimaker"
+          newTab
+          image="assets/pypimaker.png"
+          icons={["assets/python-logo.png"]}
         />
       </div>
     </>
