@@ -121,6 +121,7 @@
   </style>
 
 <div class="fab-container">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <input type="checkbox" id="toggle"/>
   <label class="fab" for="toggle"></label>
   <nav class="fab-nav">
@@ -150,6 +151,27 @@
     </ul>
   </nav>
 </div>
+
+<script>
+  $(function () {
+    "use strict";
+    
+    function uncheckBox() {
+      var isChecked = $("#toggle").prop("checked");
+      if (isChecked) {
+        $("#toggle").prop("checked", false);
+      }
+    }
+    
+    $("body").on("click", function () {
+      uncheckBox();
+    });
+    
+    $("#toggle,label").on("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+</script>
 
 <style type="text/css">
     pre { line-height: 125%; margin: 0; }
