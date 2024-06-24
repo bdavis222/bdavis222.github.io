@@ -1,6 +1,6 @@
-import Card from "./Card";
+import Card from "../Card";
 
-function Cards() {
+function SoftwareCards() {
   const iosIcons = [
     "assets/apple-logo.png",
     "assets/swiftui-logo.png",
@@ -80,4 +80,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default SoftwareCards;

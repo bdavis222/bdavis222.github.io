@@ -13,6 +13,7 @@ import Home from "./components/home/Home";
 import PythonLanding from "./components/python-course/PythonLanding";
 import Publications from "./components/publications/Publications";
 import PythonCourseMobile from "./components/python-course/PythonCourseMobile";
+import Websites from "./components/websites/Websites";
 
 class App extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/software" element={<Releases />} />
+          <Route path="/websites" element={<Websites />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/dotscanner" element={<DotScanner />} />
           <Route path="/pypimaker" element={<PypiMaker />} />

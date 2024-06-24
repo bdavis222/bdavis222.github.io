@@ -1,10 +1,10 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
-import SoftwareCards from "./SoftwareCards";
+import WebsiteCards from "./WebsiteCards";
 
-function Releases() {
+function Websites() {
   const bannerImage = "assets/site-banner.png";
-  document.title = "Software Releases";
+  document.title = "Websites";
 
   document
     .querySelectorAll("meta[property=og\\:image]")[0]
@@ -17,10 +17,10 @@ function Releases() {
     <>
       <h1>{document.title}</h1>
       <DonateButton />
-      <SoftwareCards />
+      <WebsiteCards />
       <Footer />
     </>
   );
 }
 
-export default Releases;
+export default Websites;
