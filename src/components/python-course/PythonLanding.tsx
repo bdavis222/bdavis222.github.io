@@ -1,7 +1,6 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
-import LaunchInteractiveCourseButton from "./LaunchInteractiveCourseButton";
-import ViewMobileCourseButton from "./ViewCourseButton";
+import LinkButton from "../LinkButton";
 
 function PythonLanding() {
   const bannerImage = "assets/python.png";
@@ -43,8 +42,16 @@ function PythonLanding() {
         read-only mobile version of the course. This version is not interactive,
         and only contains the course lessons for viewing.
       </p>
-      <LaunchInteractiveCourseButton />
-      <ViewMobileCourseButton />
+      <LinkButton
+        label="Interactive course"
+        link="https://bdavis222.github.io/python-course"
+        color="blue"
+      />
+      <LinkButton
+        label="Mobile-friendly course"
+        link="/#/python-course-mobile"
+        color="gold"
+      />
       <hr />
       <h2>Course structure</h2>
       <p>The course contains three main sections:</p>

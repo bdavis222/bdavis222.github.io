@@ -550,14 +550,14 @@ p {
   transform: translate(-50%, -50%);
 }
 
-/* Buttons to launch the Python course */
-.python-course-button-container {
+/* Generic buttons that link to pages */
+.link-button-container {
   height: 45px;
   margin-top: 30px;
   margin-bottom: -15px;
   position: relative;
 }
-.python-course-button {
+.link-button {
   border: none;
   padding: 10px 15px;
   color: white;
@@ -570,16 +570,16 @@ p {
   font-weight: bold;
   text-shadow: 0.5px 0.5px 2px #0d0d0d;
 }
-.python-course-button.green {
+.link-button.green {
   background-color: #85c744;
 }
-.python-course-button.blue {
+.link-button.blue {
   background-color: #4a81b4;
 }
-.python-course-button.gold {
+.link-button.gold {
   background-color: rgb(245, 193, 48);
 }
-.python-course-button:hover {
+.link-button:hover {
   color: white;
   text-decoration: none;
 }
@@ -794,7 +794,7 @@ p {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
   }
-  .python-course-button {
+  .link-button {
     filter: var(--darkButtonFilter);
   }
   .card {

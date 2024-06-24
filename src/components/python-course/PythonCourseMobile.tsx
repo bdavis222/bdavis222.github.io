@@ -1,6 +1,6 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
-import LaunchMobileCourseButton from "./LaunchMobileCourseButton";
+import LinkButton from "../LinkButton";
 
 function PythonCourseMobile() {
   const showContent = true;
@@ -31,7 +31,11 @@ function PythonCourseMobile() {
           </i>{" "}
           Click the button below to begin.
         </p>
-        <LaunchMobileCourseButton />
+        <LinkButton
+          label="Begin course"
+          link="lessons/00_intro.html"
+          color="green"
+        />
         <h2 style={{ marginTop: 30 }}>Table of Contents</h2>
         <ol start={0}>
           <li>
