@@ -19,11 +19,11 @@ function Projects() {
     <>
       <h1>{document.title}</h1>
       <DonateButton />
-      <h2>Software</h2>
+      <h2 style={{ marginLeft: 10 }}>Software</h2>
       <SoftwareCards />
-      <h2>Websites</h2>
+      <h2 style={{ marginLeft: 10 }}>Websites</h2>
       <WebsiteCards />
-      <h2>Educational Materials</h2>
+      <h2 style={{ marginLeft: 10 }}>Educational Materials</h2>
       <EducationalCards />
       <Footer />
     </>
