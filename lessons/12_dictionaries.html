@@ -118,38 +118,60 @@
       display: none;
     }
   }
-  </style>
+</style>
   
-  <div class="fab-container">
-    <input type="checkbox" id="toggle"/>
-    <label class="fab" for="toggle"></label>
-    <nav class="fab-nav">
-      <ul>
-        <a href="00_intro.html">00:&nbsp;Introduction</a>
-        <a href="01_basics.html">01:&nbsp;Basics</a>
-        <a href="02_tuples.html">02:&nbsp;Tuples</a>
-        <a href="03_lists.html">03:&nbsp;Lists</a>
-        <a href="04_conditionals.html">04:&nbsp;Conditionals</a>
-        <a href="05_while_loops.html">05:&nbsp;While-loops</a>
-        <a href="06_for_loops.html">06:&nbsp;For-loops</a>
-        <a href="07_sublists.html">07:&nbsp;Sublists</a>
-        <a href="08_functions.html">08:&nbsp;Functions</a>
-        <a href="09_documentation.html">09:&nbsp;Documentation</a>
-        <a href="10_files.html">10:&nbsp;Files</a>
-        <a href="11_sets.html">11:&nbsp;Sets</a>
-        <a href="12_dictionaries.html" style="color: #54c248; font-weight: 700;">12:&nbsp;Dictionaries</a>
-        <a href="13_classes.html">13:&nbsp;Classes</a>
-        <a href="14_inheritance.html">14:&nbsp;Inheritance</a>
-        <a href="15_error_handling.html">15:&nbsp;Error handling</a>
-        <a href="16_modules.html">16:&nbsp;Modules</a>
-        <a href="17_numpy_arrays.html">17:&nbsp;Numpy arrays</a>
-        <a href="18_plotting.html">18:&nbsp;Plotting</a>
-        <a href="19_nd_arrays.html">19:&nbsp;Multi-dimensional arrays</a>
-        <a href="20_images.html">20:&nbsp;Images</a>
-        <a href="21_modularization.html">21:&nbsp;Modularization</a>
-      </ul>
-    </nav>
-  </div>
+<div class="fab-container">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <input type="checkbox" id="toggle"/>
+  <label class="fab" for="toggle"></label>
+  <nav class="fab-nav">
+    <ul>
+      <a href="00_intro.html">00:&nbsp;Introduction</a>
+      <a href="01_basics.html">01:&nbsp;Basics</a>
+      <a href="02_tuples.html">02:&nbsp;Tuples</a>
+      <a href="03_lists.html">03:&nbsp;Lists</a>
+      <a href="04_conditionals.html">04:&nbsp;Conditionals</a>
+      <a href="05_while_loops.html">05:&nbsp;While-loops</a>
+      <a href="06_for_loops.html">06:&nbsp;For-loops</a>
+      <a href="07_sublists.html">07:&nbsp;Sublists</a>
+      <a href="08_functions.html">08:&nbsp;Functions</a>
+      <a href="09_documentation.html">09:&nbsp;Documentation</a>
+      <a href="10_files.html">10:&nbsp;Files</a>
+      <a href="11_sets.html">11:&nbsp;Sets</a>
+      <a href="12_dictionaries.html" style="color: #54c248; font-weight: 700;">12:&nbsp;Dictionaries</a>
+      <a href="13_classes.html">13:&nbsp;Classes</a>
+      <a href="14_inheritance.html">14:&nbsp;Inheritance</a>
+      <a href="15_error_handling.html">15:&nbsp;Error handling</a>
+      <a href="16_modules.html">16:&nbsp;Modules</a>
+      <a href="17_numpy_arrays.html">17:&nbsp;Numpy arrays</a>
+      <a href="18_plotting.html">18:&nbsp;Plotting</a>
+      <a href="19_nd_arrays.html">19:&nbsp;Multi-dimensional arrays</a>
+      <a href="20_images.html">20:&nbsp;Images</a>
+      <a href="21_modularization.html">21:&nbsp;Modularization</a>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  $(function () {
+    "use strict";
+    
+    function uncheckBox() {
+      var isChecked = $("#toggle").prop("checked");
+      if (isChecked) {
+        $("#toggle").prop("checked", false);
+      }
+    }
+    
+    $("body").on("click", function () {
+      uncheckBox();
+    });
+    
+    $("#toggle,label").on("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+</script>
 
 <style type="text/css">
     pre { line-height: 125%; margin: 0; }
