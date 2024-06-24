@@ -114,6 +114,11 @@ function PythonLanding() {
         Follow along with the content in each lesson, tutorial, and project, and
         have fun learning!
       </p>
+      <LinkButton
+        label="Begin course"
+        link="https://bdavis222.github.io/python-course"
+        color="green"
+      />
       <Footer />
     </>
   );
