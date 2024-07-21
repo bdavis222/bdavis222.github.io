@@ -11,11 +11,13 @@ function Fab({ names, links }: Props) {
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.scrollY;
-      if (currentPosition > scrollTop) {
-        // Scrolling down
+      let hasReachedBottom =
+        document.body.scrollHeight <= currentPosition + window.innerHeight;
+      if (currentPosition > scrollTop || currentPosition <= 0) {
+        // Scrolling down, or at the top of the screen
         showFab();
-      } else {
-        // Scrolling up
+      } else if (!hasReachedBottom) {
+        // Scrolling up, but not due to bottom rubber-banding
         hideFab();
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
