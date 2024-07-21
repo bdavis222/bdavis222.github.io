@@ -35,9 +35,10 @@ function Operator() {
       <h2>Gameplay Demo</h2>
       <p>Below is a demo of some of the gameplay in Operator.</p>
       <iframe
-        width="640"
-        height="360"
+        width="560"
+        height="315"
         src="https://www.youtube.com/embed/L1w4xdlj9NU"
+        title="YouTube video player"
         allowFullScreen
       ></iframe>
       <p>
