@@ -3,7 +3,7 @@ import Timings from "./Timings";
 function Mocks() {
   return (
     <>
-      <h2>Mock Interviews</h2>
+      <h2 id="mocks">Mock Interviews</h2>
       <Timings
         timerMin="45"
         timerMax="60 minutes"

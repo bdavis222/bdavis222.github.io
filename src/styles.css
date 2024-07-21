@@ -109,6 +109,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   font-weight: 500;
   color: var(--lightLinkColor);
@@ -183,6 +186,110 @@ p {
   margin: 0 auto;
   padding: 2rem;
   text-align: left;
+}
+
+.fab-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  z-index: 5;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  filter: drop-shadow(2px 2px 2px #c6c6c6);
+}
+
+#toggle {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.fab {
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  background: #72df66;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+
+  &:before {
+    position: absolute;
+    top: 20px;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.4s ease;
+  }
+  &:after {
+    position: absolute;
+    bottom: 20px;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.4s ease;
+  }
+}
+
+.fab-nav {
+  display: none;
+  transition: all 0.4s ease-in-out;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 0 rgba(81, 81, 81, 0.1);
+  border: 1px solid #e4e4e4;
+  padding: 10px;
+
+  ul {
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: fit-content;
+    height: calc(100vh - 210px);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    text-align: left;
+    margin: 10px 0;
+    color: #000000;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+
+    &:hover {
+      color: var(--lightLinkColor);
+      text-decoration: none;
+    }
+  }
+}
+
+#toggle:checked ~ .fab {
+  background: #df6666;
+}
+
+#toggle:checked ~ .fab-nav {
+  display: flex;
+  transform: translateY(30px) translateX(15px);
+}
+
+#toggle:checked ~ .fab:before {
+  transform: rotate(225deg) translateY(-2px) translateX(-3px);
+}
+
+#toggle:checked ~ .fab:after {
+  transform: rotate(135deg) translateY(3px) translateX(-3px);
 }
 
 .home-header {
@@ -673,6 +780,15 @@ p {
   margin: 0px;
 }
 
+/* Hiding the FAB when the screen is too short */
+@media (max-height: 280px) {
+  .fab-container {
+    display: none;
+  }
+  .fab-nav {
+    display: none;
+  }
+}
 /* Making the grid responsive to screen size */
 @media screen and (max-width: 1104px) {
   .publication-card.short {
@@ -756,6 +872,9 @@ p {
 
 /* Dark mode settings */
 @media (prefers-color-scheme: dark) {
+  .fab-container {
+    filter: drop-shadow(2px 2px 2px #000000);
+  }
   :root {
     color: var(--darkTextColor);
     background-color: var(--darkBackgroundColor);

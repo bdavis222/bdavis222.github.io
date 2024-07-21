@@ -3,7 +3,7 @@ import Timings from "./Timings";
 function InterviewIntro() {
   return (
     <>
-      <h2>Introduction to Interview Questions</h2>
+      <h2 id="interview-questions">Introduction to Interview Questions</h2>
       <Timings
         timerMin="30"
         timerMax="60 minutes"

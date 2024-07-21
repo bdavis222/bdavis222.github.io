@@ -3,7 +3,7 @@ import Timings from "./Timings";
 function ResumeProjects() {
   return (
     <>
-      <h2>Software Projects</h2>
+      <h2 id="projects">Software Projects</h2>
       <Timings
         timerMin="2"
         timerMax="3 months"

@@ -1,3 +1,4 @@
+import Fab from "../Fab";
 import Footer from "../Footer";
 import Algorithms from "./Algorithms";
 import InterviewIntro from "./InterviewIntro";
@@ -21,6 +22,26 @@ function Roadmap() {
 
   return (
     <>
+      <Fab
+        names={[
+          "Basic Programming",
+          "Algorithms",
+          "Interview Questions",
+          "Projects",
+          "Resumé",
+          "Interview Prep",
+          "Mocks",
+        ]}
+        links={[
+          "/roadmap#basic-programming",
+          "/roadmap#algorithms",
+          "/roadmap#interview-questions",
+          "/roadmap#projects",
+          "/roadmap#resume",
+          "/roadmap#interview-prep",
+          "/roadmap#mocks",
+        ]}
+      />
       <Intro />
       <Python />
       <Algorithms />

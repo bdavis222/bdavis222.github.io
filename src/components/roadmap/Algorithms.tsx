@@ -3,7 +3,7 @@ import Timings from "./Timings";
 function Algorithms() {
   return (
     <>
-      <h2>Data Structures and Algorithms</h2>
+      <h2 id="algorithms">Data Structures and Algorithms</h2>
       <Timings
         timerMin="2"
         timerMax="5 days"

@@ -3,7 +3,7 @@ import Timings from "./Timings";
 function InterviewPrep() {
   return (
     <>
-      <h2>Interview Preparation</h2>
+      <h2 id="interview-prep">Interview Preparation</h2>
       <Timings
         timerMin="2"
         timerMax="3 months"
@@ -23,9 +23,9 @@ function InterviewPrep() {
         >
           HackerRank YouTube playlist
         </a>{" "}
-        goes into a decent amount of depth on the book's concepts in a short amount of time. I don't
-        recommend focusing too much on all of these videos, but definitely watch
-        the videos covering the following topics:
+        goes into a decent amount of depth on the book's concepts in a short
+        amount of time. I don't recommend focusing too much on all of these
+        videos, but definitely watch the videos covering the following topics:
       </p>
       <div>
         <input type="checkbox" />{" "}
@@ -106,19 +106,16 @@ function InterviewPrep() {
 
       <h3>Interview Question Patterns</h3>
       <p>
-        The only way to get really good at interview problems is to do lots 
-        of them. But there are countless problems to choose from, so does one 
-        have to <i>memorize all of them?</i> Luckily, most problems fall into 
-        one of a few different patterns, and knowledge of these can greatly 
-        simplify the process. There are two good great sources on patterns 
-        that I recommend:
+        The only way to get really good at interview problems is to do lots of
+        them. But there are countless problems to choose from, so does one have
+        to <i>memorize all of them?</i> Luckily, most problems fall into one of
+        a few different patterns, and knowledge of these can greatly simplify
+        the process. There are two good great sources on patterns that I
+        recommend:
       </p>
       <ul>
         <li>
-          <a
-            href="https://algo.monster"
-            target="_blank"
-          >
+          <a href="https://algo.monster" target="_blank">
             AlgoMonster
           </a>
         </li>
@@ -206,9 +203,9 @@ function InterviewPrep() {
         normal! It takes a while to learn the patterns to be able to solve these
         problems. This is why the detailed solution videos are so valuable on
         AlgoExpert. Just try your best on each problem, and watch the videos
-        when you get stuck. You will learn the patterns if you keep going. 
-        For more help on patterns, see the Interview Question Patterns 
-        subsection above.
+        when you get stuck. You will learn the patterns if you keep going. For
+        more help on patterns, see the Interview Question Patterns subsection
+        above.
       </p>
     </>
   );

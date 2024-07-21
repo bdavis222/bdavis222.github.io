@@ -3,7 +3,7 @@ import Timings from "./Timings";
 function Resume() {
   return (
     <>
-      <h2>Resume</h2>
+      <h2 id="resume">Resume</h2>
       <Timings
         timerMin="1"
         timerMax="2 hours"
