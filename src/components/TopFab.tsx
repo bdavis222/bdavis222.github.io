@@ -10,15 +10,30 @@ function TopFab({ names, links }: Props) {
   const [scrollTop, setScrollTop] = useState(0);
   useEffect(() => {
     function onScroll() {
+      const scrollBuffer = 5;
       let currentPosition = window.scrollY;
       let hasReachedBottom =
         document.body.scrollHeight <= currentPosition + window.innerHeight;
-      if (currentPosition > scrollTop || currentPosition <= 0) {
-        // Scrolling down, or at the top of the screen
+      var lastPositionScrolledDown = scrollTop;
+      var lastPositionScrolledUp = scrollTop;
+      if (currentPosition <= 0) {
+        // If the user has scrolled to the top of the screen
         showFab();
+      }
+      if (currentPosition > scrollTop) {
+        // Scrolling down
+        if (currentPosition > lastPositionScrolledUp + scrollBuffer) {
+          // If the user has scrolled down at least the number of buffer pixels since scrolling up
+          showFab();
+          lastPositionScrolledDown = currentPosition;
+        }
       } else if (!hasReachedBottom) {
         // Scrolling up, but not due to bottom rubber-banding
-        hideFab();
+        if (currentPosition < lastPositionScrolledDown - scrollBuffer) {
+          // If the user has scrolled up at least the number of buffer pixels since scrolling down
+          hideFab();
+          lastPositionScrolledUp = currentPosition;
+        }
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
