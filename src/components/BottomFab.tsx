@@ -6,19 +6,19 @@ interface Props {
   links: string[];
 }
 
-function Fab({ names, links }: Props) {
+function BottomFab({ names, links }: Props) {
   const [scrollTop, setScrollTop] = useState(0);
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.scrollY;
       let hasReachedBottom =
         document.body.scrollHeight <= currentPosition + window.innerHeight;
-      if (currentPosition > scrollTop || currentPosition <= 0) {
-        // Scrolling down, or at the top of the screen
-        showFab();
-      } else if (!hasReachedBottom) {
-        // Scrolling up, but not due to bottom rubber-banding
+      if (currentPosition > scrollTop || hasReachedBottom) {
+        // Scrolling down, or at the bottom of the screen, when rubber-banding
         hideFab();
+      } else {
+        // Scrolling up (no rubber-banding effect at the top)
+        showFab();
       }
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
@@ -38,14 +38,14 @@ function Fab({ names, links }: Props) {
   return (
     <>
       <div
-        className="fab-container"
-        id="fab-container"
+        className="fab-container-bottom"
+        id="fab-container-bottom"
         tabIndex={0}
         onBlur={closeNavMenu}
       >
-        <input type="checkbox" id="toggle" />
-        <label className="fab" htmlFor="toggle"></label>
-        <nav className="fab-nav">
+        <input type="checkbox" id="toggle-bottom" />
+        <label className="fab-bottom" htmlFor="toggle-bottom"></label>
+        <nav className="fab-nav-bottom">
           <ul>{listItems}</ul>
         </nav>
       </div>
@@ -53,7 +53,7 @@ function Fab({ names, links }: Props) {
   );
 }
 
-export default Fab;
+export default BottomFab;
 
 async function hideFabAfterDelay() {
   await new Promise((f) => setTimeout(f, 100));
@@ -63,21 +63,23 @@ async function hideFabAfterDelay() {
 function hideFab() {
   dimFab();
   closeNavMenu();
-  const fabContainer = document.getElementById("fab-container");
+  const fabContainer = document.getElementById("fab-container-bottom");
   if (fabContainer != null) {
     fabContainer.style.visibility = "hidden";
   }
 }
 
 function dimFab() {
-  const fabContainer = document.getElementById("fab-container");
+  const fabContainer = document.getElementById("fab-container-bottom");
   if (fabContainer != null) {
     fabContainer.style.opacity = "0";
   }
 }
 
 function closeNavMenu() {
-  const fabCheckbox = document.getElementById("toggle") as HTMLInputElement;
+  const fabCheckbox = document.getElementById(
+    "toggle-bottom"
+  ) as HTMLInputElement;
   if (fabCheckbox != null) {
     fabCheckbox.checked = false;
   }
@@ -85,14 +87,14 @@ function closeNavMenu() {
 
 function showFab() {
   makeFabOpaque();
-  const fabContainer = document.getElementById("fab-container");
+  const fabContainer = document.getElementById("fab-container-bottom");
   if (fabContainer != null) {
     fabContainer.style.visibility = "visible";
   }
 }
 
 function makeFabOpaque() {
-  const fabContainer = document.getElementById("fab-container");
+  const fabContainer = document.getElementById("fab-container-bottom");
   if (fabContainer != null) {
     fabContainer.style.opacity = "1";
   }

@@ -1,5 +1,5 @@
-import Fab from "../Fab";
 import Footer from "../Footer";
+import TopFab from "../TopFab";
 import Algorithms from "./Algorithms";
 import InterviewIntro from "./InterviewIntro";
 import InterviewPrep from "./InterviewPrep";
@@ -22,7 +22,7 @@ function Roadmap() {
 
   return (
     <>
-      <Fab
+      <TopFab
         names={[
           "Basic Programming",
           "Algorithms",
