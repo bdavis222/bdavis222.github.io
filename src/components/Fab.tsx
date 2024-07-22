@@ -56,7 +56,7 @@ function Fab({ names, links }: Props) {
 export default Fab;
 
 async function hideFabAfterDelay() {
-  await new Promise((f) => setTimeout(f, 600));
+  await new Promise((f) => setTimeout(f, 100));
   hideFab();
 }
 
