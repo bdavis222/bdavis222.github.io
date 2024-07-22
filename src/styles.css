@@ -205,8 +205,8 @@ p {
 .fab {
   position: absolute;
   z-index: 999;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: #72df66;
   border-radius: 100%;
   cursor: pointer;
@@ -217,7 +217,7 @@ p {
 
   &:before {
     position: absolute;
-    top: 20px;
+    top: 25px;
     content: "";
     width: 20px;
     height: 2px;
@@ -226,7 +226,7 @@ p {
   }
   &:after {
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     content: "";
     width: 20px;
     height: 2px;
