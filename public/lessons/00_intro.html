@@ -15280,7 +15280,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Note that Jupyter notebook (the tool we are using here for code input/output) remembers the value of this variable since it was run before this code was run. It doesn't matter that this was in a different cell, as long as it was run before this cell.</p>
+<p>Note that Jupyter notebook (the tool we are using here for code input/output) remembers the value of this variable since <code>x = 3</code> was run before <code>print(x)</code> was run. It doesn't matter that <code>x = 3</code> was in a different cell, as long as it was run before the cell printing the value.</p>
 <p>Another quirk of Jupyter notebooks is that they print out the value of the last line of any cell. This is a "convenience" of Jupyter, and doesn't reflect what Python itself would do. This is why the multi-line comment in the Comments section above is being printed to the screen, even though we didn't ask it to.</p>
 <p>Variables can be reassigned:</p>
 
