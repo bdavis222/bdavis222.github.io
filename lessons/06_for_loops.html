@@ -15139,7 +15139,7 @@ floatList has 15 elements!
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">collection</span><span class="p">)):</span>
-    <span class="n">element</span> <span>class="o">=</span> <span class="n">collection</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+    <span class="n">element</span> <span class="o">=</span> <span class="n">collection</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
     <span class="c1"># Use both "index" and "element" here</span>
 </pre></div>
 
@@ -15150,7 +15150,7 @@ floatList has 15 elements!
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>More simply, Python has a short-cut function for this sort of thing: <code>enumerate</code>.</p>
+<p>More simply, Python has a short-cut function for this sort of thing: <code>enumerate</code>. This function will turn the list of elements into a tuple of lists containing the indices and elements within the collection, so they can be easily unpacked in the for-loop declaration:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15162,11 +15162,6 @@ floatList has 15 elements!
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Enumerate returns the index and value</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">xList</span><span class="p">):</span>  <span class="c1"># Notice how we can unpack &quot;index&quot; and &quot;x&quot; right in the loop</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;index type =&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">index</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x type     =&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;xList type =&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">xList</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15197,10 +15192,6 @@ floatList has 15 elements!
 8 9.0
 9 10.0
 10 [1, 2, 3, 4]
-
-index type = &lt;class &#39;int&#39;&gt;
-x type     = &lt;class &#39;list&#39;&gt;
-xList type = &lt;class &#39;list&#39;&gt;
 </pre>
 </div>
 </div>
