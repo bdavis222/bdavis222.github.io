@@ -14548,8 +14548,6 @@ a.anchor-link {
         <span class="k">return</span> <span class="mi">10</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">numberString</span><span class="p">)</span>
     <span class="k">except</span><span class="p">:</span>
         <span class="k">raise</span><span class="p">(</span><span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;A numerical string must be provided.&quot;</span><span class="p">))</span>
-
-<span class="n">doubleNumber</span><span class="p">(</span><span class="s2">&quot;g&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14557,39 +14555,11 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-3-f0ce587b180d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span>         <span class="ansi-green-fg">raise</span><span class="ansi-blue-fg">(</span>Exception<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;A numerical string must be provided.&#34;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> 
-<span class="ansi-green-fg">----&gt; 7</span><span class="ansi-red-fg"> </span>doubleNumber<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;g&#34;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;doubleNumber&#39; is not defined</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Notice that we get the stack trace, and we also get our custom messaging.</p>
-<p>However, in this example, there are actually <em>two different ways</em> we can get an error:</p>
+<p>Now we will get the stack trace, and we will also get our custom messaging.</p>
+<p>However, in this function that we're defining, there are actually <em>two different ways</em> we can get an error:</p>
 <ol>
 <li>The function isn't provided a numerical string</li>
 <li>The function is provided a numberical string of zero, cause a divide-by-zero error</li>
