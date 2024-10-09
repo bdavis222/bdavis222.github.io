@@ -14461,7 +14461,7 @@ a.anchor-link {
     <span class="n">dressingIndex</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">dressingNumberString</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
     <span class="n">dressingChoice</span> <span class="o">=</span> <span class="n">dressingOptions</span><span class="p">[</span><span class="n">dressingIndex</span><span class="p">]</span>
     
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">What meat would you like?&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">What meat would you like?&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">meat</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">meatOptions</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">meat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">meatNumberString</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your selection: &quot;</span><span class="p">)</span>
@@ -14608,7 +14608,7 @@ a.anchor-link {
      <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">getMeatChoice</span><span class="p">():</span>
     <span class="n">meatOptions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">What meat would you like?&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">What meat would you like?&quot;</span><span class="p">)</span>
     <span class="n">meatIndex</span> <span class="o">=</span> <span class="n">getMeatIndex</span><span class="p">(</span><span class="n">meatOptions</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">meatOptions</span><span class="p">[</span><span class="n">meatIndex</span><span class="p">]</span>
 </pre></div>
@@ -14770,7 +14770,7 @@ a.anchor-link {
 
 <span class="k">def</span> <span class="nf">getMeatChoice</span><span class="p">():</span>
     <span class="n">meatOptions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">What meat would you like?&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">What meat would you like?&quot;</span><span class="p">)</span>
     <span class="n">meatIndex</span> <span class="o">=</span> <span class="n">getSelectionIndex</span><span class="p">(</span><span class="n">meatOptions</span><span class="p">)</span>  <span class="c1"># Passing in meatOptions</span>
     <span class="k">return</span> <span class="n">meatOptions</span><span class="p">[</span><span class="n">meatIndex</span><span class="p">]</span>
 </pre></div>
@@ -14817,7 +14817,7 @@ a.anchor-link {
      <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">prepareMeal</span><span class="p">():</span>
     <span class="n">dressingChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;What dressing would you like on your salad?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;balsamic&quot;</span><span class="p">,</span> <span class="s2">&quot;Caesar&quot;</span><span class="p">,</span> <span class="s2">&quot;ranch&quot;</span><span class="p">])</span>
-    <span class="n">meatChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">What meat would you like?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">])</span>
+    <span class="n">meatChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">What meat would you like?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">])</span>
     <span class="n">printMealExplanation</span><span class="p">(</span><span class="n">dressingChoice</span><span class="p">,</span> <span class="n">meatChoice</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">getChoice</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
@@ -14868,7 +14868,7 @@ a.anchor-link {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">prepareMeal</span><span class="p">():</span>
     <span class="n">drinkChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;What would you like to drink?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;coffee&quot;</span><span class="p">,</span> <span class="s2">&quot;tea&quot;</span><span class="p">])</span>  <span class="c1"># Added</span>
     <span class="n">dressingChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;What dressing would you like on your salad?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;balsamic&quot;</span><span class="p">,</span> <span class="s2">&quot;Caesar&quot;</span><span class="p">,</span> <span class="s2">&quot;ranch&quot;</span><span class="p">])</span>
-    <span class="n">meatChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">What meat would you like?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">])</span>
+    <span class="n">meatChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">What meat would you like?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">])</span>
     <span class="n">printMealExplanation</span><span class="p">(</span><span class="n">drinkChoice</span><span class="p">,</span> <span class="n">dressingChoice</span><span class="p">,</span> <span class="n">meatChoice</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">getChoice</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
@@ -14921,7 +14921,7 @@ a.anchor-link {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">prepareMeal</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Gets food and beverage choices from the user and reads back the order.&quot;&quot;&quot;</span>
     <span class="n">dressingChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;What dressing would you like on your salad?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;balsamic&quot;</span><span class="p">,</span> <span class="s2">&quot;Caesar&quot;</span><span class="p">,</span> <span class="s2">&quot;ranch&quot;</span><span class="p">])</span>
-    <span class="n">meatChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">What meat would you like?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">])</span>
+    <span class="n">meatChoice</span> <span class="o">=</span> <span class="n">getChoice</span><span class="p">(</span><span class="s2">&quot;</span><span class="s2">What meat would you like?&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;chicken&quot;</span><span class="p">,</span> <span class="s2">&quot;fish&quot;</span><span class="p">])</span>
     <span class="n">printMealExplanation</span><span class="p">(</span><span class="n">drinkChoice</span><span class="p">,</span> <span class="n">dressingChoice</span><span class="p">,</span> <span class="n">meatChoice</span><span class="p">)</span>
 
 
