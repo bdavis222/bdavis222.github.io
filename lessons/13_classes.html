@@ -14459,6 +14459,7 @@ a.anchor-link {
 <li>The <code>self</code> keyword used as a function argument and a prefix for attributes</li>
 <li>Other functions (called methods) can be defined within the class</li>
 </ol>
+<p>For now, let's not worry about what this <code>self</code> keyword actually does, and let's just make sure we use it where we're supposed to use it, as described in this section.</p>
 <p>Let's use this to define our <code>Dog</code> class:</p>
 
 </div>
@@ -14593,6 +14594,12 @@ a.anchor-link {
 </div>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>By the way, the reason that we can call <code>dog.legs</code> is because we defined <code>self.legs</code> as an attribute in the <code>__init__</code> method within our class. By instantiating an instance with <code>dog = Dog()</code>, we have basically told Python that our <code>dog</code> variable will take the place of the <code>self</code> keyword everywhere we've put it in our class definition (like in <code>__init__</code>, where it's used as a prefix for attribute access).</p>
+</div>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 style="color: #1877f2;" id="Calling-methods">Calling methods<a class="anchor-link" href="#Calling-methods">&#182;</a></h2>
@@ -14636,6 +14643,14 @@ a.anchor-link {
 
 </div>
 
+</div>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>And here we see how the <code>self</code> parameter is used in the <code>bark</code> method that we defined: by including it, we can call it with <code>self.bark()</code>, and by instantiating an instance with <code>dog = Dog()</code>, we can replace <code>self</code> with <code>dog</code>.</p>
+</div>
 </div>
 
 </div>
