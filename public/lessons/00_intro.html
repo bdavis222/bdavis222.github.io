@@ -14569,13 +14569,13 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Multi-line-comments">Multi-line comments<a class="anchor-link" href="#Multi-line-comments">&#182;</a></h3>
+<h3 id="Docstrings">Docstrings<a class="anchor-link" href="#Docstrings">&#182;</a></h3>
 </div>
 </div>
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Below is an example of a multi-line comment. We will learn about these in more detail in the lesson about documentation.</p>
+<p>Below is an example of a docstring, which can be used as a multi-line comment. We will learn about these in more detail in the lesson about documentation. I will stick to using single-line comments for now.</p>
 </div>
 </div>
 
@@ -14596,36 +14596,6 @@ a.anchor-link {
 
      </div>
 </div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#34;This is a multi-line comment.\nNotice how three sets of quotation marks set \nthe beginning and end of the comment, without\nthe need for a &#39;#&#39; on every single line.\n\nAll of this will be ignored and not run as code.\n\nNotice, however, that this is outputted below the\ncell if you run it. That is just something \nspecific to Jupyter notebooks (as I will explain later).\nPython is not running any of this as code.\n\nBecause I don&#39;t want to litter the screen with \nunnecessary output, I will mostly use single-line \ncomments in these lessons.\n&#34;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Notice that the above comment is outputted below the cell when run. That is just something specific to Jupyter notebooks (as I will explain later). Python is not running any of this as code. Because I don&#39;t want to litter the screen with unnecessary output, I will mostly use single-line comments in these lessons.</p>
 </div>
 </div>
 
@@ -15311,7 +15281,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Note that Jupyter notebook (the tool we are using here for code input/output) remembers the value of this variable since <code>x = 3</code> was run before <code>print(x)</code> was run. It doesn't matter that <code>x = 3</code> was in a different cell, as long as it was run before the cell printing the value.</p>
-<p>Another quirk of Jupyter notebooks is that they print out the value of the last line of any cell. This is a "convenience" of Jupyter, and doesn't reflect what Python itself would do. <i>(This is why the multi-line comment in the Comments section above is being printed to the screen, even though we didn't ask it to.)</i></p>
+<p>By the way, one convenience of Jupyter notebooks is that they output the value of the last variable or expression at the bottom of a cell.</p>
 <p>Variables can also be reassigned:</p>
 
 </div>
