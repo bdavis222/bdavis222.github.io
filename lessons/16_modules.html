@@ -14566,7 +14566,8 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><code>argv</code> is the command list that is passed to a program when it is run. It is contained in the <code>sys</code> module, so it is called as <code>sys.argv</code>. It is a list of strings like the following:</p>
 <p><code>["&lt;program_name&gt;.py", "&lt;arg1&gt;", "&lt;arg2&gt;", ...]</code></p>
-<p>So, if a program named <code>my_program.py</code> is run with no arguments, i.e., <code>python my_program.py</code>, then <code>sys.argv</code> will look like <code>["my_program.py"]</code>.</p>
+<p>So, if a program named <code>my_program.py</code> is run with no arguments, i.e., <code>python my_program.py</code> is entered in the terminal, then <code>sys.argv</code> will look like <code>["my_program.py"]</code>.</p>
+<p>On the other hand, if the same program is run with an argument of "test", i.e., <code>python my_program.py test</code>, then <code>sys.argv</code> will look like <code>["my_program.py", "test"]</code>.</p>
 <p>How can we use this? Consider the following code.</p>
 
 </div>
