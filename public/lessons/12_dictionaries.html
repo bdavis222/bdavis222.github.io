@@ -14429,6 +14429,75 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>To this point, we have learned about a few main types of data containers, or collections, like <code>lists</code>, <code>tuples</code>, and <code>sets</code>, which all contain values. There is another very powerful type of collection called a <code>dictionary</code> that we can use that contains <em>key-value pairs</em>. We will discuss what this means in just a minute.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 style="color: #1877f2;" id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The basic syntax is as follows:</p>
+<p><code style="font-size: x-small;">{&lt;key1&gt;: &lt;value1&gt;, &lt;key2&gt;: &lt;value2&gt;, ...}</code></p>
+<p>Note the following:</p>
+<ol>
+<li>Curly braces enclose the dictionary.</li>
+<li>Each key-value pair is separated by a comma.</li>
+<li>Each key is followed by a colon and then its corresponding value.</li>
+</ol>
+<p>So the syntax is similar to that of sets, but dictionaries contain <em>pairs</em>. The colon maps each key to a value, and Python knows to interpret this as a dictionary, rather than a set.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 style="color: #1877f2;" id="Examples">Examples<a class="anchor-link" href="#Examples">&#182;</a></h2>
+</div>
+</div>
+
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let&#39;s make a simple dictionary to contain some information for the city of London:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">london</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;London&quot;</span>
+    <span class="s2">&quot;latitude&quot;</span><span class="p">:</span> <span class="mf">51.5072</span>
+    <span class="s2">&quot;longitude&quot;</span><span class="p">:</span> <span class="mf">0.1276</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Note that the amount of data we need to put in our dictionary is too long for one line, so we've broken up the curly braces onto separate lines with the data inside the dictionary indented. This is common.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="A-more-complex-example">A more complex example<a class="anchor-link" href="#A-more-complex-example">&#182;</a></h3>
+</div>
+</div>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>To this point, we have learned about a few main types of data containers, or collections, like <code>lists</code>, <code>tuples</code>, and <code>sets</code>, which all contain values. There is another very powerful type of collection called a <code>dictionary</code> that we can use that contains <em>key-value pairs</em>. We will discuss what this means in just a minute.</p>
 <p>Let's say we have a list of employees of a company, and each of those employees has a unique ID number, email address, and phone number. One way we could store all of that could be the following:</p>
 
 </div>
@@ -14495,70 +14564,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>But are we really going to keep adding new variables <em>every time a new employee joins the company</em>? This will get hard to manage. In addition, we also need to remember which index to use for which information, which is challenging if we are storing lots of information.</p>
-<p>Instead, let's organize this in a dictionary (and we'll see why this is so powerful soon):</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 style="color: #1877f2;" id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h2>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The basic syntax is as follows:</p>
-<p><code style="font-size: x-small;">{&lt;key1&gt;: &lt;value1&gt;, &lt;key2&gt;: &lt;value2&gt;, ...}</code></p>
-<p>Note the following:</p>
-<ol>
-<li>Curly braces enclose the dictionary.</li>
-<li>Each key-value pair is separated by a comma.</li>
-<li>Each key is followed by a colon and then its corresponding value.</li>
-</ol>
-<p>So the syntax is similar to that of sets, but dictionaries contain <em>pairs</em>. The colon maps each key to a value, and Python knows to interpret this as a dictionary, rather than a set.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 style="color: #1877f2;" id="Examples">Examples<a class="anchor-link" href="#Examples">&#182;</a></h2>
-</div>
-</div>
-
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Let&#39;s make a simple dictionary to contain some information for the city of London:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">london</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;London&quot;</span>
-    <span class="s2">&quot;latitude&quot;</span><span class="p">:</span> <span class="mf">51.5072</span>
-    <span class="s2">&quot;longitude&quot;</span><span class="p">:</span> <span class="mf">0.1276</span>
-<span class="p">}</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Note that the amount of data we need to put in our dictionary is too long for one line, so we've broken up the curly braces onto separate lines with the data inside the dictionary indented. This is common.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="A-more-complex-example">A more complex example<a class="anchor-link" href="#A-more-complex-example">&#182;</a></h3>
-</div>
-</div>
+<p>Instead, let's organize this in a dictionary:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
