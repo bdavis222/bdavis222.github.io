@@ -14628,6 +14628,138 @@ a.anchor-link {
 </div>
 
 </div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 style="color: #1877f2;" id="Adding-data">Adding data<a class="anchor-link" href="#Adding-data">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>So what if a new employee joins the company? Do we need to go to where our <code>employees</code> dictionary is defined and keep updating it there?</p>
+<p>Well, we <em>could</em> do that, but we can add data directly to a dictionary using the variable it is stored in.</p>
+<p>The basic syntax is as follows:</p>
+
+<p><code style="font-size: x-small;">&lt;dictionary_name&gt;[&lt;new_key&gt;] = &lt;new_value&gt;</code></p>
+<p>Note that this syntax is unique to dictionaries. If we had an empty list, for example, we wouldn't be able to use <code>emptyList[0] = "new value"</code>, as this would try to reassign a value of <code>"new value"</code> to the first index in the list, which doesn't exist yet (since the list is empty). So this syntax is a little awkward for dictionaries, as they are the only type of collection where this syntax would even work at all. We will just have to remember this quirk of Python dictionaries.</p>
+<p>Let's add a new employee:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">employees</span><span class="p">[</span><span class="s2">&quot;david&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;000004&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;david@company.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;phone_number&quot;</span><span class="p">:</span> <span class="s2">&quot;472-133-7992&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Again, <code>"david"</code> is not a key in our dictionary, but this doesn't given an error, because we are using this is a unique assignment syntax for dictionaries. So, did it work?</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">employees</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;alph&#39;: {&#39;id&#39;: &#39;000001&#39;,
+  &#39;email&#39;: &#39;alph@company.com&#39;,
+  &#39;phone_number&#39;: &#39;472-575-1534&#39;},
+ &#39;brittany&#39;: {&#39;id&#39;: &#39;000002&#39;,
+  &#39;email&#39;: &#39;brittany@company.com&#39;,
+  &#39;phone_number&#39;: &#39;472-665-1224&#39;},
+ &#39;charlie&#39;: {&#39;id&#39;: &#39;000003&#39;,
+  &#39;email&#39;: &#39;charlie@company.com&#39;,
+  &#39;phone_number&#39;: &#39;472-500-1234&#39;},
+ &#39;david&#39;: {&#39;id&#39;: &#39;000004&#39;,
+  &#39;email&#39;: &#39;david@company.com&#39;,
+  &#39;phone_number&#39;: &#39;472-133-7992&#39;}}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Yes, he was successfully added! Let's look up his phone number:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">employees</span><span class="p">[</span><span class="s2">&quot;david&quot;</span><span class="p">][</span><span class="s2">&quot;phone_number&quot;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;472-133-7992&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14866,138 +14998,6 @@ a.anchor-link {
      </div>
 </div>
 </div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 style="color: #1877f2;" id="Adding-data">Adding data<a class="anchor-link" href="#Adding-data">&#182;</a></h2>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>So what if a new employee joins the company? Do we need to go to where our <code>employees</code> dictionary is defined and keep updating it there?</p>
-<p>Well, we <em>could</em> do that, but we can add data directly to a dictionary using the variable it is stored in.</p>
-<p>The basic syntax is as follows:</p>
-
-<p><code style="font-size: x-small;">&lt;dictionary_name&gt;[&lt;new_key&gt;] = &lt;new_value&gt;</code></p>
-<p>Note that this syntax is unique to dictionaries. If we had an empty list, for example, we wouldn't be able to use <code>emptyList[0] = "new value"</code>, as this would try to reassign a value of <code>"new value"</code> to the first index in the list, which doesn't exist yet (since the list is empty). So this syntax is a little awkward for dictionaries, as they are the only type of collection where this syntax would even work at all. We will just have to remember this quirk of Python dictionaries.</p>
-<p>Let's add a new employee:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">employees</span><span class="p">[</span><span class="s2">&quot;david&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;000004&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;david@company.com&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;phone_number&quot;</span><span class="p">:</span> <span class="s2">&quot;472-133-7992&quot;</span>
-<span class="p">}</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Again, <code>"david"</code> is not a key in our dictionary, but this doesn't given an error, because we are using this is a unique assignment syntax for dictionaries. So, did it work?</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">employees</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>{&#39;alph&#39;: {&#39;id&#39;: &#39;000001&#39;,
-  &#39;email&#39;: &#39;alph@company.com&#39;,
-  &#39;phone_number&#39;: &#39;472-575-1534&#39;},
- &#39;brittany&#39;: {&#39;id&#39;: &#39;000002&#39;,
-  &#39;email&#39;: &#39;brittany@company.com&#39;,
-  &#39;phone_number&#39;: &#39;472-665-1224&#39;},
- &#39;charlie&#39;: {&#39;id&#39;: &#39;000003&#39;,
-  &#39;email&#39;: &#39;charlie@company.com&#39;,
-  &#39;phone_number&#39;: &#39;472-500-1234&#39;},
- &#39;david&#39;: {&#39;id&#39;: &#39;000004&#39;,
-  &#39;email&#39;: &#39;david@company.com&#39;,
-  &#39;phone_number&#39;: &#39;472-133-7992&#39;}}</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Yes, he was successfully added! Let's look up his phone number:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter" style="overflow-x: scroll">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">employees</span><span class="p">[</span><span class="s2">&quot;david&quot;</span><span class="p">][</span><span class="s2">&quot;phone_number&quot;</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;472-133-7992&#39;</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
