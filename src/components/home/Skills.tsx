@@ -17,6 +17,7 @@ function Skills() {
         />
         <img className="icon" src="assets/kotlin-logo.png" alt="Kotlin logo" />
         <img className="icon" src="assets/java-logo.png" alt="Java logo" />
+        <img className="icon" src="assets/cpp-logo.png" alt="C++ logo" />
         <img className="icon" src="assets/python-logo.png" alt="Python logo" />
         <img
           className="icon"
@@ -30,7 +31,6 @@ function Skills() {
           alt="SwiftUI logo"
         />
         <img className="icon" src="assets/swift-logo.png" alt="Swift logo" />
-        <img className="icon" src="assets/cpp-logo.png" alt="C++ logo" />
         <img
           className="icon"
           src="assets/javascript-logo.png"
@@ -54,11 +54,13 @@ function Skills() {
           "Jetpack Compose",
           "Kotlin",
           "Java",
+          "Game Development",
+          "C++",
           "Python",
           "iOS Development",
           "SwiftUI",
           "Swift",
-          "C++",
+          "Web Development",
           "JavaScript",
           "TypeScript",
           "HTML",
