@@ -21,6 +21,10 @@ function StartingDotScanner() {
           (Note that the <code>python</code> command may be required instead of{" "}
           <code>python3</code> for some Python 3 installations.)
         </em>
+        <em>
+          (Also, running this command might require installing command line{" "}
+          developer tools. This is normal, and it is ok to install this.)
+        </em>
         This should give version number (i.e., Python 3.x.x). If a "command not
         found" message is shown instead, then Python 3 is not properly
         installed.
