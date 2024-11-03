@@ -54,7 +54,7 @@ function ResumeProjects() {
           <img className="icon" src="assets/swift-logo.png" alt="Swift logo" />
         </h3>
         <p>
-          This is a great project to choose if you want to showcase experience
+          This is a good project to choose if you want to showcase experience
           using Swift using a declarative programming paradigm. Sean Allen has a{" "}
           <a href="https://www.youtube.com/watch?v=MCLiPW2ns2w" target="_blank">
             video walkthrough
@@ -91,7 +91,7 @@ function ResumeProjects() {
           />{" "}
         </h3>
         <p>
-          This is a great project to choose if you want to showcase experience
+          This is a good project to choose if you want to showcase experience
           using Kotlin using a declarative programming paradigm. Philipp Lackner
           has a{" "}
           <a
@@ -181,7 +181,7 @@ function ResumeProjects() {
           />
         </h3>
         <p>
-          This is a great project to choose if you want to showcase experience
+          This is a good project to choose if you want to showcase experience
           using Python. Coding with Russ has a{" "}
           <a
             href="https://www.youtube.com/watch?v=Vlolidaoiak&list=PLjcN1EyupaQnvpv61iriF8Ax9dKra-MhZ"
@@ -202,7 +202,7 @@ function ResumeProjects() {
           <img className="icon" src="assets/c-sharp-logo.png" alt="C# logo" />
         </h3>
         <p>
-          This is a great project to choose if you want to showcase experience
+          This is a good project to choose if you want to showcase experience
           using C#. Brackeys has a{" "}
           <a
             href="https://www.youtube.com/watch?v=j48LtUkZRjU&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6"
@@ -223,7 +223,7 @@ function ResumeProjects() {
           <img className="icon" src="assets/cpp-logo.png" alt="C++ logo" />
         </h3>
         <p>
-          This is a great project to choose if you want to showcase experience
+          This is a good project to choose if you want to showcase experience
           using C++. Unlike Unity, SFML is <i>very</i> stripped down, giving the
           programmer much more control, but much less help in creating their
           games. This project should only be done after the Unity project.
