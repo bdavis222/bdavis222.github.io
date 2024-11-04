@@ -656,9 +656,10 @@ p {
 }
 .close-icon {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 20px;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  width: 60px;
 }
 
 /* Publication styling */
