@@ -33,7 +33,7 @@ function ResumeProject({ title, difficulty, icons, description }: Props) {
       ) : (
         <div
           className="company-card project"
-          style={{ paddingBottom: 21 }}
+          style={{ paddingBottom: 14 }}
           onClick={() => setExpanded(true)}
         >
           <h3 className={`project-header ${difficulty}`}>
