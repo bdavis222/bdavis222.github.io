@@ -482,9 +482,6 @@ p {
   color: var(--lightGrayTextColor);
   font-weight: 700;
 }
-.h3-thin {
-  font-weight: 300;
-}
 
 /* Software card styling */
 /* Float three columns side by side */
@@ -729,6 +726,18 @@ p {
   margin-top: 10px;
   margin-bottom: 9px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Roadmap software project card styling */
+.project-header {
+  margin-bottom: 0px;
+}
+.project-difficulty {
+  font-weight: 300;
+  font-size: medium;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  color: var(--darkH3Color);
 }
 
 /* Donate button */
@@ -1153,5 +1162,8 @@ p {
   }
   .software-page-button-description {
     color: var(--darkSoftwarePageCardDescriptionColor);
+  }
+  .project-difficulty {
+    color: var(--lightH3Color);
   }
 }
