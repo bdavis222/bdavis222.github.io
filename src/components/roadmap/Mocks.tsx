@@ -34,12 +34,12 @@ function Mocks() {
         for your first mock, since 1) this is a free site, and 2) you probably
         won't have already solved the exact problem they select, since you are
         doing your preparation on AlgoExpert, not LeetCode.{" "}
-        <i>
+        {/* <i>
           Note: one of the benefits of using the spreadsheet linked in the
           AlgoExpert section above is that, if shared with your mock
           interviewer, they can view it to see what areas you’ve studied, and
           can search for questions to appropriately challenge you.
-        </i>
+        </i> */}
       </p>
       <p>
         If you don't have someone who can give you a mock interview, AlgoExpert

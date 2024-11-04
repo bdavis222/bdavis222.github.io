@@ -136,12 +136,20 @@ function InterviewPrep() {
           AlgoExpert
         </a>
         . At the time of writing this, the AlgoExpert site had 160 interview
-        questions with detailed, guided solutions (in Python) for each. The site
-        costs about $100 for a year of access (and you can search online for a
-        10% discount code), but it is well worth it, in my opinion, if it will
-        make the difference between getting a job or not.
+        questions with detailed, guided solutions (in Python) for each. A 10%
+        discount code for the annual subscription can easily be found online.
+        The price is well worth it, in my opinion, if it will make the
+        difference between getting a job or not (and I believe it does).
       </p>
       <p>
+        While one <i>could</i> do similar prep for free on a site like{" "}
+        <a href="www.leetcode.com">LeetCode</a>, detailed explanations and code
+        walkthroughs are not available there. There are <i>some</i> solution
+        videos that LeetCode users have uploaded to YouTube for certain
+        problems, but the quality of these are poor compared to the solution
+        videos available on AlgoExpert.
+      </p>
+      {/* <p>
         The path I recommend for solving problems on AlgoExpert is laid out in{" "}
         <a
           href="https://docs.google.com/spreadsheets/d/1gV1s_hSnmRRM3qbjhMVzgptdbSHwMMinL5Zpw8fdtFA"
@@ -196,16 +204,16 @@ function InterviewPrep() {
           "<span className="red-text">Continuous Median</span>"
         </i>{" "}
         should be the first four problems skipped, in that order.
-      </p>
+      </p> */}
       <p>
-        If you feel helpless after the first row or two of problems, being
-        basically unable to solve any of them, just realize that this is totally
-        normal! It takes a while to learn the patterns to be able to solve these
-        problems. This is why the detailed solution videos are so valuable on
-        AlgoExpert. Just try your best on each problem, and watch the videos
-        when you get stuck. You will learn the patterns if you keep going. For
-        more help on patterns, see the Interview Question Patterns subsection
-        above.
+        By the way, if you feel helpless after attempting several problems,
+        being basically unable to solve any of them, just realize that this is
+        totally normal! It takes a while to learn the patterns to be able to
+        solve these problems. This is why the detailed solution videos are so
+        valuable on AlgoExpert. Just try your best on each problem, and watch
+        the videos when you get stuck. You will learn the patterns if you keep
+        going. For more help on patterns, see the Interview Question Patterns
+        subsection above.
       </p>
     </>
   );
