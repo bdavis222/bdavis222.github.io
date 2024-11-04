@@ -567,13 +567,6 @@ p {
   margin-bottom: 25px;
   padding: 10px;
 }
-.company-card.project {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--lightProjectCardBackgroundColor);
-}
 .company-container {
   display: flex;
   height: 55px;
@@ -629,6 +622,41 @@ p {
   padding-left: 30px;
   padding-right: 15px;
   color: var(--lightCompanyAchievementsColor);
+}
+
+/* Roadmap software project card styling */
+.company-card.project {
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--lightProjectCardBackgroundColor);
+}
+.project-header {
+  margin-bottom: 0px;
+}
+.project-header.Beginner {
+  color: var(--lightGreenTextColor);
+}
+.project-header.Intermediate {
+  color: var(--lightOrangeTextColor);
+}
+.project-header.Advanced {
+  color: var(--lightRedTextColor);
+}
+.project-difficulty {
+  font-weight: 300;
+  font-size: medium;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  color: var(--lightH3Color);
+}
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
 }
 
 /* Publication styling */
@@ -726,18 +754,6 @@ p {
   margin-top: 10px;
   margin-bottom: 9px;
   background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Roadmap software project card styling */
-.project-header {
-  margin-bottom: 0px;
-}
-.project-difficulty {
-  font-weight: 300;
-  font-size: medium;
-  margin-top: 0px;
-  margin-bottom: 8px;
-  color: var(--darkH3Color);
 }
 
 /* Donate button */
@@ -1163,7 +1179,20 @@ p {
   .software-page-button-description {
     color: var(--darkSoftwarePageCardDescriptionColor);
   }
+  .project-header.Beginner {
+    color: var(--darkGreenTextColor);
+  }
+  .project-header.Intermediate {
+    color: var(--darkOrangeTextColor);
+  }
+  .project-header.Advanced {
+    color: var(--darkRedTextColor);
+  }
   .project-difficulty {
-    color: var(--lightH3Color);
+    color: var(--darkH3Color);
+  }
+  .close-icon {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
   }
 }

@@ -38,8 +38,15 @@ function ResumeProjects() {
         </a>{" "}
         has free courses on the basics of most languages to get you started. The
         language you choose should be based on what project you want to
-        complete. Below are a few examples.
+        complete.
       </p>
+      <p>
+        Below are a few project examples. Click any project of interest to
+        expand it and read more.
+      </p>
+
+      <h3>App and Web Development</h3>
+
       <ResumeProject
         title="iOS App"
         difficulty="Beginner"
@@ -100,11 +107,10 @@ function ResumeProjects() {
       />
 
       <ResumeProject
-        title="React Website"
+        title="Website"
         difficulty="Beginner"
         icons={[
           "assets/react-logo.png",
-          "assets/javascript-logo.png",
           "assets/typescript-logo.png",
           "assets/html-logo.png",
           "assets/css-logo.png",
@@ -124,9 +130,8 @@ function ResumeProjects() {
                 target="_blank"
               >
                 HTML tutorial
-              </a>{" "}
-              of HTML. You can then follow a long with this quick Web Dev
-              Simplified{" "}
+              </a>
+              . You can then follow a long with this quick Web Dev Simplified{" "}
               <a
                 href="https://www.youtube.com/watch?v=1PnVor36_40&list=PLijBK_3oP_H6MG6lU_8TZ5Q2DhXsKKGJ1&index=4"
                 target="_blank"
@@ -156,8 +161,10 @@ function ResumeProjects() {
         }
       />
 
+      <h3>Video Game Development</h3>
+
       <ResumeProject
-        title="PyGame Video Game"
+        title="Python Game"
         difficulty="Beginner"
         icons={["assets/pygame-logo.png", "assets/python-logo.png"]}
         description={
@@ -178,7 +185,7 @@ function ResumeProjects() {
       />
 
       <ResumeProject
-        title="Unity Video Game"
+        title="Unity Game"
         difficulty="Intermediate"
         icons={["assets/unity-logo.png", "assets/c-sharp-logo.png"]}
         description={
@@ -199,7 +206,7 @@ function ResumeProjects() {
       />
 
       <ResumeProject
-        title="SFML Video Game"
+        title="SFML Game"
         difficulty="Advanced"
         icons={["assets/sfml-logo.png", "assets/cpp-logo.png"]}
         description={
