@@ -1,5 +1,6 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
+import MobileAppStoreButtons from "./MobileAppStoreButtons";
 
 function Operator() {
   const bannerImage = "assets/operator.png";
@@ -25,13 +26,8 @@ function Operator() {
         to player performance for any of the selected difficulty levels,
         providing a challenge for all ages.
       </p>
-      <p>
-        Operator was written for iOS in Swift using the{" "}
-        <a href="https://developer.apple.com/xcode/swiftui/" target="_blank">
-          SwiftUI development framework
-        </a>
-        .
-      </p>
+      <p>Operator is available for both iOS and Android:</p>
+      <MobileAppStoreButtons />
       <h2>Gameplay Demo</h2>
       <p>Below is a demo of some of the gameplay in Operator.</p>
       <iframe
