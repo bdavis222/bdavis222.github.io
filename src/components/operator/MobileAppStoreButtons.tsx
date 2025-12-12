@@ -1,8 +1,4 @@
-import {
-  AppStoreButton,
-  GooglePlayButton,
-  ButtonsContainer,
-} from "react-mobile-app-button";
+import { AppStoreButton, GooglePlayButton } from "react-mobile-app-button";
 import React from "react";
 
 const MobileAppStoreButtons: React.FC = () => {
@@ -10,7 +6,7 @@ const MobileAppStoreButtons: React.FC = () => {
   const androidUrl = "https://play.google.com/store/apps"; // Use Google Play URL when available
 
   return (
-    <ButtonsContainer>
+    <div className="mobile-app-button-container">
       <AppStoreButton
         url={iOSUrl}
         theme={"dark"}
@@ -22,7 +18,7 @@ const MobileAppStoreButtons: React.FC = () => {
         className={"custom-google-play-btn"}
         width={200}
       />
-    </ButtonsContainer>
+    </div>
   );
 };
 

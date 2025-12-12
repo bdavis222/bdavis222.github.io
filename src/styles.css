@@ -413,6 +413,12 @@ p {
   text-align: center;
 }
 
+.mobile-app-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 /* General image styling */
 .page-banner {
   border: var(--lightPageBannerBorder);
