@@ -422,11 +422,11 @@ p {
 .mobile-screenshot-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
 }
 
 .mobile-screenshot {
-  width: 150px;
+  width: 155px;
 }
 
 /* General image styling */
