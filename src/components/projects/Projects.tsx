@@ -1,7 +1,8 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 import EducationalCards from "./EducationalCards";
-import SoftwareCards from "./SoftwareCards";
+import GameCards from "./GameCards";
+import UtilityCards from "./UtilityCards";
 import WebsiteCards from "./WebsiteCards";
 
 function Projects() {
@@ -19,8 +20,10 @@ function Projects() {
     <>
       <h1>{document.title}</h1>
       <DonateButton />
-      <h2 style={{ marginLeft: 10 }}>Software</h2>
-      <SoftwareCards />
+      <h2 style={{ marginLeft: 10 }}>Games</h2>
+      <GameCards />
+      <h2 style={{ marginLeft: 10 }}>Utilities</h2>
+      <UtilityCards />
       <h2 style={{ marginLeft: 10 }}>Websites</h2>
       <WebsiteCards />
       <h2 style={{ marginLeft: 10 }}>Educational Materials</h2>
