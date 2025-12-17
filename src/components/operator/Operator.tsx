@@ -28,7 +28,7 @@ function Operator() {
         within a given time limit to earn more time and advance to the next
         level. The difficulty adapts to player performance for any of the
         selected difficulty levels, providing a challenge for all ages. Operator
-        is available for both iOS and Android:
+        is coming soon to both iOS and Android:
       </p>
 
       <MobileAppStoreButtons
@@ -74,7 +74,7 @@ function Operator() {
         />
       </div>
 
-      <p>Play it for free on your iOS and Android device today!</p>
+      <p>Check back soon to play it for free on your iOS or Android device!</p>
 
       <Footer />
     </>
