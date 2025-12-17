@@ -419,6 +419,16 @@ p {
   gap: 15px;
 }
 
+.mobile-screenshot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.mobile-screenshot {
+  width: 150px;
+}
+
 /* General image styling */
 .page-banner {
   border: var(--lightPageBannerBorder);

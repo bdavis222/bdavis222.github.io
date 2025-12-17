@@ -16,32 +16,66 @@ function Operator() {
   return (
     <>
       <h1>{document.title}</h1>
+
       <h2 className="subtitle">A game for math enthusiasts</h2>
+
       <DonateButton />
+
       <img src={bannerImage} className="page-banner" />
+
       <p>
         Operator is a game in which the player tries to solve math puzzles
         within a given time limit to earn more time and advance to the next
-        level. The puzzles are procedurally generated, so the difficulty adapts
-        to player performance for any of the selected difficulty levels,
-        providing a challenge for all ages.
+        level. The difficulty adapts to player performance for any of the
+        selected difficulty levels, providing a challenge for all ages. Operator
+        is available for both iOS and Android:
       </p>
-      <p>Operator is available for both iOS and Android:</p>
-      <MobileAppStoreButtons />
-      <h2>Gameplay Demo</h2>
-      <p>Below is a demo of some of the gameplay in Operator.</p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://youtube.com/embed/fHHGLkNMmWQ"
-        title="YouTube video player"
-        allowFullScreen
-      ></iframe>
+
+      <MobileAppStoreButtons
+        iosLink="https://www.apple.com/app-store/" // Use App Store URL when available
+        androidLink="https://play.google.com/store/apps" // Use Google Play URL when available
+      />
+
+      <h2>Screenshots</h2>
+
       <p>
-        There are three different base difficulty levels. After a difficulty is
-        selected, the difficulty will continue to ramp up with player
-        performance.
+        Below are some screenshots of the app, showing the home screen, some
+        gameplay, the game-over screen, and the list of achievements. Along with
+        these achievements, players can also review their top scores for each
+        difficulty level, and their daily streak is tracked and displayed on the
+        home screen.
       </p>
+
+      <div className="mobile-screenshot-container">
+        <img
+          className="mobile-screenshot"
+          src="assets/operator-home.png"
+          alt="Operator home screen"
+        />
+        <img
+          className="mobile-screenshot"
+          src="assets/operator-level3.png"
+          alt="Operator gameplay"
+        />
+        <img
+          className="mobile-screenshot"
+          src="assets/operator-level4.png"
+          alt="Operator gameplay"
+        />
+        <img
+          className="mobile-screenshot"
+          src="assets/operator-game-over.png"
+          alt="Operator game-over screen"
+        />
+        <img
+          className="mobile-screenshot"
+          src="assets/operator-achievements.png"
+          alt="Operator achievements screen"
+        />
+      </div>
+
+      <p>Play it for free on your iOS and Android device today!</p>
+
       <Footer />
     </>
   );
