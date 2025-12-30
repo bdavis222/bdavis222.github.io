@@ -69,6 +69,11 @@ function Operator() {
         />
         <img
           className="mobile-screenshot"
+          src="assets/operator-leaderboards.png"
+          alt="Operator leaderboards screen"
+        />
+        <img
+          className="mobile-screenshot"
           src="assets/operator-achievements.png"
           alt="Operator achievements screen"
         />
