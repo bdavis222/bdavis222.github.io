@@ -40,10 +40,11 @@ function Operator() {
 
       <p>
         Below are some screenshots of the app, showing the home screen, some
-        gameplay, the game-over screen, and the list of achievements. Along with
-        these achievements, players can also review their top scores for each
-        difficulty level, and their daily streak is tracked and displayed on the
-        home screen.
+        gameplay, the game-over screen, the online leaderboards, and the list of
+        achievements. Along with these achievements and online leaderboards,
+        players can also review their personal top scores for each difficulty
+        level locally on the device, and their daily streak is tracked and
+        displayed on the home screen.
       </p>
 
       <div className="mobile-screenshot-container">
