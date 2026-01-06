@@ -18,7 +18,6 @@ function GameCards() {
           title="Operator"
           description="An original math puzzle game with procedurally generated levels"
           link="/#/operator"
-          newTab
           image="assets/operator.png"
           icons={iosIcons.concat(androidIcons)}
         />
@@ -26,7 +25,6 @@ function GameCards() {
           title="Gravity"
           description="An original spaceflight game with a built-in level editor"
           link="/#/gravity"
-          newTab
           image="assets/gravity.png"
           icons={["assets/sfml-logo.png", "assets/cpp-logo.png"]}
         />

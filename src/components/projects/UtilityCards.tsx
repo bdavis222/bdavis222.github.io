@@ -8,7 +8,6 @@ function UtilityCards() {
           title="Dot Scanner"
           description="Software designed for analysis of microscope imaging data"
           link="/#/dotscanner"
-          newTab
           image="assets/dotscanner.png"
           icons={["assets/python-logo.png"]}
         />
@@ -16,7 +15,6 @@ function UtilityCards() {
           title="PyPI Maker"
           description="Software designed for simplifying PyPI Python package setups"
           link="/#/pypimaker"
-          newTab
           image="assets/pypimaker.png"
           icons={["assets/python-logo.png"]}
         />
@@ -24,7 +22,6 @@ function UtilityCards() {
           title="Crater Sim"
           description="Software for simulating crater saturation on celestial bodies"
           link="/#/cratersim"
-          newTab
           image="assets/crater-sim.png"
           icons={["assets/python-logo.png"]}
         />
@@ -32,7 +29,6 @@ function UtilityCards() {
           title="Quick Spec"
           description="Software for quick analysis of amateur stellar spectra"
           link="/#/quickspec"
-          newTab
           image="assets/quick-spec.png"
           icons={["assets/python-logo.png"]}
         />

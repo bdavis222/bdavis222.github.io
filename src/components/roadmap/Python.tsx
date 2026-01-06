@@ -14,15 +14,10 @@ function Python() {
       />
       <p>
         If you don't yet know how to program in any language, I have designed an{" "}
-        <a href="/#/python" target="_blank">
-          introductory Python course
-        </a>{" "}
-        (and a{" "}
-        <a href="/#/python-course-mobile" target="_blank">
-          mobile version
-        </a>{" "}
-        of the course as well) to bring you up to speed. If you already know how to 
-        program in Python or any other language, you can skip to the next section.
+        <a href="/#/python">introductory Python course</a> (and a{" "}
+        <a href="/#/python-course-mobile">mobile version</a> of the course as
+        well) to bring you up to speed. If you already know how to program in
+        Python or any other language, you can skip to the next section.
       </p>
       <p>
         Note that a good understanding of object-oriented programming (OOP) is

@@ -2,12 +2,17 @@ interface Props {
   label: string;
   link: string;
   color: string;
+  newTab?: boolean;
 }
 
-function LinkButton({ label, link, color = "" }: Props) {
+function LinkButton({ label, link, color = "", newTab = false }: Props) {
   return (
     <div className="link-button-container">
-      <a href={link} className={"link-button " + color}>
+      <a
+        href={link}
+        target={newTab ? "_blank" : "_self"}
+        className={"link-button " + color}
+      >
         {label}
       </a>
     </div>

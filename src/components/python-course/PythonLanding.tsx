@@ -46,6 +46,7 @@ function PythonLanding() {
         label="Begin course"
         link="https://bdavis222.github.io/python-course"
         color="green"
+        newTab
       />
       <hr />
       <h2>Course structure</h2>

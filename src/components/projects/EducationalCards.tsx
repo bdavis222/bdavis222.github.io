@@ -27,7 +27,6 @@ function EducationalCards() {
           title="Interactive Python Course"
           description="An interactive beginner Python course"
           link="/#/python"
-          newTab
           image="assets/python.png"
           icons={pythonCourseIcons}
         />
@@ -35,7 +34,6 @@ function EducationalCards() {
           title="Mobile Python Course"
           description="A mobile-friendly beginner Python course"
           link="/#/python-course-mobile"
-          newTab
           image="assets/python-mobile.png"
           icons={mobilePythonCourseIcons}
         />
@@ -43,7 +41,6 @@ function EducationalCards() {
           title="Software Engineering Roadmap"
           description="A guide for starting a software career"
           link="/#/roadmap"
-          newTab
           image="assets/roadmap.png"
           icons={reactIcons}
         />
