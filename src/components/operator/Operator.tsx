@@ -54,12 +54,12 @@ function Operator() {
       slidesToSlide: 1,
     },
     small: {
-      breakpoint: { max: 760, min: 600 },
+      breakpoint: { max: 760, min: 500 },
       items: 3,
       slidesToSlide: 1,
     },
     tiny: {
-      breakpoint: { max: 600, min: 370 },
+      breakpoint: { max: 500, min: 370 },
       items: 2,
       slidesToSlide: 1,
     },
@@ -145,25 +145,26 @@ function Operator() {
             </div>
           ))}
         </Carousel>
-        {selectedImg && (
-          <div className="modal-overlay" onClick={() => setSelectedImg(null)}>
-            <span className="modal-close" onClick={() => setSelectedImg(null)}>
-              &times;
-            </span>
-
-            <img
-              src={selectedImg}
-              className="modal-content"
-              alt="Enlarged"
-              onClick={(e) => e.stopPropagation()} // Prevents closing when clicking the image
-            />
-          </div>
-        )}
       </div>
 
       <p>Check back soon to play it for free on your iOS or Android device!</p>
 
       <Footer />
+
+      {selectedImg && (
+        <div className="modal-overlay" onClick={() => setSelectedImg(null)}>
+          <span className="modal-close" onClick={() => setSelectedImg(null)}>
+            &times;
+          </span>
+
+          <img
+            src={selectedImg}
+            className="modal-content"
+            alt="Enlarged"
+            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking the image
+          />
+        </div>
+      )}
     </>
   );
 }
