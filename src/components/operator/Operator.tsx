@@ -36,6 +36,20 @@ function Operator() {
         androidLink="https://play.google.com/store/apps" // Use Google Play URL when available
       />
 
+      <h2>Features</h2>
+
+      <ul>
+        <li>Easy, Normal, and Hard starting difficulty modes</li>
+        <li>
+          Online leaderboards (using the built-in <i>Game Center</i> on iOS and{" "}
+          <i>Play Games Services</i> on Android)
+        </li>
+        <li>Local offline high-score tables</li>
+        <li>Achievements</li>
+        <li>Daily streak tracking</li>
+        <li>Localizations in over 10 languages</li>
+      </ul>
+
       <h2>Screenshots</h2>
 
       <p>
