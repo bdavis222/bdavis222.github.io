@@ -70,7 +70,7 @@ function Operator() {
 
   const totalDistance = Math.sqrt(currentX ** 2 + currentY ** 2);
   const scale = Math.max(1 - totalDistance / 500, 0.1);
-  const overlayOpacity = Math.max(0.85 - totalDistance / 300, 0);
+  const overlayOpacity = Math.max(0.85 - totalDistance / 600, 0);
   const dynamicBlur = isDismissing ? 0 : Math.max(5 - totalDistance / 60, 0);
 
   // Determine the final position if dismissing
