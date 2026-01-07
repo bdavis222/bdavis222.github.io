@@ -121,15 +121,6 @@ a:hover {
 b {
   color: var(--lightBoldColor);
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
-  display: flex;
-  place-items: center;
-  min-width: 333px;
-  min-height: 100vh;
-}
 code {
   background-color: var(--lightCodeBackgroundColor);
   color: white;
@@ -178,11 +169,24 @@ p {
   color: var(--lightTextColor);
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  width: 100%;
+  min-width: 333px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .fab-container {
@@ -419,14 +423,103 @@ p {
   gap: 15px;
 }
 
-.mobile-screenshot-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+/* Image carousel */
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-with-dots {
+  padding-bottom: 30px;
+}
+
+.carousel-with-dots .react-multi-carousel-dot-list {
+  bottom: 0;
+}
+
+.carousel-with-dots .react-multi-carousel-dot button {
+  background: var(--darkGrayTextColor); /* Inactive color */
+  border: none;
+  margin: 0 5px;
+}
+
+.carousel-with-dots .react-multi-carousel-dot--active button {
+  background: var(--lightLinkColor); /* Active color */
+}
+
+@media (prefers-color-scheme: dark) {
+  .carousel-with-dots .react-multi-carousel-dot button {
+    background: var(--lightGrayTextColor);
+  }
+  .carousel-with-dots .react-multi-carousel-dot--active button {
+    background: var(--darkLinkColor); /* Your theme's light purple */
+  }
+}
+
+.mobile-screenshot img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 .mobile-screenshot {
-  width: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Image zoom overlay on click */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85); /* Dims the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensures it sits on top of FABs and Navs */
+  cursor: zoom-out;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 85%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  animation: zoomIn 0.2s ease-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* General image styling */
@@ -985,10 +1078,6 @@ p {
   }
 }
 @media screen and (max-width: 720px) {
-  body {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
   .column {
     width: 100%;
     height: auto;

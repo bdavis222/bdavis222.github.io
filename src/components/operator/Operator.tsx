@@ -1,6 +1,9 @@
 import DonateButton from "../DonateButton";
 import Footer from "../Footer";
 import MobileAppStoreButtons from "./MobileAppStoreButtons";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useState, useEffect } from "react";
 
 function Operator() {
   const bannerImage = "assets/operator.png";
@@ -12,6 +15,60 @@ function Operator() {
   document
     .querySelectorAll("meta[property=og\\:title]")[0]
     .setAttribute("content", document.title);
+
+  const screenshots = [
+    "assets/operator-home.png",
+    "assets/operator-level3.png",
+    "assets/operator-level4.png",
+    "assets/operator-game-over.png",
+    "assets/operator-leaderboards.png",
+    "assets/operator-achievements.png",
+  ];
+
+  const [selectedImg, setSelectedImg] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (selectedImg) {
+      // Disable scrolling
+      document.body.style.overflow = "hidden";
+    } else {
+      // Re-enable scrolling
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup function to ensure scrolling is re-enabled if the component unmounts
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [selectedImg]);
+
+  const responsive = {
+    large: {
+      breakpoint: { max: 3000, min: 930 },
+      items: 5,
+      slidesToSlide: 1,
+    },
+    medium: {
+      breakpoint: { max: 930, min: 760 },
+      items: 4,
+      slidesToSlide: 1,
+    },
+    small: {
+      breakpoint: { max: 760, min: 600 },
+      items: 3,
+      slidesToSlide: 1,
+    },
+    tiny: {
+      breakpoint: { max: 600, min: 370 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    mini: {
+      breakpoint: { max: 370, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
 
   return (
     <>
@@ -61,37 +118,47 @@ function Operator() {
         displayed on the home screen.
       </p>
 
-      <div className="mobile-screenshot-container">
-        <img
-          className="mobile-screenshot"
-          src="assets/operator-home.png"
-          alt="Operator home screen"
-        />
-        <img
-          className="mobile-screenshot"
-          src="assets/operator-level3.png"
-          alt="Operator gameplay"
-        />
-        <img
-          className="mobile-screenshot"
-          src="assets/operator-level4.png"
-          alt="Operator gameplay"
-        />
-        <img
-          className="mobile-screenshot"
-          src="assets/operator-game-over.png"
-          alt="Operator game-over screen"
-        />
-        <img
-          className="mobile-screenshot"
-          src="assets/operator-leaderboards.png"
-          alt="Operator leaderboards screen"
-        />
-        <img
-          className="mobile-screenshot"
-          src="assets/operator-achievements.png"
-          alt="Operator achievements screen"
-        />
+      <div className="carousel-container">
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={false} // Do not render the carousel on the server-side
+          infinite={false}
+          autoPlay={false}
+          keyBoardControl={false}
+          transitionDuration={0}
+          containerClass="carousel-with-dots"
+        >
+          {screenshots.map((src, index) => (
+            <div
+              key={index}
+              className="mobile-screenshot"
+              onClick={() => setSelectedImg(src)}
+            >
+              <img
+                src={src}
+                alt="App Screenshot"
+                style={{ cursor: "zoom-in" }}
+              />
+            </div>
+          ))}
+        </Carousel>
+        {selectedImg && (
+          <div className="modal-overlay" onClick={() => setSelectedImg(null)}>
+            <span className="modal-close" onClick={() => setSelectedImg(null)}>
+              &times;
+            </span>
+
+            <img
+              src={selectedImg}
+              className="modal-content"
+              alt="Enlarged"
+              onClick={(e) => e.stopPropagation()} // Prevents closing when clicking the image
+            />
+          </div>
+        )}
       </div>
 
       <p>Check back soon to play it for free on your iOS or Android device!</p>
