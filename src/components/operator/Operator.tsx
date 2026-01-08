@@ -236,7 +236,7 @@ function Operator() {
             // Apply dynamic blur based on swipe distance
             backdropFilter: `blur(${dynamicBlur}px)`,
             WebkitBackdropFilter: `blur(${dynamicBlur}px)`,
-            // Ensure the transition matches your background-color fade
+            // Ensure the transition matches background-color fade
             transition: isDismissing ? "all 0.3s ease" : "none",
           }}
           onClick={() => setSelectedImg(null)}

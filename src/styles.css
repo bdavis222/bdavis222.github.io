@@ -479,7 +479,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 99999; /* High z-index to cover your Nav and FAB buttons */
+  z-index: 9999; /* High z-index to cover Nav and FAB buttons */
   cursor: pointer;
 }
 
@@ -489,7 +489,6 @@ body {
   object-fit: contain;
   border-radius: 8px;
   cursor: default;
-  animation: zoomIn 0.2s ease-out;
 }
 
 .modal-close {
@@ -502,17 +501,6 @@ body {
   cursor: pointer;
   line-height: 1;
   user-select: none;
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 /* General image styling */

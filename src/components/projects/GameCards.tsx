@@ -18,7 +18,7 @@ function GameCards() {
           title="Operator"
           description="An original math puzzle game with procedurally generated levels"
           link="/#/operator"
-          image="assets/operator.png"
+          image="assets/operator-card-banner.png"
           icons={iosIcons.concat(androidIcons)}
         />
         <Card
