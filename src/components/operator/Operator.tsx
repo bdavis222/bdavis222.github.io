@@ -171,7 +171,7 @@ function Operator() {
       <h2>Features</h2>
 
       <ul>
-        <li>Easy, Normal, and Hard starting difficulty modes</li>
+        <li>Easy, Normal, Hard, and Expert difficulty modes</li>
         <li>
           Online leaderboards (using the built-in <i>Game Center</i> on iOS and{" "}
           <i>Play Games Services</i> on Android)
