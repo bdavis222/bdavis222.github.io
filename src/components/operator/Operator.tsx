@@ -171,26 +171,48 @@ function Operator() {
       <h2>Features</h2>
 
       <ul>
-        <li>Easy, Normal, Hard, and Expert difficulty modes</li>
         <li>
-          Online leaderboards (using the built-in <i>Game Center</i> on iOS and{" "}
-          <i>Play Games Services</i> on Android)
+          <b>
+            <span className="orange-text">Four Standard Difficulty Modes:</span>
+          </b>{" "}
+          From the learning-friendly "Easy" mode to the mind-bending "Expert"
+          mode, logic challenges for all await!
         </li>
-        <li>Local offline high-score tables</li>
-        <li>Achievements</li>
-        <li>Daily streak tracking</li>
-        <li>Localizations in over 10 languages</li>
+        <li>
+          <b>
+            <span className="orange-text">Daily Challenge Mode:</span>
+          </b>{" "}
+          Master the 3x3 grid! Determine and fill in the missing mathematical
+          operators to satisfy all rows and columns simultaneously.
+        </li>
+        <li>
+          <b>
+            <span className="orange-text">Brain Training on the Go:</span>
+          </b>{" "}
+          Play offline or online—perfect for your commute or a quick break.
+        </li>
+        <li>
+          <b>
+            <span className="orange-text">Compete Globally:</span>
+          </b>{" "}
+          Climb the online leaderboards and prove your skills.
+        </li>
+        <li>
+          <b>
+            <span className="orange-text">Track Your Progress:</span>
+          </b>{" "}
+          Earn dozens of achievements and maintain your Daily Streak to build a
+          healthy brain habit.
+        </li>
       </ul>
 
       <h2>Screenshots</h2>
 
       <p>
-        Below are some screenshots of the app, showing the home screen, some
-        gameplay, the game-over screen, the online leaderboards, and the list of
-        achievements. Along with these achievements and online leaderboards,
-        players can also review their personal top scores for each difficulty
-        level locally on the device, and their daily streak is tracked and
-        displayed on the home screen.
+        Below are some screenshots of the app. Along with the achievements and
+        online leaderboards, players can also review their personal top scores
+        for each difficulty level locally on the device, and their daily streak
+        is tracked and displayed on the home screen.
       </p>
 
       <div className="carousel-container">

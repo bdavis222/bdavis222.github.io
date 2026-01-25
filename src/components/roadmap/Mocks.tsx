@@ -17,7 +17,7 @@ function Mocks() {
         majority of the medium problems that you're attempting, it is time to
         start doing regularly scheduled mock interviews while you continue to
         prepare. These mock interviews should be happening alongside your
-        continued preparation, so don’t stop solving problems on AlgoExpert.{" "}
+        continued preparation, so don't stop solving problems on AlgoExpert.{" "}
         <a href="https://youtu.be/3Q_oYDQ2whs?t=129" target="_blank">
           Here
         </a>{" "}
