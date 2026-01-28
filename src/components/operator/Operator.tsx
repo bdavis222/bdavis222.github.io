@@ -17,18 +17,19 @@ function Operator() {
     .setAttribute("content", document.title);
 
   const screenshots = [
-    "assets/operator-home.png",
-    "assets/operator-level3.png",
-    "assets/operator-level4.png",
-    "assets/operator-game-over.png",
-    "assets/operator-leaderboards.png",
-    "assets/operator-achievements.png",
+    "assets/operator-screenshot1.png",
+    "assets/operator-screenshot2.png",
+    "assets/operator-screenshot3.png",
+    "assets/operator-screenshot4.png",
+    "assets/operator-screenshot5.png",
+    "assets/operator-screenshot6.png",
+    "assets/operator-screenshot7.png",
   ];
 
   // State for the expanded image in the carousel
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
   const [touchStart, setTouchStart] = useState<{ x: number; y: number } | null>(
-    null
+    null,
   );
   const [currentX, setCurrentX] = useState(0);
   const [currentY, setCurrentY] = useState(0);
@@ -168,6 +169,37 @@ function Operator() {
         androidLink="https://play.google.com/store/apps" // Use Google Play URL when available
       />
 
+      <h2>Screenshots</h2>
+
+      <div className="carousel-container">
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={false} // Do not render the carousel on the server-side
+          infinite={false}
+          autoPlay={false}
+          keyBoardControl={false}
+          transitionDuration={0}
+          containerClass="carousel-with-dots"
+        >
+          {screenshots.map((src, index) => (
+            <div
+              key={index}
+              className="mobile-screenshot"
+              onClick={() => setSelectedImg(src)}
+            >
+              <img
+                src={src}
+                alt="App Screenshot"
+                style={{ cursor: "pointer" }}
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
+
       <h2>Features</h2>
 
       <ul>
@@ -205,44 +237,6 @@ function Operator() {
           healthy brain habit.
         </li>
       </ul>
-
-      <h2>Screenshots</h2>
-
-      <p>
-        Below are some screenshots of the app. Along with the achievements and
-        online leaderboards, players can also review their personal top scores
-        for each difficulty level locally on the device, and their daily streak
-        is tracked and displayed on the home screen.
-      </p>
-
-      <div className="carousel-container">
-        <Carousel
-          swipeable={false}
-          draggable={false}
-          showDots={true}
-          responsive={responsive}
-          ssr={false} // Do not render the carousel on the server-side
-          infinite={false}
-          autoPlay={false}
-          keyBoardControl={false}
-          transitionDuration={0}
-          containerClass="carousel-with-dots"
-        >
-          {screenshots.map((src, index) => (
-            <div
-              key={index}
-              className="mobile-screenshot"
-              onClick={() => setSelectedImg(src)}
-            >
-              <img
-                src={src}
-                alt="App Screenshot"
-                style={{ cursor: "pointer" }}
-              />
-            </div>
-          ))}
-        </Carousel>
-      </div>
 
       <p>Check back soon to play it for free on your iOS or Android device!</p>
 
