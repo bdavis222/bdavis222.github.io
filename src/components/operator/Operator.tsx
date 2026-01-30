@@ -161,12 +161,12 @@ function Operator() {
         within a given time limit to earn more time and advance to the next
         level. The difficulty adapts to player performance for any of the
         selected difficulty levels, providing a challenge for all ages. Operator
-        is coming soon to both iOS and Android:
+        is available now on both iOS and Android:
       </p>
 
       <MobileAppStoreButtons
-        iosLink="https://www.apple.com/app-store/" // Use App Store URL when available
-        androidLink="https://play.google.com/store/apps" // Use Google Play URL when available
+        iosLink="https://apps.apple.com/us/app/operator-math-puzzle-game/id6756993326"
+        androidLink="https://play.google.com/store/apps/details?id=com.briandavis.operator"
       />
 
       <h2>Screenshots</h2>
@@ -238,7 +238,7 @@ function Operator() {
         </li>
       </ul>
 
-      <p>Check back soon to play it for free on your iOS or Android device!</p>
+      <p>Play it for free on your iOS or Android device today!</p>
 
       <Footer />
 
