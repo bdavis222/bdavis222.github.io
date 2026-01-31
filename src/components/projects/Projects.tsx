@@ -19,7 +19,7 @@ function Projects() {
   return (
     <>
       <h1>{document.title}</h1>
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=687UCVASKKEPG" />
       <h2 style={{ marginLeft: 10 }}>Games</h2>
       <GameCards />
       <h2 style={{ marginLeft: 10 }}>Utilities</h2>

@@ -21,7 +21,7 @@ function PypiMaker() {
     <>
       <h1>{document.title}</h1>
       <h2 className="subtitle">Simplifying PyPI setup and management</h2>
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=687UCVASKKEPG" />
       <img src={bannerImage} className="page-banner" />
       <p>
         PyPI Maker is designed to simplify uploading and managing Python

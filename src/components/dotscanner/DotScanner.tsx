@@ -20,7 +20,7 @@ function DotScanner() {
     <>
       <h1>{document.title}</h1>
       <h2 className="subtitle">Microscope image analysis software</h2>
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=687UCVASKKEPG" />
       <img src={bannerImage} className="page-banner" />
       <p>
         Dot Scanner is designed to simplify analysis of microscope imaging data.

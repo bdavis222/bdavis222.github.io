@@ -17,7 +17,7 @@ function PythonCourseMobile() {
     <>
       <h1 id="title">{document.title}</h1>
       <h2 className="subtitle">A mobile course for beginners to programming</h2>
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=687UCVASKKEPG" />
       <img src={bannerImage} className="page-banner" />
       <p>
         Welcome to the read-only, mobile-friendly version of this introductory

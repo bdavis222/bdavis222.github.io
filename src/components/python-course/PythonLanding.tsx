@@ -19,7 +19,7 @@ function PythonLanding() {
       <h2 className="subtitle">
         An interactive course for beginners to programming
       </h2>
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=687UCVASKKEPG" />
       <img src={bannerImage} className="page-banner" />
       <p>
         Welcome! This is an interactive course designed to teach Python
