@@ -152,7 +152,7 @@ function Operator() {
 
       <h2 className="subtitle">A game for math enthusiasts</h2>
 
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=EDLSPQ42AAEUS" />
 
       <img src={bannerImage} className="page-banner" />
 

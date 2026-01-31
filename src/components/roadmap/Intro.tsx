@@ -8,7 +8,7 @@ function Intro() {
       <h2 className="subtitle">
         A guide to landing a career in the software industry
       </h2>
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=687UCVASKKEPG" />
       <img src="assets/roadmap.png" className="page-banner" />
       <p>
         This website is designed to guide people of all different levels of

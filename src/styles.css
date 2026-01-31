@@ -850,15 +850,8 @@ body {
 }
 
 /* Donate button */
-.donate-button {
-  padding: 5px;
-  filter: var(--lightButtonFilter);
-}
-.donate-button:hover {
-  opacity: 0.5;
-}
 .donate-button-container {
-  height: 35px;
+  height: 40px;
   margin-top: 15px;
   margin-bottom: 20px;
   position: relative;
@@ -870,6 +863,15 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.donate-button {
+  padding: 5px;
+  height: 40px;
+  filter: var(--lightButtonFilter);
+  cursor: pointer;
+}
+.donate-button:hover {
+  opacity: 0.7;
 }
 
 /* Generic buttons that link to pages */

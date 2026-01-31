@@ -1,15 +1,16 @@
-function DonateButton() {
+interface Props {
+  link: string;
+}
+
+function DonateButton({ link }: Props) {
   return (
     <>
       <div className="donate-button-container">
         <div className="center-in-donate-button-container">
-          <a
-            href="https://www.paypal.com/donate/?business=UA5NL9MJSFMVY"
-            target="_blank"
-          >
+          <a href={link}>
             <img
               className="donate-button"
-              src="https://img.shields.io/badge/Donate-PayPal-green.svg"
+              src="assets/paypal-donate-button-img.png"
               alt="Donate button"
             />
           </a>

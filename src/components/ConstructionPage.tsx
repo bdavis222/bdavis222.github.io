@@ -20,7 +20,7 @@ function ConstructionPage({ title, subtitle }: Props) {
     <>
       <h1 id="title">{document.title}</h1>
       <h2 className="subtitle">{subtitle}</h2>
-      <DonateButton />
+      <DonateButton link="https://www.paypal.com/donate/?hosted_button_id=687UCVASKKEPG" />
       <img src={bannerImage} className="page-banner" />
       <p>This page is currently under construction. Please check back soon!</p>
       <Footer />
