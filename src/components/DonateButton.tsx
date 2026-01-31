@@ -7,7 +7,7 @@ function DonateButton({ link }: Props) {
     <>
       <div className="donate-button-container">
         <div className="center-in-donate-button-container">
-          <a href={link}>
+          <a href={link} target="_blank">
             <img
               className="donate-button"
               src="assets/paypal-donate-button-img.png"
