@@ -5,6 +5,19 @@ function Skills() {
     <>
       <h2 style={{ marginBottom: 22 }}>Skills</h2>
       <div>
+        <img className="icon" src="assets/unity-logo.png" alt="Unity logo" />
+        <img
+          className="icon"
+          src="assets/c-sharp-logo.png"
+          alt="C Sharp logo"
+        />
+        <img className="icon" src="assets/apple-logo.png" alt="Apple logo" />
+        <img
+          className="icon"
+          src="assets/swiftui-logo.png"
+          alt="SwiftUI logo"
+        />
+        <img className="icon" src="assets/swift-logo.png" alt="Swift logo" />
         <img
           className="icon"
           src="assets/android-logo.png"
@@ -24,13 +37,6 @@ function Skills() {
           src="assets/jupyter-logo.png"
           alt="Jupyter logo"
         />
-        <img className="icon" src="assets/apple-logo.png" alt="Apple logo" />
-        <img
-          className="icon"
-          src="assets/swiftui-logo.png"
-          alt="SwiftUI logo"
-        />
-        <img className="icon" src="assets/swift-logo.png" alt="Swift logo" />
         <img
           className="icon"
           src="assets/javascript-logo.png"
@@ -50,6 +56,12 @@ function Skills() {
       </div>
       <p>
         {getSkillsList([
+          "Game Development",
+          "Unity",
+          "C#",
+          "iOS Development",
+          "Swift",
+          "SwiftUI",
           "Android Development",
           "Jetpack Compose",
           "Kotlin",
@@ -57,9 +69,7 @@ function Skills() {
           "Game Development",
           "C++",
           "Python",
-          "iOS Development",
-          "SwiftUI",
-          "Swift",
+          "Jupyter",
           "Web Development",
           "JavaScript",
           "TypeScript",

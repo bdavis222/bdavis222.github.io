@@ -4,22 +4,69 @@ function Experience() {
   return (
     <>
       <h2 style={{ marginBottom: 25 }}>Experience</h2>
+
+      <CompanyCard
+        name="Retrograde Interactive"
+        jobTitle="Founder & CEO"
+        dates="Aug 2026 - Present"
+        icon="assets/retrograde-interactive.png"
+        accomplishments={[
+          <li>
+            Developing innovative console games targeting multiple platforms
+          </li>,
+          <li>
+            Developing, launching, and maintaining successful games for iOS and
+            Android
+          </li>,
+        ]}
+        skills={[
+          "Game Development",
+          "Game Design",
+          "Unity",
+          "C#",
+          "iOS Development",
+          "Swift",
+          "SwiftUI",
+          "Android Development",
+          "Java",
+          "Kotlin",
+          "Jetpack Compose",
+          "End-to-End Development",
+          "Python",
+          "Unit Testing",
+          "Clean Architecture",
+          "Xcode",
+          "Android Studio",
+          "SQL",
+          "Bash",
+          "Unix",
+          "macOS",
+        ]}
+      />
+
       <CompanyCard
         name="Google"
         jobTitle="Software Engineer"
-        dates="Apr 2022 - Present"
+        dates="Apr 2022 - Aug 2026"
         icon="assets/google-name.png"
         accomplishments={[
-          <li>Developing features for Google Drive Android</li>,
+          <li>
+            Created novel backend AI solutions for Google's internal systems
+          </li>,
+          <li>
+            Developed, launched, and maintained several large and successful
+            frontend features for Google Drive
+          </li>,
           <li>Promoted for outstanding performance and leadership</li>,
-          <li>Leading projects for several organizational priorities</li>,
-          <li>Earned Google readability in multiple programming languages</li>,
+          <li>Lead and delivered projects for several company priorities</li>,
         ]}
         skills={[
           "Java",
           "Kotlin",
           "Python",
-          "Android",
+          "C++",
+          "Server Development",
+          "Android Development",
           "Jetpack Compose",
           "Unit Testing",
           "Clean Architecture",
@@ -32,6 +79,7 @@ function Experience() {
           "macOS",
         ]}
       />
+
       <CompanyCard
         name="Penn State"
         jobTitle="Research Assistant"
@@ -69,6 +117,7 @@ function Experience() {
           "Windows",
         ]}
       />
+
       <CompanyCard
         name="CU Boulder"
         jobTitle="Research Assistant"
@@ -76,6 +125,7 @@ function Experience() {
         icon="assets/cu-name.png"
         accomplishments={[
           <li>B.A. in astrophysics, 2016</li>,
+          <li>Chancellor's Recognition Award (4.0 GPA)</li>,
           <li>
             Honors Thesis:{" "}
             <i>
