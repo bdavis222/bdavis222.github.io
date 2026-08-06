@@ -24,18 +24,18 @@ jobs:
     steps:
       # checkout the repository content to github runner
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # setup nodejs environment
       - name: Setup Node.js environment
-        uses: actions/setup-node@v4 # Updated to v4 for better compatibility
+        uses: actions/setup-node@v5
         with:
-          node-version: "18.16.1"
-          cache: "npm" # Use built-in cache for modern actions/setup-node
+          node-version: "22"
+          cache: "npm"
 
       # install dependencies
       - name: Install dependencies
-        run: npm ci # Better practice for CI/CD
+        run: npm ci
 
       # build the react app
       - name: Build
@@ -45,13 +45,13 @@ jobs:
 
       # 1. Prepare and upload the artifact
       - name: Setup Pages
-        uses: actions/configure-pages@v5 # Sets up a standardized build environment
+        uses: actions/configure-pages@v6
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: "./dist" # directory to deploy
+          path: "./dist"
 
       # 2. Deploy the artifact to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # Updated to v4
+        uses: actions/deploy-pages@v5
