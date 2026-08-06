@@ -16,7 +16,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    permissions: # <-- ADDED PERMISSIONS
+    permissions:
       contents: read
       pages: write # For deploying to GitHub Pages
       id-token: write # For OIDC authentication
@@ -24,7 +24,7 @@ jobs:
     steps:
       # checkout the repository content to github runner
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # setup nodejs environment
       - name: Setup Node.js environment
