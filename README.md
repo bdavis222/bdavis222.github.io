@@ -1,8 +1,9 @@
 # Brian Davis
+
 > Portfolio site
 
 This page was written in TypeScript using the React library.
-It showcases several software products that I have created and gives a brief overview about me. 
+It showcases several software products that I have created and gives a brief overview about me.
 
 ## Development
 
@@ -36,4 +37,4 @@ The latter will give an address for other devices to connect to (to test on a mo
 
 ### Publishing changes
 
-The `static.yml` file within `.github/workflows/` will ensure that any changes pushed directly to the main branch of this repository will be published to the site.
+The `static.yml` file within `.github/workflows/` will allow for deployment. When ready for deployment (i.e., after new changes are pushed to `main`), go to the GitHub website and navigate to `Actions > Deploy static content to Pages (in the left sidebar) > Run workflow (on the right of the screen)`.
