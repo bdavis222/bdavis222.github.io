@@ -12,11 +12,18 @@ function Experience() {
         icon="assets/retrograde-interactive.png"
         accomplishments={[
           <li>
-            Developing innovative console games targeting multiple platforms
+            Developing novel, immersive console and PC video games{" "}
+            <i>
+              <span className="gray-text thin">
+                (Nintendo Switch, PlayStation, Windows, macOS)
+              </span>
+            </i>
           </li>,
           <li>
-            Developing, launching, and maintaining successful games for iOS and
-            Android
+            Launching successful and highly rated mobile video games{" "}
+            <i>
+              <span className="gray-text thin">(iOS, Android)</span>
+            </i>
           </li>,
         ]}
         skills={[

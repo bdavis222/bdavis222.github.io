@@ -572,6 +572,9 @@ body {
   color: var(--lightGrayTextColor);
   font-weight: 700;
 }
+.gray-text.thin {
+  font-weight: 500;
+}
 
 /* Software card styling */
 /* Float three columns side by side */
@@ -727,6 +730,9 @@ body {
 .project-header {
   margin-top: 0px;
   margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 .project-header.Beginner {
   color: var(--lightGreenTextColor);
@@ -737,12 +743,28 @@ body {
 .project-header.Advanced {
   color: var(--lightRedTextColor);
 }
-.project-difficulty {
+.project-difficulty-expanded {
   font-weight: 300;
   font-size: medium;
   margin-top: 0px;
   margin-bottom: 8px;
   color: var(--lightH3Color);
+}
+.project-difficulty-collapsed {
+  display: inline-block;
+  line-height: inherit;
+  font-weight: 300;
+  font-size: medium;
+  margin-top: 0px;
+  color: var(--lightH3Color);
+  transform: translateY(-1px);
+}
+.icon-row-grouped {
+  display: inline-flex;
+  align-items: center; /* Keeps icons centered vertically relative to each other */
+  align-self: center; /* Centers the icon group relative to the text height */
+  white-space: nowrap;
+  transform: translateY(-3px);
 }
 .close-icon {
   position: absolute;
@@ -1289,7 +1311,10 @@ body {
   .project-header.Advanced {
     color: var(--darkRedTextColor);
   }
-  .project-difficulty {
+  .project-difficulty-expanded {
+    color: var(--darkH3Color);
+  }
+  .project-difficulty-collapsed {
     color: var(--darkH3Color);
   }
   .close-icon {

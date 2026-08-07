@@ -16,8 +16,18 @@ function ResumeProject({ title, difficulty, icons, description }: Props) {
     <>
       {expanded ? (
         <div className="company-card project">
-          <h3 className={`project-header ${difficulty}`}>{title}</h3>
-          <p className="project-difficulty">
+          <h3
+            onClick={() => setExpanded(false)}
+            style={{ cursor: "pointer" }}
+            className={`project-header ${difficulty}`}
+          >
+            {title}
+          </h3>
+          <p
+            onClick={() => setExpanded(false)}
+            style={{ cursor: "pointer" }}
+            className="project-difficulty-expanded"
+          >
             <i>{difficulty}</i>
           </p>
           {iconRow}
@@ -26,6 +36,7 @@ function ResumeProject({ title, difficulty, icons, description }: Props) {
               className="close-icon"
               src="assets/close-icon.svg"
               alt="close icon"
+              style={{ cursor: "pointer" }}
             ></img>
           </a>
           {description}
@@ -33,11 +44,24 @@ function ResumeProject({ title, difficulty, icons, description }: Props) {
       ) : (
         <div
           className="company-card project"
-          style={{ paddingBottom: 14 }}
+          style={{ paddingBottom: 14, cursor: "pointer" }}
           onClick={() => setExpanded(true)}
         >
-          <h3 className={`project-header ${difficulty}`}>
-            {title} <span>{iconRow}</span>
+          <h3
+            className={`project-header ${difficulty}`}
+            style={{ cursor: "pointer" }}
+          >
+            {title}
+            <span
+              className="project-difficulty-collapsed"
+              style={{
+                paddingLeft: "8px",
+                paddingRight: "8px",
+              }}
+            >
+              <i>{difficulty}</i>
+            </span>
+            <span className="icon-row-grouped">{iconRow}</span>
           </h3>
         </div>
       )}
