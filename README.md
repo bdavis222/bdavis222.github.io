@@ -37,4 +37,4 @@ The latter will give an address for other devices to connect to (to test on a mo
 
 ### Publishing changes
 
-The `static.yml` file within `.github/workflows/` will allow for deployment. When ready for deployment (i.e., after new changes are pushed to `main`), go to the GitHub website and navigate to `Actions > Deploy static content to Pages (in the left sidebar) > Run workflow (on the right of the screen)`.
+The `static.yml` file within `.github/workflows/` will allow for deployment. This _should_ deploy the site automatically when new changes are pushed to `main`, but GitHub doesn't always play nicely. If the site isn't automatically updated after new changes are pushed to `main`, go to the GitHub website and navigate to `Actions > Deploy static content to Pages (in the left sidebar) > Run workflow (on the right of the screen)`. Interacting with that button should kickoff deployment. (Also, sometimes it gets stuck, so canceling and restarting might be required.)
